@@ -1,0 +1,28 @@
+.minicartIconContainer {
+    color: #fff;
+  }
+
+  .minicartTitle {
+    color: #53626C;
+    line-height: 70px;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-color: #F5F5F5;
+}
+
+.closeIconContainer {
+  position: absolute;
+  left: -5px;
+  top: 5px;
+}
+
+.closeIcon{
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  color: transparent;
+  padding: 0px 9px;
+}
+

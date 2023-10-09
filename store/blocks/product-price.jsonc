@@ -7,10 +7,25 @@
       "marginBottom": 4
     },
     "children": [
+      "product-price-savings",
       "product-selling-price"
     ]
   },
 
+
+  "flex-layout.row#product-prices": {
+    "children": [
+      "product-selling-price",
+      "product-list-price"
+    ],
+    "props": {
+      "blockClass": "product--prices--container",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": false
+    }
+  },
+  
   "flex-layout.row#list-price-savings": {
     "props": {
       "colGap": 2,

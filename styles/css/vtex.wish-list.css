@@ -1,0 +1,18 @@
+.wishlistIcon {
+  background: url("assets/svg/Ico-Brissa-Wishlist-Icon.svg") !important;
+  background-repeat: no-repeat !important;
+  box-sizing: border-box;
+  color: transparent;
+  padding: 20px 19px;
+  position: relative;
+  top: 7px;
+}
+
+.wishlistIconContainer :global(.vtex-button__label) {
+  background-color: #536271;
+  border-radius: 50%;
+  width: 50px;
+  position: relative;
+  top: -10px;
+  transform: scale(0.8);
+}

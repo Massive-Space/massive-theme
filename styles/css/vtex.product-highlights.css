@@ -10,3 +10,58 @@
   border-radius: 20px;
   padding: 5px 10px;
 }
+
+.productHighlightText--textflagIva {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  top: 60px !important;
+  width: 38px;
+  height: 30px;
+  font-size: 0px;
+  background-color: #e84d38;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.productHighlightText--textflagIva::before {
+  content: "Día sin IVA";
+  font-size: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--main-img) .productHighlightText--textflagIva {
+  position: absolute;
+  left: 25.7%;
+  top: 35px;
+  width: 45px;
+}
+
+.productHighlightText--textflag,
+.productHighlightText--textflag__plp {
+    display: block;
+    margin: 5px;
+    width: fit-content;
+    
+    font-size: 11px;
+    background-color: #FF6A1B;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-flex-layout-0-x-flexColChild--main-img) .productHighlightText--textflagIva {
+      left: 20px;
+      top: 40px;
+  }
+
+  .productHighlightText--textflagIva {
+      right: 3px;
+      top: 53px;
+  }
+}

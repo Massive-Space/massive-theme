@@ -3,6 +3,7 @@
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
+    "title": "Footer Desktop",
     "children": [
       "flex-layout.row#footer-1-desktop",
       "flex-layout.row#footer-2-desktop",
@@ -11,20 +12,278 @@
   },
   "flex-layout.row#footer-1-desktop": {
     "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
+      "vtex.menu@2.x:menu#footer-about-us",
+      "vtex.menu@2.x:menu#footer-club-brissa",
+      "vtex.menu@2.x:menu#footer-terms-and-conditions",
+      "vtex.menu@2.x:menu#footer-store-location",
+      "vtex.menu@2.x:menu#footer-help",
+      "vtex.menu@2.x:menu#footer-blog"
     ],
     "props": {
       "blockClass": "menu-row",
       "paddingTop": 6,
-      "paddingBottom": 3
+      "paddingBottom": 6
     }
   },
 
+  "flex-layout.row#footer-2-desktop": {
+    "props": {
+      "blockClass": "container-payment-methods-social-networks"
+    },
+    "children": ["flex-layout.row#payment-methods-social-networks"]
+  },
+  "flex-layout.row#payment-methods-social-networks": {
+    "title":"Metodos de pago - Redes Sociales",
+    "props": {
+      "blockClass": "paymentRow-methods-social-networks"
+    },
+    "children": [
+      "flex-layout.row#logo-footer-dk", "flex-layout.row#superIntendecia", "flex-layout.row#payments-methods", "flex-layout.col#container-social-networks-desktop"
+    ]
+  },
+
+  "flex-layout.row#logo-footer-dk": {
+    "title":"Logo Footer",
+    "props": {
+      "blockClass": "rowLogo-footer-desktop"
+    },
+    "children": [
+      "logo#footer-desktop"
+    ]
+  },
+  "logo#footer-desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/images/Logo-Brissa-Gray.png",
+      "width": "146",
+      "height": "40"
+    }
+  },
+
+
+
+  "flex-layout.col#spacer-footer": {
+    "props": {
+      "width": "10%"
+    }
+  },
+
+
+
+  "flex-layout.row#superIntendecia": {
+    "title":"Super Intendencia",
+    "props": {
+      "blockClass": "rowSuperIntendecia"
+    },
+    "children": [
+      "flex-layout.col#superIntendecia"
+    ]
+  },
+  "flex-layout.col#superIntendecia": {
+    "props": {
+      "blockClass": "colSuperIntendecia"
+    },
+    "children": [
+      "rich-text#superIntendecia",
+      "image#superIntendecia"
+    ]
+  },
+
+  "rich-text#superIntendecia": {
+    "title":"Texto Super Intendencia",
+    "props": {
+      "text": "Vigilado por:",
+      "blockClass": ["footer-superIntendecia","title-footer2"]
+    }
+  },
+
+  "image#superIntendecia": {
+    "title":"Logo PCI PSS",
+    "props": {
+      "src": "assets/images/watched-by.png",
+      "maxHeight": 35,
+      "blockClass": "image-footer"
+    }
+  },
+
+
+
+
+  "flex-layout.row#payments-methods": {
+    "title":"Metodos de pago",
+    "props": {
+      "blockClass": "payment-methods"
+    },
+    "children": [
+      "flex-layout.col#payments-methods"
+    ]
+  },
+  "flex-layout.col#payments-methods": {
+    "props": {
+      "blockClass": "payment-methods"
+    },
+    "children": [
+      "rich-text#payments-methods",
+      "image#payments-methods"
+    ]
+  },
+
+  "rich-text#payments-methods": {
+    "title":"Texto Metodos de Pago",
+    "props": {
+      "text": "Medios de pago disponibles:",
+      "blockClass": ["payments-methods","title-footer2"]
+    }
+  },
+
+  "image#payments-methods": {
+    "title":"Logo PCI PSS",
+    "props": {
+      "src": "assets/images/metodos-de-pago.png",
+      "maxHeight": 30,
+      "maxWidth": 290,
+      "blockClass": "image-footer"
+    }
+  },
+
+
+
+
+
+
+  "flex-layout.col#container-social-networks-desktop": {
+    "props": {
+      "blockClass": "container-social-networks-desktop"
+    },
+    "children": [
+      "rich-text#social-networks",
+      "flex-layout.row#social-networks-desktop"
+    ]
+  },
+  "rich-text#social-networks": {
+    "title":"Texto Redes Sociales",
+    "props": {
+      "text": "Síguenos en nuestras redes:",
+      "blockClass": ["payments-methods","title-footer2"]
+    }
+  },
+  "flex-layout.row#social-networks-desktop": {
+    "title":"Metodos de pago - Redes Sociales",
+    "props": {
+      "blockClass": "social-networks-desktop"
+    },
+    "children": [
+      "image#logo__Instagram-desktop",
+      "image#logo__facebook-desktop",
+      "image#logo__whatsapp-desktop"
+    ]
+  },
+
+  "image#logo__Instagram-desktop": {
+    "title": "Instagram",
+    "props": {
+      "blockClass": "icon-social-networks__footer",
+      "src": "https://almacenesbrissa.vteximg.com.br/arquivos/Intagram-Icon.svg",
+      "maxHeight": 30,
+      "link": {
+        "url": "https://www.instagram.com/",
+        "newTab": true
+      }
+    }
+  },
+  "image#logo__facebook-desktop": {
+    "title": "Facebook",
+    "props": {
+      "blockClass": "icon-social-networks__footer",
+      "src": "https://almacenesbrissa.vteximg.com.br/arquivos/Facebook-Icon.svg",
+      "maxHeight": 30,
+      "link": {
+        "url": "https://www.facebook.com/",
+        "newTab": true
+      }
+    }
+  },
+  "image#logo__whatsapp-desktop": {
+    "title": "Whatsapp",
+    "props": {
+      "blockClass": "icon-social-networks__footer",
+      "src": "https://almacenesbrissa.vteximg.com.br/arquivos/WhatsApp-Icon.svg",
+      "maxHeight": 30,
+      "link": {
+        "url": "https://www.whatsapp.com/",
+        "newTab": true
+      }
+    }
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+  "flex-layout.row#footer-3-desktop": {
+    "title":"Copyright - Power By",
+    "children": [
+      "rich-text#footer",
+      "flex-layout.row#footer-1"
+    ],
+    "props": {
+      "blockClass": "credits-powered"
+    }
+  },
+  "rich-text#footer": {
+    "title":"Texto Copyright",
+    "props": {
+      "text": "All stock and product photos are from photos.icons8.com",
+      "blockClass": "footer"
+    }
+  },
+
+  "flex-layout.row#footer-1": {
+    "title": "Power By",
+    "props": {
+      "blockClass": "vtex__massive",
+        "colSizing": "auto"
+    },
+    "children":[
+      "image#sitePCI",
+      "image#massive",
+      "image#vtex"
+    ]
+  },
+
+  "image#sitePCI": {
+    "title":"Logo PCI PSS",
+    "props": {
+      "src": "assets/images/site-pci-dss.png",
+      "maxHeight": 30,
+      "blockClass": "image-footer-powered"
+    }
+  },
+  "image#massive": {
+    "title":"Logo Massive",
+    "props": {
+      "src": "assets/images/powered-massive.png",
+      "maxHeight": 30,
+      "blockClass": "image-footer-powered"
+    }
+  },
+  "image#vtex": {
+    "title":"Logo Vtex",
+    "props": {
+      "src": "assets/images/technology-vtex.png",
+      "maxHeight": 30,
+      "blockClass": "image-footer-powered"
+    }
+  },
   "social-networks": {
     "props": {
       "socialNetworks": [
@@ -45,72 +304,6 @@
           "url": "https://www.youtube.com/user/VTEXTV"
         }
       ]
-    }
-  },
-
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
-    "props": {
-      "blockClass": "payment-methods"
-    }
-  },
-  "accepted-payment-methods": {
-    "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
-    }
-  },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
-    "props": {
-      "blockClass": "credits"
-    }
-  },
-  "rich-text#footer": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
-    }
-  },
-
-  "footer-layout.mobile": {
-    "children": [
-      "flex-layout.row#1-footer-mobile",
-      "flex-layout.row#2-footer-mobile"
-    ]
-  },
-  "flex-layout.row#2-footer-mobile": {
-    "children": ["flex-layout.col#footer-1-mobile"],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4
-    }
-  },
-  "flex-layout.col#footer-1-mobile": {
-    "children": [
-      "accepted-payment-methods",
-      "social-networks",
-      "rich-text#footer-mobile"
-    ],
-    "props": {
-      "blockClass": "payment-methods",
-      "paddingTop": 4,
-      "paddingBottom": 4,
-      "rowGap": 4
-    }
-  },
-  "flex-layout.row#1-footer-mobile": {
-    "props": {
-      "paddingTop": 4,
-      "paddingBottom": 4
-    },
-    "children": ["vtex.menu@2.x:menu#footer-mobile"]
-  },
-  "rich-text#footer-mobile": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
     }
   }
 }

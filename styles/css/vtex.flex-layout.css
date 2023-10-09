@@ -23,13 +23,13 @@
 }
 
 .flexRowContent--main-header {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
 }
 
 .flexRowContent--main-header-mobile {
   align-items: center;
-  padding: 0.625rem 0.5rem;
-  background-color: #f0f0f0;
+  padding: 0;
+  background-color: #ffffff;
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
@@ -43,7 +43,7 @@
 }
 
 .flexRow--deals {
-  background-color: #0F3E99;
+  background-color: #0f3e99;
   padding: 14px 0px;
 }
 
@@ -96,3 +96,294 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+/* BEGIN - home */
+
+.flexRow--detach-categories-container {
+  margin: 1.5rem 0;
+}
+
+.flexRowContent--container-text-link {
+  display: flex;
+}
+
+.flexColChild--containerCol-text-seo__mobile {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 50px 0px;
+}
+
+.flexRowContent--content-benefits .stretchChildrenWidth:first-child {
+  width: 30% !important;
+}
+
+.flexRowContent--content-benefits .stretchChildrenWidth:last-child {
+  width: 67% !important;
+}
+
+.flexRowContent--content-benefits {
+  max-width: 365px;
+  margin: 15px auto 35px auto;
+  background-color: #c4d7e4;
+  padding: 15px 0px 15px 25px;
+}
+
+.flexRowContent--containerRow-banners-home {
+  margin: 7px 0px;
+}
+
+.flexRowContent--containerRow-text-seo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexRowContent--container-text-seo {
+  margin: 35px 0px 46px 0px;
+}
+
+.flexColChild--info__shelf {
+  height: 100%;
+}
+
+.flexRow--info__shelf,
+.flexColChild--info__shelf,
+.flexRowContent--info__shelf {
+  height: 100%;
+}
+.flexRow--info__shelf {
+  position: relative;
+  display: flex;
+}
+
+.flexRow--content__info__shelf {
+  border-top: unset;
+}
+
+.flexCol--info__shelf {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0 10px;
+}
+
+.flexCol--info__shelf .flexColChild--info__shelf:last-child {
+  width: 100% !important;
+}
+
+.flexColChild--info__shelf :global(.vtex-button) {
+  margin: 10px 0;
+  border-radius: 25px;
+}
+
+.flexRowContent--info__shelf {
+  padding-top: 15px;
+}
+
+.flexColChild--info__shelf
+  :global(.vtex-add-to-cart-button-0-x-buttonText--shelf) {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: bold !important;
+}
+
+.containerCol-banners-home {
+  height: auto;
+  width: auto;
+}
+@media screen and (max-width: 1024px) {
+  .flexColChild--info__shelf :global(.vtex-button__label) {
+    padding: 0 4px !important;
+  }
+  .flexColChild--info__shelf
+    :global(.vtex-add-to-cart-button-0-x-buttonText--shelf) {
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: none;
+    font-family: "Quicksand";
+  }
+  .flexRowContent--info__shelf {
+    min-height: 200px;
+  }
+  .flexRowContent--info__shelf .stretchChildrenWidth:first-child {
+    height: 100%;
+  }
+  .flexCol--info__shelf {
+    margin-top: 0;
+  }
+}
+/* END - home */
+
+/* BEGIN - footer */
+
+.flexRowContent--footer__content {
+  padding-top: 40px;
+  padding-bottom: 20px !important;
+}
+
+.flexRowContent--footer__content {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.flexRowContent--footer__content .stretchChildrenWidth:first-child {
+  justify-content: flex-start;
+}
+
+.flexRow--footer__content {
+  background-color: #f5f5f5;
+}
+
+.flexRow--container-payment-methods-social-networks {
+  background-color: #536271;
+  border: 1px solid #536271;
+}
+
+.flexRow--container-logo-footer {
+  background-color: #536271;
+  border: 1px solid #536271;
+  padding: 15px 0px 24px;
+}
+
+.flexRowContent--paymentRow-methods-social-networks {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+
+.flexCol--colSuperIntendecia,
+.flexCol--container-social-networks-desktop,
+.flexCol--payment-methods {
+  width: 300px !important;
+}
+
+.flexColChild--container-social-networks-desktop,
+.flexColChild--payment-methods,
+.flexColChild--colSuperIntendecia {
+  display: flex;
+  justify-content: center;
+}
+
+.flexRowContent--container-social-networks {
+  display: flex;
+}
+
+.flexCol--content-footer {
+  padding: 15px 0px;
+}
+
+.flexRow--menu-row {
+  background-color: #536271;
+}
+
+.flexRowContent--vtex__massive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexRow--vtex__massive {
+  margin: 0 auto;
+}
+
+.flexRowContent--credits-powered {
+  max-width: 1250px;
+  margin: 10px auto;
+}
+
+.flexRow--credits-powered {
+  background-color: #343f47;
+  padding: 10px 0;
+}
+
+.stretchChildrenWidth--powered-footer {
+  width: 5% !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .flexRowContent--footer__content .stretchChildrenWidth {
+    width: 25% !important;
+  }
+
+  .flexRowContent--content-benefits .stretchChildrenWidth:first-child {
+    justify-content: flex-end;
+  }
+
+  .flexRowContent--content-benefits .stretchChildrenWidth:last-child {
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  .flexRowContent--content-benefits {
+    max-width: 394px;
+    width: 394px;
+    padding: 20px 0px 20px 25px;
+    display: flex;
+  }
+}
+/* END - footer */
+
+/* BEGIN - product */
+
+.flexRowContent--row-buy-button .stretchChildrenWidth:first-child {
+  width: 35% !important;
+}
+
+.flexRowContent--row-buy-button .stretchChildrenWidth:last-child {
+  width: 55% !important;
+  height: 58px;
+}
+
+.flexRowContent--rating-list-btn-pdp .stretchChildrenWidth:first-child {
+  width: 80% !important;
+}
+
+.flexRowContent--rating-list-btn-pdp .stretchChildrenWidth:last-child {
+  width: 10% !important;
+}
+
+.flexRowContent--row-buy-button :global(.vtex-button) {
+  border-radius: 15px;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+.flexRow--row-buy-button {
+  margin-left: 10px;
+}
+
+.flexRowContent--row-buy-button :global(.vtex-button__label)::before {
+  content: url("assets/svg/Car-Icon-White.svg");
+  padding-right: 8px;
+}
+
+.flexRowContent--product--prices--container {
+  flex-direction: column-reverse;
+}
+
+@media only screen and (max-width: 1024px) {
+  .flexRowContent--product--prices--container {
+    flex-direction: column-reverse;
+  }
+
+  .flexRowContent--product--prices--container .stretchChildrenWidth,
+  .flexRowContent--product--prices--container
+    .stretchChildrenWidth
+    :global(.vtex-product-price-1-x-sellingPrice) {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .flexRowContent--product--prices--container .stretchChildrenWidth {
+    width: max-content !important;
+    padding: 0 12px 0 0;
+    margin: 0;
+  }
+}
+/* END - product */

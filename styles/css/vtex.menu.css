@@ -1,0 +1,112 @@
+:global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
+  .menuItem--footer__menu-text {
+  background-color: #888888;
+}
+
+.styledLinkContainer--footer__menu-text,
+.styledLinkContainer--footer__menu-list {
+  margin: 0;
+}
+
+.styledLinkContent--footer__menu-text {
+  font-family: "Quicksand";
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.styledLinkContent--footer__menu-list {
+  font-family: "Quicksand" !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+  color: #ffffff !important;
+}
+
+.styledLinkContent--container-menu-footer {
+  font-family: "Quicksand";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #ffffff;
+}
+
+:global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
+  .menuItem--footer__menu-text {
+  background-color: #536271;
+}
+
+.styledLinkContent--menu-text-seo {
+  color: #bdbdbd;
+  font-family: "Quicksand";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px 0px;
+}
+
+.styledLinkContent--text-seo__menu-list {
+  color: #353835;
+  font-family: "Quicksand";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.menuItem--text-seo__menu-list--isClosed {
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.styledLinkContainer--text-seo__menu-list {
+  padding: 6px;
+}
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
+    .menuItem--footer__menu-text--isOpen {
+    background-color: #b3b3b3;
+  }
+  :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
+    .menuItem--footer__menu-text--isOpen
+    .styledLinkContainer--footer__menu-text {
+    border-bottom: none;
+  }
+
+  .styledLinkContent--footer__menu-list,
+  .styledLinkContent--footer__menu-text {
+    width: 85% !important;
+    padding: 0 !important;
+    margin: 0 auto;
+  }
+
+  .styledLinkContent--footer__menu-list {
+    width: 75% !important;
+    white-space: normal;
+    height: auto;
+    display: block;
+  }
+  .styledLinkContainer--footer__menu-list {
+    border-bottom: 1px solid #3c4851;
+  }
+
+  :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
+    .menuItem--footer__menu-text--isOpen {
+    background-color: #536271;
+  }
+
+  :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
+    .menuItem--footer__menu-text--isOpen
+    .styledLinkContainer--footer__menu-text {
+    border-bottom: none;
+  }
+
+  .styledLinkContent--text-seo__menu-list {
+    white-space: normal;
+  }
+}

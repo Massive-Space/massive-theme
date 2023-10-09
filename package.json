@@ -1,0 +1,19 @@
+{
+    "name": "almacenesbrissa-storetheme",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "link:storetheme": "vtex link",
+      "transpile:scss": "npx gulp styles",
+      "watch:scss": "npx gulp watch",
+      "prelink:storetheme": "yarn run transpile:scss"
+    },
+    "author": "almacenesbrissa",
+    "license": "ISC",
+    "devDependencies": {
+      "gulp": "^4.0.2",
+      "gulp-sass": "5.0.0",
+      "merge-stream": "^2.0.0",
+      "node-sass": "^7.0.1"
+    }
+  }

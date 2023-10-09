@@ -1,0 +1,373 @@
+{
+  "responsive-layout.mobile": {
+    "title": "Content Mobile",
+    "children": ["disposition-layout#total-home-mobile"]
+  },
+  "disposition-layout#total-home-mobile": {
+    "title": "Contenido - Mobile",
+    "children": [
+      "list-context.media-list#banner-principal__media",
+      "responsive-layout.mobile#banner--benefit-mobile__home",
+      "flex-layout.row#categories",
+      "__fold__",
+      "flex-layout.row#detach",
+      "flex-layout.row#collection",
+      "flex-layout.row#trending-products",
+      "list-context.media-list#carrousel-banner",
+      "flex-layout.row#best-sellers",
+      "responsive-layout.mobile#shop-online-link",
+      "flex-layout.row#text-seo-mobile",
+      "flex-layout.row#image-newsletter"
+    ],
+    "props": {
+      "blockClass": "home__order",
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        },
+        {
+          "order": 7
+        },
+        {
+          "order": 8
+        },
+        {
+          "order": 9
+        },
+        {
+          "order": 10
+        },
+        {
+          "order": 11
+        }
+      ]
+    }
+  },
+
+  //BENEFICIOS
+
+  "responsive-layout.mobile#banner--benefit-mobile__home": {
+    "title": "Banners Beneficios - Mobile",
+    "props": {
+      "blockClass": "container-banner-benefit-mobile"
+    },
+    "children": ["slider-layout#banner--benefit-mobile__home"]
+  },
+
+  "slider-layout#banner--benefit-mobile__home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": ["carousel", "spacehome","benefit-mobile"]
+    },
+    "children": [
+      "flex-layout.row#benefit-1",
+      "flex-layout.row#benefit-2",
+      "flex-layout.row#benefit-3",
+      "flex-layout.row#benefit-4"
+    ]
+  },
+
+  //BENEFICIOS
+
+  // COMPRA ONLINE
+  "responsive-layout.mobile#shop-online-link": {
+    "title": "Links Compra Online - Mobile",
+    "props": {
+      "blockClass": "container-link-shop"
+    },
+    "children": [
+      "rich-text#link-shop-title",
+      "flex-layout.row#content-link-shop"
+    ]
+  },
+
+  "rich-text#link-shop-title": {
+    "title": "Titulo Compra Online",
+    "props": {
+      "text": "Compra online en almacenesbrissa",
+      "blockClass": "title-home"
+    }
+  },
+
+  "flex-layout.row#content-link-shop": {
+    "props": {
+      "blockClass": "container-text-link"
+    },
+    "children": [
+      "flex-layout.col#content1-link-shop",
+      "flex-layout.col#content2-link-shop"
+    ]
+  },
+
+  "flex-layout.col#content1-link-shop": {
+    "title": "Contenido 1",
+    "children": ["flex-layout.row#column1-link-shop"]
+  },
+  "flex-layout.row#column1-link-shop": {
+    "props": {
+      "blockClass": "container-text-link"
+    },
+    "children": ["flex-layout.col#column1-link-shop"]
+  },
+
+  "flex-layout.col#column1-link-shop": {
+    "props": {
+      "blockClass": "container-text-link"
+    },
+    "children": ["rich-text#text-link-left1", "rich-text#text-link-left2"]
+  },
+
+  "flex-layout.col#content2-link-shop": {
+    "title": "Contenido 2",
+    "children": ["flex-layout.row#column2-link-shop"]
+  },
+
+  "flex-layout.row#column2-link-shop": {
+    "props": {
+      "blockClass": "container-text-link"
+    },
+    "children": ["flex-layout.col#column2-link-shop"]
+  },
+
+  "flex-layout.col#column2-link-shop": {
+    "props": {
+      "blockClass": "container-text-link"
+    },
+    "children": [
+      "rich-text#text-link-right3",
+      "rich-text#text-link-right4",
+      "rich-text#text-link-right5"
+    ]
+  },
+
+  "rich-text#text-link-left1": {
+    "title": "Text bloque 1",
+    "props": {
+      "text": "[Enlace de SEO](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
+      "blockClass": "text-link__home-left"
+    }
+  },
+  "rich-text#text-link-left2": {
+    "title": "Text bloque 2",
+    "props": {
+      "text": "[Enlace de SEO](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
+      "blockClass": "text-link__home-left"
+    }
+  },
+  "rich-text#text-link-right3": {
+    "title": "Text bloque 3",
+    "props": {
+      "text": "[Enlace de SEO](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
+      "blockClass": "text-link__home-right"
+    }
+  },
+  "rich-text#text-link-right4": {
+    "title": "Text bloque 4",
+    "props": {
+      "text": "[Enlace de SEO1](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
+      "blockClass": "text-link__home-right"
+    }
+  },
+  "rich-text#text-link-right5": {
+    "title": "Text bloque 5",
+    "props": {
+      "text": "[Enlace de SEO](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
+      "blockClass": "text-link__home-right"
+    }
+  },
+
+  // COMPRA ONLINE
+
+  // TEXTOS SEO - MO
+
+  "flex-layout.row#text-seo-mobile": {
+    "title": "Textos SEO - Mobile",
+    "props": {
+      "blockClass": "containerRow-text-seo__mobile"
+    },
+    "children": ["flex-layout.col#text-seo-mobile"]
+  },
+
+  "flex-layout.col#text-seo-mobile": {
+    "props": {
+      "blockClass": "containerCol-text-seo__mobile"
+    },
+    "children": ["disclosure-layout-group#text-seo-mobile"]
+  },
+
+  "disclosure-layout-group#text-seo-mobile": {
+    "props": {
+      "blockClass": "disclosure-text-seo__mobile",
+      "maxVisible": "one"
+    },
+    "children": ["disposition-layout#text-seo__mobile"]
+  },
+
+  "disposition-layout#text-seo__mobile": {
+    "title": "Mostrar / Ocultar / Reorganizar",
+    "children": [
+      "disclosure-layout#textSeo__content__1",
+      "disclosure-layout#textSeo__content__2",
+      "disclosure-layout#textSeo__content__3",
+      "disclosure-layout#textSeo__content__4",
+      "disclosure-layout#textSeo__content__5",
+      "disclosure-layout#textSeo__content__6"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        }
+      ]
+    }
+  },
+
+  "disclosure-layout#textSeo__content__1": {
+    "title": "Menu SEO 1",
+    "props": {
+      "blockClass": "text-seo-content",
+      "initialVisibility": "visible"
+    },
+    "children": [
+      "disclosure-trigger#title-textSeo__content",
+      "disclosure-content#textSeo__content"
+    ]
+  },
+  "disclosure-layout#textSeo__content__2": {
+    "title": "Menu SEO 2",
+    "props": {
+      "blockClass": "text-seo-content"
+    },
+    "children": [
+      "disclosure-trigger#title-textSeo__content",
+      "disclosure-content#textSeo__content"
+    ]
+  },
+  "disclosure-layout#textSeo__content__3": {
+    "title": "Menu SEO 3",
+    "props": {
+      "blockClass": "text-seo-content"
+    },
+    "children": [
+      "disclosure-trigger#title-textSeo__content",
+      "disclosure-content#textSeo__content"
+    ]
+  },
+  "disclosure-layout#textSeo__content__4": {
+    "title": "Menu SEO 4",
+    "props": {
+      "blockClass": "text-seo-content"
+    },
+    "children": [
+      "disclosure-trigger#title-textSeo__content",
+      "disclosure-content#textSeo__content"
+    ]
+  },
+
+  "disclosure-layout#textSeo__content__5": {
+    "title": "Menu SEO 5",
+    "props": {
+      "blockClass": "text-seo-content"
+    },
+    "children": [
+      "disclosure-trigger#title-textSeo__content",
+      "disclosure-content#textSeo__content"
+    ]
+  },
+
+  "disclosure-layout#textSeo__content__6": {
+    "title": "Menu SEO 6",
+    "props": {
+      "blockClass": "text-seo-content"
+    },
+    "children": [
+      "disclosure-trigger#title-textSeo__content",
+      "disclosure-content#textSeo__content"
+    ]
+  },
+
+  "disclosure-trigger#title-textSeo__content": {
+    "title": "Título",
+    "props": {
+      "blockClass": "text-seo__terms"
+    },
+    "children": ["menu-item#textSeo-title"]
+  },
+  "menu-item#textSeo-title": {
+    "title": "Asignación Titulo",
+    "props": {
+      "blockClass": "menu-text-seo",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "",
+        "text": ""
+      }
+    }
+  },
+
+  "disclosure-content#textSeo__content": {
+    "title": "Categorias",
+    "children": ["vtex.menu@2.x:menu#textSeo__list"],
+    "props": {
+      "blockClass": "text-seo__terms"
+    }
+  },
+
+  "vtex.menu@2.x:menu#textSeo__list": {
+    "title": "Listado",
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "text-seo__menu-list",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#"
+      }
+    },
+    "children": []
+  }
+
+  // TEXTOS SEO - MO
+}

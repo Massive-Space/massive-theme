@@ -1,0 +1,45 @@
+{
+  "slider-layout#header-top": {
+    "title": "Top Promocional",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 500000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never",
+      "blockClass": "sliderHeaderTop"
+    },
+    "children": ["rich-text#promo__1"]
+  },
+  "rich-text#promo__1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Últimos días de nuestro outlet en Brissa Kids",
+      "blockClass": "messageHeaderTop"
+    }
+  },
+  "login": {
+    "title": "Login",
+    "props": {
+      "label": false,
+      "hideIconLabel": false,
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true,
+      "placeholder": "",
+      "optionsTitle": "¿Cómo prefieres ingresar?",
+      "showIconProfile": false,
+      "hasGoogleOneTap": true
+    }
+  }
+}

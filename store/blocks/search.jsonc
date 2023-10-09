@@ -63,8 +63,12 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
+      "flex-layout.row#search-result-categories",
       "flex-layout.row#searchtitle",
-      "flex-layout.row#result"
+      "flex-layout.row#result",
+      "flex-layout.row#search-result-suggestion",
+      "responsive-layout.desktop#shop-online-link-dk",
+      "flex-layout.row#text-seo"
     ],
     "props": {
       "pagination": "show-more",
@@ -72,6 +76,382 @@
       "defaultGalleryLayout": "grid"
     }
   },
+
+  "flex-layout.row#search-result-suggestion": {
+    "title": "Productos Destacados",
+    "props": {
+      "blockClass": "row-search-result"
+    },
+    "children": ["flex-layout.col#search-result-suggestion"]
+  },
+
+  "flex-layout.col#search-result-suggestion": {
+    "title": "Productos Destacados",
+    "props": {
+      "blockClass": "col-search-result"
+    },
+    "children": ["search-title.v2", "list-context.product-list#search-result"]
+  },
+
+  "list-context.product-list#search-result": {
+    "title": "Colección",
+    "blocks": ["product-summary.shelf#search-result"],
+    "props": {
+      "collection": "1774",
+      "hideUnavailableItems": true,
+      "skusFilter": "FIRST_AVAILABLE",
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "children": ["slider-layout#search-result"]
+  },
+  "slider-layout#search-result": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "showNavigationArrows": "always",
+      "infinite": true,
+      "blockClass": "shelf"
+    }
+  },
+
+  "flex-layout.row#search-result-categories": {
+    "title": "Categorias",
+    "props": {
+      "blockClass": "categoriesRow-search-result"
+    },
+    "children": ["flex-layout.col#search-result-categories"]
+  },
+
+  "flex-layout.col#search-result-categories": {
+    "props": {
+      "blockClass": "categoriesCol-search-result"
+    },
+    "children": ["slider-layout#search-result-categories"]
+  },
+
+  "slider-layout#search-result-categories": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 10,
+        "tablet": 5,
+        "phone": 3
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["carousel", "search-result-categories"]
+    },
+    "children": [
+      "flex-layout.row#search-result-category-1",
+      "flex-layout.row#search-result-category-2",
+      "flex-layout.row#search-result-category-3",
+      "flex-layout.row#search-result-category-4",
+      "flex-layout.row#search-result-category-5",
+      "flex-layout.row#search-result-category-6",
+      "flex-layout.row#search-result-category-7",
+      "flex-layout.row#search-result-category-8",
+      "flex-layout.row#search-result-category-9",
+      "flex-layout.row#search-result-category-10",
+      "flex-layout.row#search-result-category-11",
+      "flex-layout.row#search-result-category-12",
+      "flex-layout.row#search-result-category-13",
+      "flex-layout.row#search-result-category-14",
+      "flex-layout.row#search-result-category-15"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-1": {
+    "title": "Categoria 1",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-1"]
+  },
+
+  "flex-layout.col#search-result-category-1": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-2": {
+    "title": "Categoria 2",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-2"]
+  },
+
+  "flex-layout.col#search-result-category-2": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-3": {
+    "title": "Categoria 3",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-3"]
+  },
+
+  "flex-layout.col#search-result-category-3": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-4": {
+    "title": "Categoria 4",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-4"]
+  },
+
+  "flex-layout.col#search-result-category-4": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-5": {
+    "title": "Categoria 5",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-5"]
+  },
+
+  "flex-layout.col#search-result-category-5": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-6": {
+    "title": "Categoria 6",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-6"]
+  },
+
+  "flex-layout.col#search-result-category-6": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-7": {
+    "title": "Categoria 7",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-7"]
+  },
+
+  "flex-layout.col#search-result-category-7": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-8": {
+    "title": "Categoria 8",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-8"]
+  },
+
+  "flex-layout.col#search-result-category-8": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-9": {
+    "title": "Categoria 9",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-9"]
+  },
+
+  "flex-layout.col#search-result-category-9": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-10": {
+    "title": "Categoria 10",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-10"]
+  },
+
+  "flex-layout.col#search-result-category-10": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-11": {
+    "title": "Categoria 11",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-11"]
+  },
+
+  "flex-layout.col#search-result-category-11": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-12": {
+    "title": "Categoria 12",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-12"]
+  },
+
+  "flex-layout.col#search-result-category-12": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-13": {
+    "title": "Categoria 13",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-13"]
+  },
+
+  "flex-layout.col#search-result-category-13": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-14": {
+    "title": "Categoria 14",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-14"]
+  },
+
+  "flex-layout.col#search-result-category-14": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+
+  "flex-layout.row#search-result-category-15": {
+    "title": "Categoria 15",
+    "props": {
+      "blockClass": "contentRow-search-result-categories"
+    },
+    "children": ["flex-layout.col#search-result-category-15"]
+  },
+
+  "flex-layout.col#search-result-category-15": {
+    "props": {
+      "blockClass": "contentCol-search-result-categories"
+    },
+    "children": [
+      "image#search-result-category",
+      "rich-text#search-result-category"
+    ]
+  },
+  "rich-text#search-result-category": {
+    "title": "Titulo Categoria",
+    "props": {
+      "text": "Test1",
+      "blockClass": "text-title-search-result",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "image#search-result-category": {
+    "title": "Image Categoria",
+    "props": {
+      "src": "https://almacenesbrissa.vteximg.com.br/arquivos/Sldr-Cat-Almohadas.png",
+      "maxHeight": 135,
+      "maxWidth": 135,
+      "blockClass": "image-categories"
+    }
+  },
+
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
@@ -95,6 +475,15 @@
       "blockClass": "filterCol"
     }
   },
+
+  "filter-navigator.v3": {
+    "title": "Filtros",
+    "props": {
+      "openFiltersMode": "one",
+      "initiallyCollapsed": true,
+      "navigationTypeOnMobile": "collapsible"
+    }
+  },
   "flex-layout.col#content": {
     "children": [
       "flex-layout.row#searchinfo",
@@ -108,7 +497,10 @@
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
+    "children": [
+      "flex-layout.col#productCount",
+      "flex-layout.row#orderByAndSwitcher"
+    ]
   },
   "flex-layout.row#orderByAndSwitcher": {
     "children": ["order-by.v2", "gallery-layout-switcher"],
@@ -212,6 +604,7 @@
       "blockClass": "filterMobileCol"
     }
   },
+
   "flex-layout.col#switcherMobile": {
     "children": ["gallery-layout-switcher"],
     "props": {
@@ -272,29 +665,19 @@
     "props": {
       "name": "grid"
     },
-    "children": [
-      "icon-grid",
-      "responsive-layout.desktop#textOptionGrid"
-    ]
+    "children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
   },
   "gallery-layout-option#list": {
     "props": {
       "name": "list"
     },
-    "children": [
-      "icon-inline-grid",
-      "responsive-layout.desktop#textOptionList"
-    ]
+    "children": ["icon-inline-grid", "responsive-layout.desktop#textOptionList"]
   },
   "responsive-layout.desktop#textOptionGrid": {
-    "children": [
-      "rich-text#option-grid"
-    ]
+    "children": ["rich-text#option-grid"]
   },
   "responsive-layout.desktop#textOptionList": {
-    "children": [
-      "rich-text#option-list"
-    ]
+    "children": ["rich-text#option-list"]
   },
   "rich-text#option-grid": {
     "props": {

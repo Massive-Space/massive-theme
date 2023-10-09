@@ -1,22 +1,30 @@
 {
   "product-summary.shelf": {
+    "title": "Vitrina",
+    "props": {
+      "blockClass": ["principal__shelf"],
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 4,
+        "phone": 2
+      }
+    },
     "children": [
-      "stack-layout#prodsum",
-      "product-summary-name",
-      "flex-layout.col#productRating",
-      "product-summary-space",
-      "product-list-price#summary",
-      "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
+      // "vtex.product-highlights@2.x:product-highlights#colecction",
+      "product-summary-image",
+      "flex-layout.row#info__shelf"
     ]
   },
-  "flex-layout.col#productRating": {
-    "props": {
-      "blockClass": "productRating"
-    },
-    "children": ["product-rating-inline"]
-  },
+
+  // "children": [
+  //   "stack-layout#prodsum",
+  //   "product-summary-name",
+  //   "flex-layout.col#productRating",
+  //   "product-list-price#summary",
+  //   "flex-layout.row#selling-price-savings",
+  //   "product-installments#summary",
+  //   "add-to-cart-button"
+  // ]
 
   "stack-layout#prodsum": {
     "children": [
@@ -24,6 +32,13 @@
       "vtex.product-highlights@2.x:product-highlights#collection",
       "modal-trigger#quickview" // Check quickview.jsonc
     ]
+  },
+
+  "flex-layout.col#productRating": {
+    "props": {
+      "blockClass": "productRating"
+    },
+    "children": ["product-rating-inline"]
   },
 
   "product-summary-image#shelf": {
@@ -81,9 +96,7 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
+      "markers": ["discount"],
       "blockClass": "summary"
     }
   }

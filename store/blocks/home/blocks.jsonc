@@ -1,0 +1,444 @@
+{
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#text-seo-1": {
+    "title": "Textos",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# Conoce el nuevo sitio de Brissa",
+      "blockClass": "text-seo"
+    }
+  },
+  "rich-text#text-seo-2": {
+    "title": "Textos",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Nueva colección Camuflaje",
+      "blockClass": "text-seo"
+    }
+  },
+  "rich-text#text-seo-3": {
+    "title": "Textos",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Temporada de Cojines",
+      "blockClass": "text-seo"
+    }
+  },
+  "rich-text#text-seo-4": {
+    "title": "Textos",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Especial de Colores",
+      "blockClass": "text-seo"
+    }
+  },
+
+  "list-context.product-list#detach-category-1": {
+    "blocks": ["product-summary.shelf#detach-categories"],
+    "props": {
+      "collection": "1774",
+      "hideUnavailableItems": true,
+      "skusFilter": "FIRST_AVAILABLE",
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "children": ["slider-layout#detach-categories"]
+  },
+
+  "list-context.product-list#detach-category-2": {
+    "blocks": ["product-summary.shelf#detach-categories"],
+    "props": {
+      "collection": "1773",
+      "hideUnavailableItems": true,
+      "skusFilter": "FIRST_AVAILABLE",
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "children": ["slider-layout#detach-categories"]
+  },
+
+  "list-context.product-list#detach-category-3": {
+    "blocks": ["product-summary.shelf#detach-categories"],
+    "props": {
+      "collection": "1772",
+      "hideUnavailableItems": true,
+      "skusFilter": "FIRST_AVAILABLE",
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "children": ["slider-layout#detach-categories"]
+  },
+
+  "slider-layout#detach-categories": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "showNavigationArrows": "always",
+      "infinite": true,
+      "blockClass": "shelf"
+    }
+  },
+  
+  "list-context.media-list#banner-categories": {
+    "title": "Banner Media",
+    "children": ["slider-layout#banner-categories"],
+    "props": {
+      "height": 600,
+      "preload": true,
+      "mediaList": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-categories": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "never",
+      "blockClass": ["carousel", "spacehome"]
+    }
+  },
+
+  "slider-layout#product-home": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 2
+      },
+      "showNavigationArrows": "always",
+      "infinite": true,
+      "blockClass": "shelf"
+    }
+  },
+  "stack-layout#product-home": {
+    "children": ["product-summary-image"]
+  },
+
+  "product-summary-price#product-home": {
+    "props": {
+      "showInstallments": false,
+      "showListPrice": false
+    }
+  },
+  "flex-layout.row#carrousel-banner": {
+    "title": "Carrosel",
+    "props": {},
+    "children": ["flex-layout.col#carrousel-banner"]
+  },
+  "flex-layout.col#carrousel-banner": {
+    "children": ["list-context.media-list#carrousel-banner"]
+  },
+
+  "list-context.media-list#carrousel-banner": {
+    "title": "Banner Carrousel",
+    "children": ["slider-layout#carrousel-banner"],
+    "props": {
+      "height": 600,
+      "preload": true,
+      "mediaList": [
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        },
+        {
+          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#carrousel-banner": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": ["carousel", "spacehome"],
+      "autoplay": {
+        "timeout": 8000,
+        "stopOnHover": true
+      }
+    }
+  },
+
+  // CATEGORIAS
+
+  "flex-layout.row#category-1": {
+    "title": "Categoria 1",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-1"]
+  },
+
+  "flex-layout.col#category-1": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-2": {
+    "title": "Categoria 2",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-2"]
+  },
+
+  "flex-layout.col#category-2": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-3": {
+    "title": "Categoria 3",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-3"]
+  },
+
+  "flex-layout.col#category-3": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-4": {
+    "title": "Categoria 4",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-4"]
+  },
+
+  "flex-layout.col#category-4": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-5": {
+    "title": "Categoria 5",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-5"]
+  },
+
+  "flex-layout.col#category-5": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-6": {
+    "title": "Categoria 6",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-6"]
+  },
+
+  "flex-layout.col#category-6": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-7": {
+    "title": "Categoria 7",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-7"]
+  },
+
+  "flex-layout.col#category-7": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-8": {
+    "title": "Categoria 8",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-8"]
+  },
+
+  "flex-layout.col#category-8": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-9": {
+    "title": "Categoria 9",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-9"]
+  },
+
+  "flex-layout.col#category-9": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-10": {
+    "title": "Categoria 10",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-10"]
+  },
+
+  "flex-layout.col#category-10": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-11": {
+    "title": "Categoria 11",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-11"]
+  },
+
+  "flex-layout.col#category-11": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-12": {
+    "title": "Categoria 12",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-12"]
+  },
+
+  "flex-layout.col#category-12": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-13": {
+    "title": "Categoria 13",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-13"]
+  },
+
+  "flex-layout.col#category-13": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-14": {
+    "title": "Categoria 14",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-14"]
+  },
+
+  "flex-layout.col#category-14": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "flex-layout.row#category-15": {
+    "title": "Categoria 15",
+    "props": {
+      "blockClass": "contentRow-categories"
+    },
+    "children": ["flex-layout.col#category-15"]
+  },
+
+  "flex-layout.col#category-15": {
+    "props": {
+      "blockClass": "contentCol-categories"
+    },
+    "children": ["image#category", "rich-text#category"]
+  },
+
+  "rich-text#category": {
+    "title": "Titulo Categoria",
+    "props": {
+      "text": "Test1",
+      "blockClass": "text-title-categories",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "image#category": {
+    "title": "Image Categoria",
+    "props": {
+      "src": "https://almacenesbrissa.vteximg.com.br/arquivos/Sldr-Cat-Almohadas.png",
+      "maxHeight": 392,
+      "maxWidth": 392,
+      "blockClass": "image-categories"
+    }
+  }
+
+  // CATEGORIAS
+}

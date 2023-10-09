@@ -1,7 +1,7 @@
 .container {
   max-width: 96rem;
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .inlineContainer {
@@ -9,9 +9,39 @@
 }
 
 .star--filled {
-  color: #FFB100;
+  color: #536271;
 }
 
 .star--empty {
-  color: #FFB100;
+  color: #536271;
+}
+
+.reviewsRatingCount,
+.reviewsRatingAverage {
+  color: #536271;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.graphContainer {
+  margin-bottom: 0px;
+}
+
+.loginLink {
+  background-color: #536271;
+  max-width: 743px;
+  width: 100%;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }

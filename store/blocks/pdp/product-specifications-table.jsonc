@@ -1,5 +1,8 @@
 {
   "product-specification-group#table": {
+    "props": {
+      "blockClass": "productSpecificationGroupTable"
+    },
     "children": [
       "flex-layout.row#spec-group"
     ]

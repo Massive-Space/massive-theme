@@ -1,0 +1,61 @@
+{
+  "header-layout.mobile": {
+    "title": "Header Mobile",
+    "props": {
+      "blockClass": "header__mobile"
+    },
+    "children": [
+      "slider-layout#header-top",
+      "header-row#components-header__mobile",
+      "search-bar"
+    ]
+  },
+  "header-row#components-header__mobile": {
+    "title": "Contenido",
+    "props": {
+      "sticky": true,
+      "blockClass": "header__components__mobile"
+    },
+    "children": ["disposition-layout#1-mobile"]
+  },
+  "disposition-layout#1-mobile": {
+    "title":"Principal",
+    "children": [
+      "drawer",
+      "flex-layout.col#spacer",
+      "logo#mobile",
+      "flex-layout.col#spacer",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": ["menu#drawer"]
+  },
+
+  "menu#drawer": {
+    "children": [
+      "login",
+      "menu-item#category-apparel",
+      "menu-item#category-home",
+      "menu-item#more"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://almacenesbrissa.vteximg.com.br/arquivos/Logo-MB-Brissa-Gray.svg",
+      "width": "128",
+      "height": "35"
+    }
+  }
+}

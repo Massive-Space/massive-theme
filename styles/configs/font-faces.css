@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "Quicksand-Light";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/Quicksand-Light.ttf") format("ttf"),
+    url("assets/fonts/Quicksand-Light.woff") format("woff"),
+    url("assets/fonts/Quicksand-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/Quicksand-Regular.ttf") format("ttf"),
+    url("assets/fonts/Quicksand-Regular.woff") format("woff"),
+    url("assets/fonts/Quicksand-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Quicksand-Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/Quicksand-Medium.ttf") format("ttf"),
+    url("assets/fonts/Quicksand-Medium.woff") format("woff"),
+    url("assets/fonts/Quicksand-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Quicksand-SemiBold";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/Quicksand-SemiBold.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "Quicksand-Bold";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("assets/fonts/Quicksand-Bold.ttf") format("ttf"),
+    url("assets/fonts/Quicksand-Bold.woff") format("woff"),
+    url("assets/fonts/Quicksand-Bold.woff2") format("woff2");
+}
