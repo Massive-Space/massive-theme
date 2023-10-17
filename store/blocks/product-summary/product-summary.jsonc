@@ -63,6 +63,7 @@
   },
   "product-highlight-text": {
     "props": {
+      "blockClass": "textflag",
       "message": "{highlightName}"
     }
   },

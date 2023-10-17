@@ -6,17 +6,13 @@
       "preventHorizontalStretch": true,
       "marginBottom": 4
     },
-    "children": [
-      "product-price-savings",
-      "product-selling-price"
-    ]
+    "children": ["product-price-savings", "product-selling-price"]
   },
-
 
   "flex-layout.row#product-prices": {
     "children": [
-      "product-selling-price",
-      "product-list-price"
+      "flex-layout.col#list-price-savings-1",
+      "flex-layout.col#list-price-savings-2"
     ],
     "props": {
       "blockClass": "product--prices--container",
@@ -25,7 +21,15 @@
       "preventHorizontalStretch": false
     }
   },
-  
+
+  "flex-layout.col#list-price-savings-1": {
+    "children": ["product-list-price", "product-selling-price"]
+  },
+
+  "flex-layout.col#list-price-savings-2": {
+    "children": ["flex-layout.row#offers-dektop"]
+  },
+
   "flex-layout.row#list-price-savings": {
     "props": {
       "colGap": 2,
@@ -34,9 +38,6 @@
       "marginBottom": 2,
       "marginTop": 5
     },
-    "children": [
-      "product-list-price",
-      "product-price-savings"
-    ]
+    "children": ["product-list-price", "product-price-savings"]
   }
 }

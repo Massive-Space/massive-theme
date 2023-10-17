@@ -93,6 +93,21 @@
   padding: 0.25rem 0.5rem 0.25rem 0.5rem;
 }
 
+.savings--discountpdp, .savings--discountpdp2 {
+  max-width: 160px;
+  display: flex;
+  justify-content: center;
+  background-color: #e76d1e;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
 @media screen and (max-width: 1024px) {
   :global(.vtex-flex-layout-0-x-flexRowContent--product--prices--container)
     .currencyContainer {
@@ -108,5 +123,11 @@
   :global(.vtex-flex-layout-0-x-flexRow--product--prices--container)
     .sellingPrice--hasListPrice {
     width: 40vw;
+  }
+
+  .savings--discountpdp{
+    z-index: 2;
+    left: 25.9%;
+    top: 1%;
   }
 }

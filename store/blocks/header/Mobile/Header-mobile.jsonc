@@ -21,9 +21,10 @@
   "disposition-layout#1-mobile": {
     "title":"Principal",
     "children": [
-      "drawer",
+      "app-menu",
       "flex-layout.col#spacer",
       "logo#mobile",
+      "flex-layout.col#spacer",
       "flex-layout.col#spacer",
       "minicart.v2"
     ],
@@ -34,21 +35,7 @@
       "fullWidth": true
     }
   },
-  "drawer": {
-    "children": ["menu#drawer"]
-  },
 
-  "menu#drawer": {
-    "children": [
-      "login",
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
   "logo#mobile": {
     "props": {
       "title": "Logo",

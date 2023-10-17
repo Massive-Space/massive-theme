@@ -1,0 +1,108 @@
+{
+  // CLASIFICACION - BOTON LISTA
+  "responsive-layout.desktop#product-rating-list-btn": {
+    "children": ["flex-layout.row#product-rating-list-btn"]
+  },
+
+  "flex-layout.row#product-rating-list-btn": {
+    "props": {
+      "marginBottom": 3,
+      "blockClass": "rating-list-btn-pdp"
+    },
+    "children": ["product-rating-summary#top-pdp", "add-to-list-btn"]
+  },
+
+  "product-rating-summary#top-pdp": {
+    "props": {
+      "blockClass": "rating-top-pdp"
+    }
+  },
+  // CLASIFICACION - BOTON LISTA
+
+  // FLAG
+  "flex-layout.row#offers-dektop": {
+    "title": "Banderas",
+    "children": ["product-price-savings#pdp"],
+    "props": {
+      "blockClass": "pdp--flags--container"
+    }
+  },
+  "product-price-savings#pdp": {
+    "title": "Descuento",
+    "props": {
+      "blockClass": ["discountpdp", "discountpdp2"],
+      "message": " -{savingsPercentage}"
+    }
+  },
+
+  "flex-layout.row#offers-mobile": {
+    "title": "Banderas",
+    "children": ["product-price-savings#pdp-mobile"],
+    "props": {
+      "blockClass": "pdp--flags--container"
+    }
+  },
+  "product-price-savings#pdp-mobile": {
+    "title": "Descuento",
+    "props": {
+      "blockClass": ["discountpdp"],
+      "message": " -{savingsPercentage}"
+    }
+  },
+
+  // FLAG
+
+  // IMAGES PDP MOBILE
+
+  "responsive-layout.desktop#product-images": {
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#new-plp",
+      "product-images#pdp"
+    ]
+  },
+  "responsive-layout.phone#product-images": {
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#new-plp",
+      "product-price-savings#pdp-mobile",
+      "product-images#mobile"
+    ]
+  },
+  "product-images#pdp": {
+    "title": "Imagenes del Producto",
+    "props": {
+      "displayThumbnailsArrows": true,
+      "zoomMode": "in-place-hover",
+      "maxHeight": 500,
+      "showPaginationDots": false,
+      "aspectRatio": "158:125"
+    }
+  },
+  "product-images#mobile": {
+    "title": "Imagenes del Producto - Mobile",
+    "props": {
+      "displayThumbnailsArrows": true,
+      "zoomMode": "in-place-hover",
+      "maxHeight": 1000,
+      "thumbnailsOrientation": "horizontal",
+      "thumbnailVisibility": "visible",
+      "showPaginationDots": true
+    }
+  },
+  // IMAGES PDP MOBILE
+
+  // TAG PDP
+
+  "vtex.product-highlights@2.x:product-highlights#new-plp": {
+    "title": "Highlights-flags",
+    "props": {
+      "blockClass": "flagNew__plp",
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["OFERTAS20"]
+      }
+    },
+    "children": ["product-highlight-text"]
+  }
+  // TAG PDP
+}

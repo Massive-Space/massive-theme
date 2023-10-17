@@ -21,3 +21,12 @@
   border-radius: 15px;
   background-color: #e0e0e0;
 }
+
+@media only screen and (max-width: 1024px) {
+  .quantitySelectorContainer :global(.vtex-numeric-stepper__input),
+  .quantitySelectorContainer :global(.vtex-numeric-stepper__plus-button),
+  .quantitySelectorContainer :global(.vtex-numeric-stepper__minus-button) {
+    height: 50px;
+    width: 40px !important;
+  }
+}

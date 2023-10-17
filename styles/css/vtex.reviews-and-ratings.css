@@ -45,3 +45,35 @@
   font-weight: 700;
   line-height: normal;
 }
+
+:global(.vtex-reviews-and-ratings-3-x-graphBar) {
+  background-color: #536271;
+}
+:global(.vtex-reviews-and-ratings-3-x-graphTextLabel) {
+  color: #536271;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+:global(.vtex-reviews-and-ratings-3-x-graphBarPercent) {
+  color: #536271;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: absolute;
+  right: -60px;
+}
+
+.graphTextLabel {
+  color: #536271;
+  font-family: "Quicksand";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

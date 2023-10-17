@@ -77,9 +77,12 @@
     :global(.vtex-minicart-2-x-openIconContainer),
   :global(.vtex-sticky-layout-0-x-container)
     :global(.vtex-store-components-3-x-searchBarContainer),
-    :global(.vtex-sticky-layout-0-x-wrapper--stuck)
+  :global(.vtex-sticky-layout-0-x-wrapper--stuck)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-      transition: none;
-    }
+    transition: none;
   }
-  
+}
+
+.headerRowContainer--header__components__mobile {
+  justify-content: space-evenly;
+}

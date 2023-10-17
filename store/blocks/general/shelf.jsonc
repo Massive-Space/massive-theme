@@ -86,7 +86,7 @@
       "product-summary-name",
       "flex-layout.row#spacer",
       "flex-layout.row#price",
-      "add-to-cart-button"
+      "add-to-cart-button#shelf"
     ],
     "props": {
       "blockClass": ["info__shelf"]
@@ -127,7 +127,7 @@
       "blockClass": "spacer"
     }
   },
-  "add-to-cart-button": {
+  "add-to-cart-button#shelf": {
     "title": "Boton agregar",
     "props": {
       "blockClass": "shelf",

@@ -1,8 +1,8 @@
 {
-  "vendor": "almacenesbrissa",
+  "vendor": "massivespacenew",
   "name": "store-theme",
-  "title": "almacenes Brissa Theme",
-  "version": "1.0.1",
+  "title": "massive space",
+  "version": "1.0.0",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",

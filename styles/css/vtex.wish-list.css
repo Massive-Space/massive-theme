@@ -12,7 +12,5 @@
   background-color: #536271;
   border-radius: 50%;
   width: 50px;
-  position: relative;
-  top: -10px;
   transform: scale(0.8);
 }
