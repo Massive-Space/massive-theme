@@ -50,5 +50,21 @@
       "text": "**PAGE NOT FOUND**",
       "font": "t-heading-1"
     }
+  },
+  "store.custom#referrals-page": {
+    "blocks": ["referrals-page"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+  "store.custom#referrals-page-redeem": {
+    "blocks": [
+      // Add some content here
+    ]
+  },
+  "store.custom#referrals-page-benefits": {
+    "blocks": [
+      // Add some content here
+    ]
   }
 }

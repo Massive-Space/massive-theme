@@ -97,7 +97,7 @@
     "title": "Colección",
     "blocks": ["product-summary.shelf#search-result"],
     "props": {
-      "collection": "1774",
+      "collection": "137",
       "hideUnavailableItems": true,
       "skusFilter": "FIRST_AVAILABLE",
       "orderBy": "OrderByTopSaleDESC"

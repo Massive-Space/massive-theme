@@ -2,7 +2,7 @@
   "vendor": "massivespacenew",
   "name": "store-theme",
   "title": "massive space",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
@@ -65,7 +65,8 @@
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
-    "vtex.css-handles": "1.x"
+    "vtex.css-handles": "1.x",
+    "massivespacenew.massivespacenew-apps": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",

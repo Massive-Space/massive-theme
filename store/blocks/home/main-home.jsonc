@@ -470,7 +470,7 @@
     "title": "Colección",
     "blocks": ["product-summary.shelf#product-home"],
     "props": {
-      "collection": "1774",
+      "collection": "137",
       "hideUnavailableItems": true,
       "skusFilter": "FIRST_AVAILABLE",
       "orderBy": "OrderByTopSaleDESC"
@@ -649,7 +649,7 @@
     "title": "Colección",
     "blocks": ["product-summary.shelf#product-home"],
     "props": {
-      "collection": "1774",
+      "collection": "137",
       "hideUnavailableItems": true,
       "skusFilter": "FIRST_AVAILABLE",
       "orderBy": "OrderByTopSaleDESC"

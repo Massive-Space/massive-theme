@@ -52,7 +52,7 @@
   "list-context.product-list#detach-category-1": {
     "blocks": ["product-summary.shelf#detach-categories"],
     "props": {
-      "collection": "1774",
+      "collection": "137",
       "hideUnavailableItems": true,
       "skusFilter": "FIRST_AVAILABLE",
       "orderBy": "OrderByTopSaleDESC"
@@ -63,7 +63,7 @@
   "list-context.product-list#detach-category-2": {
     "blocks": ["product-summary.shelf#detach-categories"],
     "props": {
-      "collection": "1773",
+      "collection": "137",
       "hideUnavailableItems": true,
       "skusFilter": "FIRST_AVAILABLE",
       "orderBy": "OrderByTopSaleDESC"
@@ -74,7 +74,7 @@
   "list-context.product-list#detach-category-3": {
     "blocks": ["product-summary.shelf#detach-categories"],
     "props": {
-      "collection": "1772",
+      "collection": "137",
       "hideUnavailableItems": true,
       "skusFilter": "FIRST_AVAILABLE",
       "orderBy": "OrderByTopSaleDESC"
@@ -94,7 +94,7 @@
       "blockClass": "shelf"
     }
   },
-  
+
   "list-context.media-list#banner-categories": {
     "title": "Banner Media",
     "children": ["slider-layout#banner-categories"],

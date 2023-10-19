@@ -1,21 +1,9 @@
 {
   "store.custom#about-us": {
     "blocks": [
-      "custom-metas-injection#content__terminos",
       "flex-layout.row#about-us",
       "video#about-us"
     ]
-  },
-  "custom-metas-injection#content__terminos": {
-    "title": "Custom Meta Tags",
-    "props": {
-      "metas": [
-        {
-          "property": "og:image",
-          "content": ""
-        }
-      ]
-    }
   },
   "flex-layout.row#about-us": {
     "children": ["image#mobile-phone", "flex-layout.col#text-about-us"]

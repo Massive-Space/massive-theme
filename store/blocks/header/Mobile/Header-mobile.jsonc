@@ -21,7 +21,7 @@
   "disposition-layout#1-mobile": {
     "title":"Principal",
     "children": [
-      "app-menu",
+      // "app-menu",
       "flex-layout.col#spacer",
       "logo#mobile",
       "flex-layout.col#spacer",

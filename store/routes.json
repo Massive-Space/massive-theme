@@ -7,5 +7,14 @@
   },
   "store.custom#contact-us": {
     "path": "/contact-us"
+  },
+  "store.custom#referrals-page": {
+    "path": "/refprog/:referrer"
+  },
+  "store.custom#referrals-page-redeem": {
+    "path": "/programa-referidos/redimir"
+  },
+  "store.custom#referrals-page-benefits": {
+    "path": "/programa-referidos/beneficios"
   }
 }
