@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+
+.logo-container {
+  margin: 54px 0 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+}
+
+.title-container h1 {
+  color: #4F4F4F;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.explanation-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.explanation-container p {
+  width: 65%;
+  color: #4F4F4F;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: justify;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+
+.selected-option {
+  font-family: Montserrat;
+  padding-top: 1px;
+  padding-left: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 35px;
+  border: 1px solid #4F4F4F;
+  background: #FFF;
+  color: #4F4F4F;
+  height: 44px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.selected-option:after {
+  content: url(/arquivos/icon-select.svg);
+  position: absolute;
+  right: 8px;
+  top: 6px;
+}
+
+.option {
+  margin: 2px 0;
+  padding: 5px 2px 3px;
+  cursor: pointer;
+  font-family: Montserrat;
+}
+
+.option.bank-selected {
+  background-color: #B2E5FB;
+}
+
+.options {
+  display: none !important;
+  position: fixed;
+  left: calc(50vw - 175px);
+  width: 350px;
+  padding-left: 5px;
+  height: 250px;
+  overflow: auto;
+  background-color: white;
+}
+
+.options.open {
+  display: block !important;
+  z-index: 1;
+}
+
+.options .option:hover {
+  background-color: #ccc;
+}
+
+.placeholder {
+  color: #ADADAD;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.actions-container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.back-to-commerce-link {
+  color: #A5A5A5;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.back-to-commerce-link:hover {
+  text-decoration: none;
+}
+
+.continue-button {
+  width: 191px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  background: #9DCC6B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.continue-button > .label {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+.body-container {
+
+}
+
+.button-enabled {
+}
+
+.button-disabled {
+  opacity: 0.5;
+}
+
+@media (min-width: 851px) {
+  .bank-select {
+    width: 50%;
+  }
+}
+
+@media (max-width: 850px) {
+  .bank-select {
+    width: 100%;
+  }
+  .options {
+    left: 10%;
+    width: 80%;
+    padding-left: 2px;
+  }
+}
+
+@media (max-width: 670px) {
+  .explanation-container p {
+    width: 85%;
+  }
+}
+
+@media (max-width: 450px) {
+  .explanation-container p {
+    width: 94%;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal-cntainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .actions-container {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .actions-container > a {
+    margin-top: 10px;
+  }
+}
