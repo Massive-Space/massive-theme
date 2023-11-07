@@ -1,0 +1,5 @@
+{
+  "pse-payment-validator": {
+    "component": "PsePaymentValidator"
+  }
+}
