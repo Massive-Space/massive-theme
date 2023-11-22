@@ -122,7 +122,7 @@
 :global(.vtex-flex-layout-0-x-flexColChild--info__shelf) .productBrandName {
   font-size: 15px;
   line-height: normal;
-  color: #353835;
+  color: #231032;
   font-family: "Quicksand";
   text-align: left;
   font-style: normal;
@@ -138,10 +138,6 @@
 /* END - home */
 
 /* BEGIN - header */
-
-.logoLink {
-  margin-left: 10px;
-}
 
 .searchBarContainer {
   padding-top: 9px !important;
@@ -189,9 +185,7 @@
 }
 
 @media only screen and (max-width: 1024px) {
-  .logoLink {
-    margin-left: 10%;
-  }
+
 }
 
 /* BEGIN - minicart */
@@ -318,7 +312,7 @@
 }
 
 .productBrand {
-  color: #536271;
+  color: #231032;
   font-family: "Quicksand";
   font-size: 30px;
   font-style: normal;

@@ -8,15 +8,15 @@
     "children": [
       "list-context.media-list#banner-principal__media",
       "responsive-layout.mobile#banner--benefit-mobile__home",
-      "flex-layout.row#categories",
+      // "flex-layout.row#categories",
       "__fold__",
       "flex-layout.row#detach",
-      "flex-layout.row#collection",
-      "flex-layout.row#trending-products",
-      "list-context.media-list#carrousel-banner",
-      "flex-layout.row#best-sellers",
-      "responsive-layout.mobile#shop-online-link",
-      "flex-layout.row#text-seo-mobile",
+      // "flex-layout.row#collection",
+      // "flex-layout.row#trending-products",
+      // "list-context.media-list#carrousel-banner",
+      // "flex-layout.row#best-sellers",
+      // "responsive-layout.mobile#shop-online-link",
+      // "flex-layout.row#text-seo-mobile",
       "flex-layout.row#image-newsletter"
     ],
     "props": {

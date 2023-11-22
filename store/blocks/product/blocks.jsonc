@@ -63,7 +63,6 @@
   "responsive-layout.phone#product-images": {
     "children": [
       "vtex.product-highlights@2.x:product-highlights#new-plp",
-      "product-price-savings#pdp-mobile",
       "product-images#mobile"
     ]
   },

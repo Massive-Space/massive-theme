@@ -1,3 +1,9 @@
+:global(.vtex-rich-text-0-x-link) {
+  text-decoration: none;
+  font-family: "Quicksand-Bold";
+  color: #231032;
+}
+
 .container--deals {
   color: #ffffff;
   text-align: center;
@@ -255,7 +261,7 @@
   line-height: normal;
   margin: 0 0 10px 0;
   font-family: "Quicksand-Bold";
-  color: #536271;
+  color: #231032;
 }
 
 .paragraph--title--detach {

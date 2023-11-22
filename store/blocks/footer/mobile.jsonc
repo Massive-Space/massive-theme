@@ -6,7 +6,7 @@
     },
     "children": [
       "flex-layout.row#logo-footer",
-      "disclosure-layout-group#footer-menu",
+      // "disclosure-layout-group#footer-menu",
       "flex-layout.row#content-footer"
     ]
   },
@@ -28,9 +28,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://almacenesbrissa.vteximg.com.br/arquivos/Logo-Brissa-White.svg",
-      "width": "128",
-      "height": "35"
+      "url": "assets/svg/logo-massive-white.svg",
+      "height": "50"
     }
   },
 

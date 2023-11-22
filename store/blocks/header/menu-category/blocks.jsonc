@@ -1,18 +1,41 @@
 {
   "flex-layout.col#menu-items-1": {
-    "children": [
-      "vtex.menu@2.x:menu#colum-1"
-    ]
+    "children": ["vtex.menu@2.x:menu#colum-1"]
   },
   "vtex.menu@2.x:menu#colum-1": {
     "props": {
       "orientation": "vertical"
     },
+    "children": ["flex-layout.row#menu-items-colum"]
+  },
+  "flex-layout.row#menu-items-colum": {
     "children": [
-      "menu-item#item-1",
-      "menu-item#item-2"
+      "flex-layout.col#menu-items-colum-1",
+      "flex-layout.col#menu-items-colum-2"
     ]
   },
+
+  "flex-layout.col#menu-items-colum-1": {
+    "children": [
+      "menu-item#item-1",
+      "menu-item#item-2",
+      "menu-item#item-3",
+      "menu-item#item-4",
+      "menu-item#item-5",
+      "menu-item#item-6"
+    ]
+  },
+  "flex-layout.col#menu-items-colum-2": {
+    "children": [
+      "menu-item#item-7",
+      "menu-item#item-8",
+      "menu-item#item-9",
+      "menu-item#item-10",
+      "menu-item#item-11",
+      "menu-item#item-12"
+    ]
+  },
+
   "menu-item#item-1": {
     "props": {
       "id": "menu-item-1",
@@ -21,10 +44,10 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/Almohadas",
+        "href": "#",
         "noFollow": true,
-        "tagTitle": "Almohadas",
-        "text": "Almohadas"
+        "tagTitle": "Televisores",
+        "text": "Televisores"
       }
     }
   },
@@ -36,15 +59,170 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/Cobijas",
+        "href": "#",
         "noFollow": true,
-        "tagTitle": "Cobijas",
-        "text": "Cobijas"
+        "tagTitle": "Audio",
+        "text": "Audio"
       }
     }
   },
 
+  "menu-item#item-3": {
+    "props": {
+      "id": "menu-item-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Camarás",
+        "text": "Camarás"
+      }
+    }
+  },
+  "menu-item#item-4": {
+    "props": {
+      "id": "menu-item-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Celulares",
+        "text": "Celulares"
+      }
+    }
+  },
 
+  "menu-item#item-5": {
+    "props": {
+      "id": "menu-item-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Drones",
+        "text": "Drones"
+      }
+    }
+  },
+  "menu-item#item-6": {
+    "props": {
+      "id": "menu-item-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Tablets",
+        "text": "Tablets"
+      }
+    }
+  },
+
+  "menu-item#item-7": {
+    "props": {
+      "id": "menu-item-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Impresión",
+        "text": "Impresión"
+      }
+    }
+  },
+  "menu-item#item-8": {
+    "props": {
+      "id": "menu-item-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Mundo Gamer",
+        "text": "Mundo Gamer"
+      }
+    }
+  },
+
+  "menu-item#item-9": {
+    "props": {
+      "id": "menu-item-9",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Computadores",
+        "text": "Computadores"
+      }
+    }
+  },
+  "menu-item#item-10": {
+    "props": {
+      "id": "menu-item-10",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "laptops",
+        "text": "laptops"
+      }
+    }
+  },
+
+  "menu-item#item-11": {
+    "props": {
+      "id": "menu-item-11",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Monitores",
+        "text": "Monitores"
+      }
+    }
+  },
+  "menu-item#item-12": {
+    "props": {
+      "id": "menu-item-12",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Accesorios",
+        "text": "Accesorios"
+      }
+    }
+  },
+
+  // MENU IMAGENES
 
   "flex-layout.col#menu-image": {
     "children": ["flex-layout.row#category-images"]
@@ -128,4 +306,5 @@
       "text": "[Videojuegos](https://developers.vtex.com/vtex-developer-docs/docs/welcome)"
     }
   }
+  // MENU IMAGENES
 }

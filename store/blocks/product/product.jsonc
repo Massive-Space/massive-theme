@@ -4,7 +4,6 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
-      "flex-layout.row#description",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "responsive-layout.desktop#shelf",
@@ -161,6 +160,7 @@
     "children": [
       "flex-layout.row#product-name",
       "responsive-layout.desktop#product-rating-list-btn",
+      "flex-layout.row#description",
       "flex-layout.row#product-prices",
       "sku-selector#product",
       "flex-layout.row#buy-button",

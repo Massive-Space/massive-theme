@@ -63,12 +63,12 @@
   "search-result-layout.desktop": {
     "children": [
       "flex-layout.row#searchbread",
-      "flex-layout.row#search-result-categories",
+      // "flex-layout.row#search-result-categories",
       "flex-layout.row#searchtitle",
       "flex-layout.row#result",
-      "flex-layout.row#search-result-suggestion",
-      "responsive-layout.desktop#shop-online-link-dk",
-      "flex-layout.row#text-seo"
+      "flex-layout.row#search-result-suggestion"
+      // "responsive-layout.desktop#shop-online-link-dk",
+      // "flex-layout.row#text-seo"
     ],
     "props": {
       "pagination": "show-more",
