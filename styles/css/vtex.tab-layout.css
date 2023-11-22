@@ -1,6 +1,6 @@
 .listItemActive :global(.vtex-button) {
-  background-color: #536271 !important;
-  border-color: #536271 !important;
+  background-color: #231032 !important;
+  border-color: #231032 !important;
   border-radius: 90px;
 }
 
@@ -14,8 +14,8 @@
 }
 
 .listItem :global(.vtex-button) {
-  background-color: #43b8c9;
-  border-color: #43b8c9;
+  background-color: #ff0063;
+  border-color: #ff0063;
   border-radius: 10px;
 }
 

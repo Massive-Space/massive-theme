@@ -1,0 +1,131 @@
+{
+  "flex-layout.col#menu-items-1": {
+    "children": [
+      "vtex.menu@2.x:menu#colum-1"
+    ]
+  },
+  "vtex.menu@2.x:menu#colum-1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#item-1",
+      "menu-item#item-2"
+    ]
+  },
+  "menu-item#item-1": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Almohadas",
+        "noFollow": true,
+        "tagTitle": "Almohadas",
+        "text": "Almohadas"
+      }
+    }
+  },
+  "menu-item#item-2": {
+    "props": {
+      "id": "menu-item-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/Cobijas",
+        "noFollow": true,
+        "tagTitle": "Cobijas",
+        "text": "Cobijas"
+      }
+    }
+  },
+
+
+
+  "flex-layout.col#menu-image": {
+    "children": ["flex-layout.row#category-images"]
+  },
+  "flex-layout.row#category-images": {
+    "children": [
+      "flex-layout.col#category-image-1",
+      "flex-layout.col#category-image-2",
+      "flex-layout.col#category-image-3",
+      "flex-layout.col#category-image-4"
+    ]
+  },
+
+  "flex-layout.col#category-image-1": {
+    "title": "Menu Imagenes 1",
+    "children": ["image#category-1", "rich-text#category-1"]
+  },
+  "flex-layout.col#category-image-2": {
+    "title": "Menu Imagenes 2",
+    "children": ["image#category-2", "rich-text#category-2"]
+  },
+  "flex-layout.col#category-image-3": {
+    "title": "Menu Imagenes 3",
+    "children": ["image#category-3", "rich-text#category-3"]
+  },
+  "flex-layout.col#category-image-4": {
+    "title": "Menu Imagenes 4",
+    "children": ["image#category-4", "rich-text#category-4"]
+  },
+
+  "image#category-1": {
+    "props": {
+      "src": "assets/images/category-massive-1.png",
+      "maxHeight": 200
+    }
+  },
+  "image#category-2": {
+    "props": {
+      "src": "assets/images/category-massive-2.png",
+      "maxHeight": 200
+    }
+  },
+  "image#category-3": {
+    "props": {
+      "src": "assets/images/category-massive-3.png",
+      "maxHeight": 200
+    }
+  },
+  "image#category-4": {
+    "props": {
+      "src": "assets/images/category-massive-4.png",
+      "maxHeight": 200
+    }
+  },
+
+  "rich-text#category-1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Televisores](https://developers.vtex.com/vtex-developer-docs/docs/welcome)"
+    }
+  },
+  "rich-text#category-2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Tecnología](https://developers.vtex.com/vtex-developer-docs/docs/welcome)"
+    }
+  },
+  "rich-text#category-3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Celulares](https://developers.vtex.com/vtex-developer-docs/docs/welcome)"
+    }
+  },
+  "rich-text#category-4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "[Videojuegos](https://developers.vtex.com/vtex-developer-docs/docs/welcome)"
+    }
+  }
+}

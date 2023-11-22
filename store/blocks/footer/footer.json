@@ -55,7 +55,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/svg/Massive1x.svg",
+      "url": "assets/svg/logo-massive-white.svg",
       "width": "150",
       "height": "50"
     }
@@ -242,7 +242,7 @@
   "rich-text#footer": {
     "title":"Texto Copyright",
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "Todos los derechos reservados Ⓒ Massive Space 2023",
       "blockClass": "footer"
     }
   },

@@ -17,6 +17,11 @@
   }
 }
 
+.flexRowContent--menu-header{
+  display: flex;
+  justify-content: center;
+}
+
 .flexRowContent--menu-link {
   background-color: #03044e;
   color: #fff;
@@ -124,7 +129,7 @@
 .flexRowContent--content-benefits {
   max-width: 365px;
   margin: 15px auto 35px auto;
-  background-color: #c4d7e4;
+  background-color: #231032;
   padding: 15px 0px 15px 25px;
 }
 
@@ -234,8 +239,8 @@
 }
 
 .flexRow--container-payment-methods-social-networks {
-  background-color: #536271;
-  border: 1px solid #536271;
+  background-color: #2a1e3b;
+  border: 1px solid #2a1e3b;
 }
 
 .flexRow--container-logo-footer {
@@ -272,7 +277,7 @@
 }
 
 .flexRow--menu-row {
-  background-color: #536271;
+  background-color: #2a1e3b;
 }
 
 .flexRowContent--vtex__massive {
@@ -291,7 +296,7 @@
 }
 
 .flexRow--credits-powered {
-  background-color: #343f47;
+  background-color: #231032;
   padding: 10px 0;
 }
 

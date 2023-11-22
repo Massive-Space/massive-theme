@@ -16,14 +16,14 @@
       "flex-layout.row#banner-benefit",
       "flex-layout.row#categories",
       "__fold__",
-      "flex-layout.row#detach",
-      "flex-layout.row#collection",
-      "flex-layout.row#trending-products",
-      "flex-layout.row#banners-home",
-      "flex-layout.row#best-sellers",
-      "responsive-layout.desktop#shop-online-link-dk",
-      "flex-layout.row#text-seo",
-      "flex-layout.row#image-newsletter"
+      "flex-layout.row#detach"
+      // "flex-layout.row#collection",
+      // "flex-layout.row#trending-products",
+      // "flex-layout.row#banners-home",
+      // "flex-layout.row#best-sellers",
+      // "responsive-layout.desktop#shop-online-link-dk",
+      // "flex-layout.row#text-seo",
+      // "flex-layout.row#image-newsletter"
     ],
     "props": {
       "blockClass": "home__order",
@@ -154,7 +154,7 @@
   "image#benefit-1": {
     "title": "Imagen",
     "props": {
-      "src": "assets/images/Ico-Brissa-Envios-Icon.png",
+      "src": "assets/images/truck.png",
       "maxHeight": 50,
       "maxWidth": 80,
       "blockClass": "image-benefits"
@@ -164,7 +164,7 @@
   "image#benefit-2": {
     "title": "Imagen",
     "props": {
-      "src": "assets/images/Ico-Brissa-Seguro-Icon.png",
+      "src": "assets/images/secure-shield.png",
       "maxHeight": 50,
       "maxWidth": 80,
       "blockClass": "image-benefits"
@@ -174,7 +174,7 @@
   "image#benefit-3": {
     "title": "Imagen",
     "props": {
-      "src": "assets/images/Ico-Brissa-Asesoria-Icon.png",
+      "src": "assets/images/conversation.png",
       "maxHeight": 50,
       "maxWidth": 80,
       "blockClass": "image-benefits"
@@ -184,7 +184,7 @@
   "image#benefit-4": {
     "title": "Imagen",
     "props": {
-      "src": "assets/images/Ico-Brissa-RetiroEnTienda-Icon.png",
+      "src": "assets/images/online-shop.png",
       "maxHeight": 50,
       "maxWidth": 80,
       "blockClass": "image-benefits"
@@ -194,7 +194,7 @@
   "rich-text#benefit-1": {
     "title": "Texto Beneficios",
     "props": {
-      "text": "Destacados",
+      "text": "Entrega en tu Ciudad",
       "blockClass": "text-benefits"
     }
   },
@@ -202,7 +202,7 @@
   "rich-text#benefit-2": {
     "title": "Texto Beneficios",
     "props": {
-      "text": "Destacados",
+      "text": "Compras Seguras",
       "blockClass": "text-benefits"
     }
   },
@@ -210,7 +210,7 @@
   "rich-text#benefit-3": {
     "title": "Texto Beneficios",
     "props": {
-      "text": "Destacados",
+      "text": "Asesoría Personalizada",
       "blockClass": "text-benefits"
     }
   },
@@ -218,7 +218,7 @@
   "rich-text#benefit-4": {
     "title": "Texto Beneficios",
     "props": {
-      "text": "Destacados",
+      "text": "Más de 400 mil Productos",
       "blockClass": "text-benefits"
     }
   },

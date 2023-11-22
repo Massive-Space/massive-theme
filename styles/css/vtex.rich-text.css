@@ -211,9 +211,14 @@
 /* END - minicart */
 
 /* BEGIN - body */
+.container--text-benefits {
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap-reverse;
+}
 
 .paragraph--text-benefits {
-  color: #536271;
+  color: #fff;
   font-family: "Quicksand";
   font-size: 22px;
   font-style: normal;
@@ -237,7 +242,7 @@
   left: 40%;
 }
 
-.link--text-title-categories{
+.link--text-title-categories {
   color: #ffffff;
   font-family: "Quicksand";
   text-decoration: none;
@@ -308,8 +313,6 @@
 .paragraph--text-link__home-right {
   margin-top: 13px;
 }
-
-
 
 @media only screen and (max-width: 1024px) {
   .paragraph--title-home {
