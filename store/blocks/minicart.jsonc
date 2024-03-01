@@ -57,6 +57,54 @@
       "text": "[Elegir productos](/)",
       "blockClass": "go-to-continue"
     }
-  }
+  },
   // CART EMPTY
+  "flex-layout.row#minicart-footer": {
+    "title": "Contenido",
+    "props": {
+      "blockClass": "content__minicart__footer",
+      "width": "100%"
+    },
+    "children": [
+      "toggle-layout#store_promo_term",
+      "minicart-summary",
+      "minicart-checkout-button",
+      "drawer-close-button"
+    ]
+  },
+  "toggle-layout#store_promo_term": {
+    "title": "Termometro promocional M/O",
+    "children": ["custom-thermometer"]
+  },
+  "minicart-summary": {
+    "title": "Checkout",
+    "blocks": ["checkout-summary.compact"]
+  },
+  "checkout-summary.compact": {
+    "title": "Checkout",
+    "children": ["summary-totalizers"],
+    "props": {
+      "totalizersToShow": ["Items", "Discounts", "Tax"]
+    }
+  },
+  "summary-totalizers": {
+    "title": "Resumen Precios",
+    "props": {
+      "showTotal": true,
+      "showDeliveryTotal": true,
+      "showTax": true
+    }
+  },
+  "minicart-checkout-button": {
+    "title": "Botón Cerrar Compra",
+    "props": {
+      "blockClass": "botton__close__buy"
+    }
+  },
+  "drawer-close-button": {
+    "title": "Boton Cerrar Carrito",
+    "props": {
+      "blockClass": "close__button__minicart"
+    }
+  }
 }

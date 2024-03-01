@@ -1,7 +1,7 @@
 {
   "responsive-layout.mobile": {
     "title": "Content Mobile",
-    "children": ["disposition-layout#total-home-mobile"]
+    "children": ["disposition-layout#total-home-mobile", "custom-modal"]
   },
   "disposition-layout#total-home-mobile": {
     "title": "Contenido - Mobile",
@@ -79,7 +79,7 @@
       "infinite": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "always",
-      "blockClass": ["carousel", "spacehome","benefit-mobile"]
+      "blockClass": ["carousel", "spacehome", "benefit-mobile"]
     },
     "children": [
       "flex-layout.row#benefit-1",
@@ -368,6 +368,14 @@
     },
     "children": []
   }
+  // "flex-layout.row#form-massive": {
+  //   "props": {
+  //     "blockClass": "container-form"
+  //   },
+  //   "children": [
+  //     "custom-form"
+  //   ]
+  // }
 
   // TEXTOS SEO - MO
 }

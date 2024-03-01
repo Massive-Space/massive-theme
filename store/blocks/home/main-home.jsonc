@@ -6,7 +6,7 @@
 
   "responsive-layout.desktop": {
     "title": "Content Desktop",
-    "children": ["disposition-layout#total-home"]
+    "children": ["disposition-layout#total-home","custom-modal"]
   },
 
   "disposition-layout#total-home": {
@@ -17,13 +17,6 @@
       "flex-layout.row#categories",
       "__fold__",
       "flex-layout.row#detach"
-      // "flex-layout.row#collection",
-      // "flex-layout.row#trending-products",
-      // "flex-layout.row#banners-home",
-      // "flex-layout.row#best-sellers",
-      // "responsive-layout.desktop#shop-online-link-dk",
-      // "flex-layout.row#text-seo",
-      // "flex-layout.row#image-newsletter"
     ],
     "props": {
       "blockClass": "home__order",

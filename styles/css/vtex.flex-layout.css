@@ -17,7 +17,7 @@
   }
 }
 
-.flexRow--menu-header{
+.flexRow--menu-header {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 10%);
 }
 
@@ -530,3 +530,13 @@
   }
 }
 /* END - product */
+
+.flexRowContent--content__minicart__footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--content__minicart__footer .stretchChildrenWidth {
+  width: 100% !important;
+}
+
