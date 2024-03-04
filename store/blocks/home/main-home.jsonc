@@ -6,7 +6,7 @@
 
   "responsive-layout.desktop": {
     "title": "Content Desktop",
-    "children": ["disposition-layout#total-home","custom-modal"]
+    "children": ["disposition-layout#total-home", "custom-modal"]
   },
 
   "disposition-layout#total-home": {
@@ -16,7 +16,8 @@
       "flex-layout.row#banner-benefit",
       "flex-layout.row#categories",
       "__fold__",
-      "flex-layout.row#detach"
+      "flex-layout.row#detach",
+      "flex-layout.row#form-massive"
     ],
     "props": {
       "blockClass": "home__order",
@@ -865,6 +866,90 @@
     "props": {
       "src": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png"
     }
-  }
+  },
   // NEWSLETTER
+
+  "flex-layout.row#form-massive": {
+    "props": {
+      "blockClass": "formRow_massive"
+    },
+    "children": ["image#image_form", "flex-layout.col#form-massive"]
+  },
+  "image#image_form": {
+    "props": {
+      "src": "https://massivespacenew.vteximg.com.br/arquivos/image_test_massive2.jpg",
+      "blockClass": "image_form",
+      "maxHeight": 450
+    }
+  },
+  "flex-layout.col#form-massive": {
+    "props": {
+      "paddingLeft": 5,
+      "paddingRight": 5,
+      "blockClass": "form_massive"
+    },
+    "children": ["rich-text#form-massive", "form#massive-home"]
+  },
+
+  "rich-text#form-massive": {
+    "props": {
+      "text": "Contáctanos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text-form"
+    }
+  },
+  "form#massive-home": {
+    "props": {
+      "entity": "FM",
+      "schema": "formMassive"
+    },
+    "children": [
+      "form-input.text#name",
+      "form-input.text#phone",
+      "form-input.text#email",
+      "form-input.text#city",
+      "form-submit"
+    ],
+    "blocks": ["form-success"]
+  },
+  "form-success": {
+    "children": ["rich-text#successSubmit"]
+  },
+  "rich-text#successSubmit": {
+    "props": {
+      "text": "Succesfully submitted the data!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "form-input.text#name": {
+    "props": {
+      "pointer": "#/properties/name",
+      "placeholder": "Nombre"
+    }
+  },
+  "form-input.text#phone": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "placeholder": "Teléfono"
+    }
+  },
+  "form-input.text#email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Email"
+    }
+  },
+  "form-input.text#city": {
+    "props": {
+      "pointer": "#/properties/city",
+      "placeholder": "Ciudad"
+    }
+  },
+  "form-submit": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
 }

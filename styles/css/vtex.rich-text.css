@@ -319,6 +319,12 @@
 .paragraph--text-link__home-right {
   margin-top: 13px;
 }
+.paragraph--text-form {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
 
 @media only screen and (max-width: 1024px) {
   .paragraph--title-home {

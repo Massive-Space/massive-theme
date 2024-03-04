@@ -17,7 +17,8 @@
       // "flex-layout.row#best-sellers",
       // "responsive-layout.mobile#shop-online-link",
       // "flex-layout.row#text-seo-mobile",
-      "flex-layout.row#image-newsletter"
+      "flex-layout.row#image-newsletter",
+      "flex-layout.row#form-massive"
     ],
     "props": {
       "blockClass": "home__order",

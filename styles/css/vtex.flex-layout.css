@@ -255,8 +255,8 @@
 }
 
 .flexRow--container-logo-footer {
-  background-color: #536271;
-  border: 1px solid #536271;
+  background-color: #231032;
+  border: 1px solid #231032;
   padding: 15px 0px 24px;
 }
 
@@ -301,9 +301,17 @@
   margin: 0 auto;
 }
 
+.flexRowContent--formRow_massive,
 .flexRowContent--credits-powered {
   max-width: 1250px;
   margin: 10px auto;
+}
+
+.flexColChild--form_massive:first-child {
+  height: 30% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .flexRow--credits-powered {
@@ -539,4 +547,3 @@
 .flexRowContent--content__minicart__footer .stretchChildrenWidth {
   width: 100% !important;
 }
-
