@@ -163,8 +163,8 @@
       "flex-layout.row#description",
       "flex-layout.row#product-prices",
       "sku-selector#product",
-      "flex-layout.row#buy-button",
-      "product-assembly-options"
+      "product-assembly-options",
+      "flex-layout.row#buy-button"
     ]
   },
 

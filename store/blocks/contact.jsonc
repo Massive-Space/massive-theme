@@ -36,8 +36,8 @@
     ],
     "children": [
       "form-input.text#title",
-      "form-input.text#name",
-      "form-input.text#email",
+      "form-input.text#name2",
+      "form-input.text#email2",
       "form-input.textarea#message",
       "form-submit#contact"
     ]
@@ -61,12 +61,12 @@
       "pointer": "#/properties/title"
     }
   },
-  "form-input.text#name": {
+  "form-input.text#name2": {
     "props": {
       "pointer": "#/properties/name"
     }
   },
-  "form-input.text#email": {
+  "form-input.text#email2": {
     "props": {
       "pointer": "#/properties/email"
     }
