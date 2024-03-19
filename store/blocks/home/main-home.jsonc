@@ -17,7 +17,8 @@
       "flex-layout.row#categories",
       "__fold__",
       "flex-layout.row#detach",
-      "flex-layout.row#form-massive"
+      "flex-layout.row#form-massive",
+      "flex-layout.row#container-text-seo"
     ],
     "props": {
       "blockClass": "home__order",
@@ -57,6 +58,21 @@
         }
       ]
     }
+  },
+  "flex-layout.row#custom-slide": {
+    "title": "Cutom Slide",
+    "props": {
+      "marginTop": 20,
+      "marginBottom": 20
+    },
+    "children": ["flex-layout.col#custom-slide"]
+  },
+  "flex-layout.col#custom-slide": {
+    "props": {
+      "marginRight": 20,
+      "marginLeft": 20
+    },
+    "children": ["custom-slide"]
   },
   // BANNER PRINCIPAL
   "list-context.media-list#banner-principal__media": {
@@ -951,5 +967,28 @@
     "props": {
       "label": "Enviar"
     }
+  },
+  // TEXTOS SEO
+  "flex-layout.row#container-text-seo": {
+    "props": {
+      "blockClass": "home-container-text-seo",
+      "htmlId": "viewMore-custom"
+    },
+    "children": ["flex-layout.col#text-seo"]
+  },
+  "flex-layout.col#text-seo": {
+    "title": "Textos SEO",
+    "props": {
+      "blockClass": "home-container-text-seo"
+    },
+    "children": ["seo-context#home"]
+  },
+  "seo-context#home": {
+    "title": "Contenido",
+    "props": {
+      "isHome": true
+    },
+    "children": ["seo-long-text", "seo-paragraph", "seo-links"]
   }
+  // TEXTOS SEO
 }

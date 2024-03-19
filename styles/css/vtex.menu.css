@@ -69,12 +69,12 @@
 
 @media screen and (max-width: 1024px) {
   :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
-    .menuItem--footer__menu-text--isOpen {
+  .menuItem--footer__menu-text--isOpen {
     background-color: #b3b3b3;
   }
   :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
-    .menuItem--footer__menu-text--isOpen
-    .styledLinkContainer--footer__menu-text {
+  .menuItem--footer__menu-text--isOpen
+  .styledLinkContainer--footer__menu-text {
     border-bottom: none;
   }
 
@@ -96,17 +96,23 @@
   }
 
   :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
-    .menuItem--footer__menu-text--isOpen {
+  .menuItem--footer__menu-text--isOpen {
     background-color: #536271;
   }
 
   :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
-    .menuItem--footer__menu-text--isOpen
-    .styledLinkContainer--footer__menu-text {
+  .menuItem--footer__menu-text--isOpen
+  .styledLinkContainer--footer__menu-text {
     border-bottom: none;
   }
 
   .styledLinkContent--text-seo__menu-list {
     white-space: normal;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .styledLinkContainer--menu-header-Item {
+    margin: 0 7px;
   }
 }

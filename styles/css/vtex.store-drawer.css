@@ -1,3 +1,7 @@
 .menuIcon {
   color: transparent;
 }
+
+.closeIconButton--close__button__minicart {
+  display: none;
+}

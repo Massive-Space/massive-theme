@@ -38,30 +38,36 @@
   align-items: center;
 }
 
+@media screen and (max-width: 1080px) {
+  .container :global(.vtex-button) {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+
 .container :global(.vtex-button__label) {
   display: none;
 }
 
-.sendButton :global(.vtex-button){
+.sendButton :global(.vtex-button) {
   background-color: #ff0063;
   border-radius: 10px;
 }
 
-.sendButton :global(.vtex-button):hover{
+.sendButton :global(.vtex-button):hover {
   background-color: #231032;
   border: none;
 }
 
 .emailPasswordOptionBtn :global(.vtex-button),
-.accessCodeOptionBtn :global(.vtex-button){
+.accessCodeOptionBtn :global(.vtex-button) {
   background-color: #231032;
   color: #fff;
 }
 
-
-.accessCodeOptionBtn :global(.vtex-button):hover{
+.accessCodeOptionBtn :global(.vtex-button):hover {
   border-color: #ff0063;
 }
-.emailPasswordOptionBtn :global(.vtex-button):hover{
+.emailPasswordOptionBtn :global(.vtex-button):hover {
   border-color: #ff0063;
 }

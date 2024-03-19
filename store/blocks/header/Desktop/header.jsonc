@@ -11,7 +11,10 @@
       "flex-layout.row#1-desktop",
       "sticky-layout#4-desktop",
       "flex-layout.row#menu-desktop"
-    ]
+    ],
+    "props": {
+      "blockClass": "header-desktop"
+    }
   },
 
   "flex-layout.row#1-desktop": {
@@ -77,10 +80,12 @@
   },
   "flex-layout.col#category-menu": {
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "blockClass": "menu-header"
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
+
   "logo#desktop": {
     "props": {
       "title": "Logo",

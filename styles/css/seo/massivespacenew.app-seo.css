@@ -1,0 +1,78 @@
+.seoLongTextContainer,
+.seoLinksContainer,
+.seoParagraphContainer {
+  margin: 10px 0;
+}
+
+.seoLinksItems {
+  height: 100%;
+  max-height: 195px;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.seoParagraphContainer {
+  gap: 24px;
+}
+
+.seoLongTextTitle,
+.seoParagraphTitle,
+.seoLinksTitle,
+.seoLongTextTitle .heading,
+.seoParagraphTitle .heading,
+.seoLinksTitle .heading {
+  color: #000;
+  font-family: "Quicksand";
+  font-weight: normal;
+}
+
+.headingLevel1 {
+  font-size: 2.25rem;
+}
+
+.headingLevel2 {
+  font-size: 1.75rem;
+}
+
+.headingLevel3 {
+  font-size: 1.5rem;
+}
+
+.headingLevel4 {
+  font-size: 1.3rem;
+}
+
+.seoLinksItem {
+  width: 20%;
+  text-decoration: none;
+  color: #000 !important;
+}
+
+.seoLinksItem .link {
+  text-decoration: none;
+  color: #000 !important;
+}
+
+.link {
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 60em) {
+  .seoLinksItems {
+    max-height: 435px;
+  }
+
+  .seoParagraphContainer {
+    flex-direction: column;
+  }
+
+  .seoLongTextTitle,
+  .seoParagraphTitle,
+  .seoLinksTitle {
+    text-align: center;
+  }
+
+  .seoLinksItem {
+    width: 50%;
+  }
+}

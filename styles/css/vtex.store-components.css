@@ -185,7 +185,6 @@
 }
 
 @media only screen and (max-width: 1024px) {
-
 }
 
 /* BEGIN - minicart */
@@ -271,6 +270,18 @@
   }
 }
 
+@media screen and (max-width: 1080px) {
+  .autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
+    width: 85%;
+  }
+  .autoCompleteOuterContainer {
+    padding-left: 12%;
+  }
+  :global(.vtex-store-components-3-x-logoImage) {
+    transform: scale(1.5) !important;
+  }
+}
+
 /* BEGIN - pdp */
 
 .skuSelectorInternalBox {
@@ -320,11 +331,10 @@
   line-height: 26px;
 }
 
-.diagonalCross{
+.diagonalCross {
   background-color: #fff;
-  border: 2px solid #EFEFEF;
+  border: 2px solid #efefef;
   border-radius: 10px;
 }
-
 
 /* END - pdp */
