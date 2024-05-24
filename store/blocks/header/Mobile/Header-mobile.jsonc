@@ -5,6 +5,7 @@
       "blockClass": "header__mobile"
     },
     "children": [
+      "whats-app-widget",
       "slider-layout#header-top",
       "header-row#components-header__mobile",
       "search-bar"

@@ -8,6 +8,7 @@
   },
   "header-layout.desktop": {
     "children": [
+      "whats-app-widget",
       "flex-layout.row#1-desktop",
       "sticky-layout#4-desktop",
       "flex-layout.row#menu-desktop"
