@@ -70,7 +70,8 @@
     "vtex.toggle-layout": "0.x",
     "massivespacenew.referrals": "0.x",
     "massivespacenew.massivespacenew-apps": "0.x",
-    "massivespacenew.app-seo": "0.x"
+    "massivespacenew.app-seo": "0.x",
+    "massivespacenew.massive-editor": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",
