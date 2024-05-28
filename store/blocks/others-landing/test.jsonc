@@ -1,0 +1,48 @@
+{
+  "store.custom#test": {
+    "children": ["flex-layout.row#modal-trigger"]
+  },
+  "flex-layout.row#modal-trigger": {
+    "children": ["flex-layout.col#modal-trigger"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#modal-trigger": {
+    "children": ["modal-trigger#example"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "modal-trigger#example": {
+    "children": ["modal-layout#example"],
+    "props": {
+      "trigger": "load"
+    }
+  },
+  "rich-text#example": {
+    "props": {
+      "text": "Click me.",
+      "blockClass": "buttonModal"
+    }
+  },
+  "modal-layout#example": {
+    "children": ["flex-layout.row#form-massive"],
+    "props": {
+      "blockClass": "containerContentModal"
+    }
+  },
+  "rich-text#modal-content": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu bibendum augue. Aliquam at lorem ac dui aliquet vehicula auctor eu felis. Fusce venenatis felis in sem aliquam elementum. Donec iaculis eu massa eu rutrum. Duis nulla ante, fermentum eu nulla at, euismod vehicula quam. Curabitur ex mi, cursus sit amet elementum a, porttitor sit amet purus. Fusce efficitur rutrum libero, in lobortis urna mattis elementum.",
+      "blockClass": "textModal"
+    }
+  },
+  "image#example-modal": {
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+      "maxHeight": 100,
+      "maxWidth": 100
+    }
+  }
+}

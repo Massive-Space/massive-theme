@@ -4,6 +4,7 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      "iframe-product1",
       "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "responsive-layout.desktop#shelf",
@@ -235,7 +236,10 @@
     "props": {
       "blockClass": "message-availability"
     },
-    "children": ["availability-subscriber"]
+    "children": [
+      // "availability-subscriber"
+      "form#massive-product"
+    ]
   },
 
   "share#default": {

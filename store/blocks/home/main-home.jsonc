@@ -6,7 +6,7 @@
 
   "responsive-layout.desktop": {
     "title": "Content Desktop",
-    "children": ["disposition-layout#total-home", "custom-modal"]
+    "children": ["disposition-layout#total-home", "flex-layout.row#custom-slide1"]
   },
 
   "disposition-layout#total-home": {
@@ -17,8 +17,7 @@
       "flex-layout.row#categories",
       "__fold__",
       "flex-layout.row#detach",
-      "flex-layout.row#form-massive",
-      "flex-layout.row#container-text-seo"
+      "flex-layout.row#form-massive"
     ],
     "props": {
       "blockClass": "home__order",
@@ -59,8 +58,8 @@
       ]
     }
   },
-  "flex-layout.row#custom-slide": {
-    "title": "Cutom Slide",
+  "flex-layout.row#custom-slide1": {
+    "title": "Custom Slide",
     "props": {
       "marginTop": 20,
       "marginBottom": 20
@@ -72,8 +71,9 @@
       "marginRight": 20,
       "marginLeft": 20
     },
-    "children": ["custom-slide"]
+    "children": ["custom-slide1"]
   },
+
   // BANNER PRINCIPAL
   "list-context.media-list#banner-principal__media": {
     "title": "Banner Principal",

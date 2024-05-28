@@ -1,0 +1,70 @@
+{
+  "form#massive-product": {
+    "props": {
+      "entity": "SM",
+      "schema": "formMassiveProduct"
+    },
+    "children": [
+      "flex-layout.row#container-form-product",
+      "flex-layout.row#container-form-product-email",
+      "form-submit#form-product"
+    ],
+    "blocks": ["form-success#form-product"]
+  },
+  "form-success#form-product": {
+    "children": ["rich-text#successSubmit-form-product"]
+  },
+  "rich-text#successSubmit-form-product": {
+    "props": {
+      "text": "Hemos recibido tus datos \n Te informaremos en cuanto este producto este de vuelta",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#container-form-product": {
+    "props": {
+      "blockClass": "container-form-product",
+      "marginTop": 4,
+      "marginBottom": 4
+    },
+    "children": [
+      "form-input.text#form-product-name",
+      "form-input.text#form-product-phone"
+    ]
+  },
+
+  "form-input.text#form-product-name": {
+    "props": {
+      "pointer": "#/properties/name",
+      "placeholder": "Nombre"
+    }
+  },
+  "form-input.text#form-product-phone": {
+    "props": {
+      "pointer": "#/properties/phone",
+      "placeholder": "Teléfono"
+    }
+  },
+
+  "flex-layout.row#container-form-product-email": {
+    "props": {
+      "blockClass": "container-form-product-email",
+      "marginTop": 4,
+      "marginBottom": 4
+    },
+    "children": ["form-input.text#form-product-email"]
+  },
+
+  "form-input.text#form-product-email": {
+    "props": {
+      "pointer": "#/properties/email",
+      "placeholder": "Email"
+    }
+  },
+  "form-submit#form-product": {
+    "props": {
+      "label": "Enviar"
+    }
+  }
+}

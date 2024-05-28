@@ -1,0 +1,50 @@
+.slContainerSlider {
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 25px auto;
+    max-width: 1250px;
+  }
+
+  .slContainerContent {
+    width: calc(33% - 4px);
+    text-decoration: none;
+  }
+
+  .slContainerContent .imageElement {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .slTextSlider {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 1300px) {
+    .slContainerSlider {
+      margin: 20px;
+    }
+
+    .slContainerContent {
+      width: calc(50% - 6px);
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .slContainerSlider {
+      margin: 12px;
+    }
+
+    .slContainerContent {
+      width: 100%;
+    }
+  }

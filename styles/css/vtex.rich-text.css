@@ -423,3 +423,17 @@
 }
 
 /* END - Search */
+
+.container--buttonModal {
+  background-color: #231032;
+  padding: 0 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.paragraph--buttonModal {
+  color: #fff;
+  font-weight: 700;
+  font-size: 22px;
+  margin: 10px 0;
+}
