@@ -1,5 +1,11 @@
 {
   "pse-payment-validator": {
     "component": "PsePaymentValidator"
+  },
+  "whats-app-widget": {
+    "component": "massivespacenew.admin-ui-widgets/WhatsAppWidget"
+  },
+  "whats-app-button": {
+    "component": "massivespacenew.admin-ui-widgets/WhatsAppButton"
   }
 }

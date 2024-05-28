@@ -165,7 +165,8 @@
       "flex-layout.row#product-prices",
       "sku-selector#product",
       "product-assembly-options",
-      "flex-layout.row#buy-button"
+      "flex-layout.row#buy-button",
+      "whats-app-button"
     ]
   },
 
