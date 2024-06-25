@@ -7,7 +7,9 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
+    "title":"Header Desktop",
     "children": [
+      "toggle-layout#store_promo_term_NO_TOCAR",
       "whats-app-widget",
       "flex-layout.row#1-desktop",
       "sticky-layout#4-desktop",
@@ -16,6 +18,13 @@
     "props": {
       "blockClass": "header-desktop"
     }
+  },
+
+  "toggle-layout#store_promo_term_NO_TOCAR": {
+    "title": "NO TOCAR M/O",
+    "children": [
+      "custom-thermometer"
+    ]
   },
 
   "flex-layout.row#1-desktop": {

@@ -41,6 +41,7 @@
 
 .imageElement--carousel {
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .paginationDotsContainer--carousel {
@@ -137,6 +138,10 @@
     left: 1px;
     position: absolute;
     top: 30px;
+  }
+
+  .imageElement--carousel {
+    margin-bottom: 0;
   }
 }
 /* END - Body */
