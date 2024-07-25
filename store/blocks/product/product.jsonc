@@ -9,6 +9,7 @@
       "product-specification-group#table",
       "responsive-layout.desktop#shelf",
       "responsive-layout.mobile#shelf",
+      "flex-layout.row#cross-selling-block",
       "flex-layout.row#product-reviews",
       "product-questions-and-answers"
     ]
@@ -251,6 +252,20 @@
         "Twitter": false,
         "Pinterest": true
       }
+    }
+  },
+  "flex-layout.row#cross-selling-block": {
+    "title": "Connectif PDP",
+    "props": {
+      "blockClass": "row-search-result"
+    },
+    "children": ["connectif#cross-selling-block"]
+  },
+
+  "connectif#cross-selling-block": {
+    "props": {
+      "classId": "cross-selling-block",
+      "elementId": "cross-selling-block-elem-id"
     }
   }
 }
