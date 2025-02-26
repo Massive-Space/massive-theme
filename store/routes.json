@@ -16,5 +16,8 @@
   },
   "store.custom#referrals-page-benefits": {
     "path": "/programa-referidos/beneficios"
+  },
+  "store.custom#MSV-stores": {
+    "path": "/tiendas"
   }
 }

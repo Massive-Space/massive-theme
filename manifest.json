@@ -2,7 +2,7 @@
   "vendor": "massivespacenew",
   "name": "store-theme",
   "title": "massive space",
-  "version": "1.0.0",
+  "version": "0.0.14",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
@@ -71,7 +71,9 @@
     "massivespacenew.admin-ui-widgets": "0.x",
     "massivespacenew.referrals": "0.x",
     "massivespacenew.massivespacenew-apps": "0.x",
-    "massivespacenew.app-seo": "0.x"
+    "massivespacenew.app-seo": "0.x",
+    "massivespacenew.locator": "0.x",
+    "massivespacenew.popups-promocional": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",
