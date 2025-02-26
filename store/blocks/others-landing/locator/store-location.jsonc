@@ -1,0 +1,6 @@
+{
+  "store.custom#MSV-stores": {
+    "title": "Contenido",
+    "children": ["store-custom-location"]
+  }
+}
