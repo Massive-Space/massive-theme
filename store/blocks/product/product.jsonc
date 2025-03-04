@@ -57,7 +57,7 @@
 
   "shelf.relatedProducts": {
     "title": "Productos relacionados",
-    "blocks": ["product-summary.shelf#product-home"],
+    "blocks": ["product-summary.shelf#product-related"],
     "props": {
       "recommendation": "view",
       "productList": {

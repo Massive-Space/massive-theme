@@ -417,7 +417,7 @@
 }
 
 @media screen and (max-width: 1080px) {
-  .flexRowContent--row-buy-button :global(.vtex-button){
+  .flexRowContent--row-buy-button :global(.vtex-button) {
     width: 70%;
   }
 }
@@ -565,4 +565,8 @@
 
 .flexRowContent--content__minicart__footer .stretchChildrenWidth {
   width: 100% !important;
+}
+
+.flexRow--flexRow--text-seo-home {
+  position: absolute;
 }

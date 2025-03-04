@@ -1,6 +1,17 @@
 {
   "store.custom#test": {
-    "children": ["flex-layout.row#modal-trigger"]
+    "children": ["custom-metas-injection#test", "flex-layout.row#modal-trigger"]
+  },
+  "custom-metas-injection#test": {
+    "title": "Custom Meta Tags",
+    "props": {
+      "metas": [
+        {
+          "property": "og:image",
+          "content": "https://quest.vteximg.com.br/arquivos/quest-OG.jpg"
+        }
+      ]
+    }
   },
   "flex-layout.row#modal-trigger": {
     "children": ["flex-layout.col#modal-trigger"],

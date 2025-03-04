@@ -6,12 +6,17 @@
 
   "responsive-layout.desktop": {
     "title": "Content Desktop",
-    "children": ["disposition-layout#total-home", "flex-layout.row#custom-slide1"]
+    "children": [
+      "disposition-layout#total-home",
+      "flex-layout.row#custom-slide1"
+    ]
   },
 
   "disposition-layout#total-home": {
     "title": "Contenido",
     "children": [
+      "toggle-layout#text-seo-home",
+      "flex-layout.row#text-seo-home",
       "list-context.media-list#banner-principal__media",
       "flex-layout.row#banner-benefit",
       "flex-layout.row#categories",
@@ -58,6 +63,27 @@
       ]
     }
   },
+
+  "toggle-layout#text-seo-home": {
+    "children": ["flex-layout.row#text-seo-home"]
+  },
+
+  "flex-layout.row#text-seo-home": {
+    "title": "Custom Slide",
+    "props": {
+      "blockClass": "flexRow--text-seo-home"
+    },
+    "children": ["rich-text#text-seo-home"]
+  },
+
+  "rich-text#text-seo-home": {
+    "title": "Titulo Destacados",
+    "props": {
+      "text": "# H1 title \n ## h2 text\n ### h3 text\n #### h4 text\n",
+      "blockClass": "rich-text--text-seo-home"
+    }
+  },
+
   "flex-layout.row#custom-slide1": {
     "title": "Custom Slide",
     "props": {
