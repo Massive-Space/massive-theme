@@ -3,16 +3,16 @@
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "title":"Header",
+    "title": "Header",
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
-    "title":"Header Desktop",
+    "title": "Header Desktop",
     "children": [
       "toggle-layout#store_promo_term_NO_TOCAR",
       "whats-app-widget",
-      "flex-layout.row#1-desktop",
-      "sticky-layout#4-desktop",
+      "flex-layout.row#telemarketing__home",
+      "sticky-layout#content-header__home",
       "flex-layout.row#menu-desktop"
     ],
     "props": {
@@ -22,41 +22,28 @@
 
   "toggle-layout#store_promo_term_NO_TOCAR": {
     "title": "NO TOCAR M/O",
-    "children": [
-      "custom-thermometer"
-    ]
+    "children": ["custom-thermometer"]
   },
 
-  "flex-layout.row#1-desktop": {
+  "flex-layout.row#telemarketing__home": {
+    "title": "Telemarketing",
     "children": ["telemarketing"],
     "props": {
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "msv-flexRow-telemarketing__home"
     }
   },
 
-  "flex-layout.row#menu-desktop": {
+  "sticky-layout#content-header__home": {
+    "title": "Contenido Header DK",
     "props": {
-      "blockClass": "menu-header",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "flex-layout.col#category-menu"
-    ]
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
-  "sticky-layout#4-desktop": {
-    "props": {
-      "blockClass": "sticky-header"
+      "blockClass": "msv-stickyLayout-header__home"
     },
     "children": ["flex-layout.row#4-desktop"]
   },
+
   "flex-layout.row#4-desktop": {
+    "title": "Contenido",
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "center",
@@ -76,24 +63,36 @@
       "flex-layout.col#spacer-header"
     ]
   },
+
+  "flex-layout.row#menu-desktop": {
+    "title": "Menu Header DK",
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "msv-flexRow-menuDesktop__header"
+    },
+    "children": ["msv-menu-header_dk"]
+  },
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
   "flex-layout.col#spacer-header": {
     "props": {
       "width": "grow"
     }
   },
+
   "flex-layout.col#logo-desktop": {
     "props": {
       "blockClass": "logo-header-dk",
       "verticalAlign": "middle"
     },
     "children": ["logo#desktop"]
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle",
-      "blockClass": "menu-header"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
   },
 
   "logo#desktop": {

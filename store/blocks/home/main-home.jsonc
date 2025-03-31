@@ -1,28 +1,16 @@
 {
   "store.home": {
     "title": "Home",
-    "blocks": ["responsive-layout.desktop", "responsive-layout.mobile"]
-  },
-
-  "responsive-layout.desktop": {
-    "title": "Content Desktop",
-    "children": [
-      "disposition-layout#total-home",
-      "flex-layout.row#custom-slide1"
-    ]
+    "blocks": ["disposition-layout#total-home"]
   },
 
   "disposition-layout#total-home": {
     "title": "Contenido",
     "children": [
-      "toggle-layout#text-seo-home",
-      "flex-layout.row#text-seo-home",
-      "list-context.media-list#banner-principal__media",
-      "flex-layout.row#banner-benefit",
-      "flex-layout.row#categories",
-      "__fold__",
-      "flex-layout.row#detach",
-      "flex-layout.row#form-massive"
+      "list-context.media-list#banner-media__home",
+      "flex-layout.row#productDetach__home",
+      "flex-layout.row#slideCategories__home",
+      "flex-layout.row#newsletter__home"
     ],
     "props": {
       "blockClass": "home__order",
@@ -64,46 +52,10 @@
     }
   },
 
-  "toggle-layout#text-seo-home": {
-    "children": ["flex-layout.row#text-seo-home"]
-  },
-
-  "flex-layout.row#text-seo-home": {
-    "title": "Custom Slide",
-    "props": {
-      "blockClass": "flexRow--text-seo-home"
-    },
-    "children": ["rich-text#text-seo-home"]
-  },
-
-  "rich-text#text-seo-home": {
-    "title": "Titulo Destacados",
-    "props": {
-      "text": "# H1 title \n ## h2 text\n ### h3 text\n #### h4 text\n",
-      "blockClass": "rich-text--text-seo-home"
-    }
-  },
-
-  "flex-layout.row#custom-slide1": {
-    "title": "Custom Slide",
-    "props": {
-      "marginTop": 20,
-      "marginBottom": 20
-    },
-    "children": ["flex-layout.col#custom-slide"]
-  },
-  "flex-layout.col#custom-slide": {
-    "props": {
-      "marginRight": 20,
-      "marginLeft": 20
-    },
-    "children": ["custom-slide1"]
-  },
-
   // BANNER PRINCIPAL
-  "list-context.media-list#banner-principal__media": {
+  "list-context.media-list#banner-media__home": {
     "title": "Banner Principal",
-    "children": ["slider-layout#banner-principal__media"],
+    "children": ["slider-layout#slider-banner-media__home"],
     "props": {
       "height": 600,
       "preload": true,
@@ -119,7 +71,7 @@
       ]
     }
   },
-  "slider-layout#banner-principal__media": {
+  "slider-layout#slider-banner-media__home": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
@@ -130,7 +82,7 @@
       "showNavigationArrows": "always",
       "blockClass": "carousel",
       "autoplay": {
-        "timeout": 8000,
+        "timeout": 10000,
         "stopOnHover": true
       }
     }
@@ -138,883 +90,112 @@
 
   // BANNER PRINCIPAL
 
-  // BENEFICIOS
-  "flex-layout.row#banner-benefit": {
-    "title": "Beneficios",
+  // Productos destacados
+
+  "flex-layout.row#productDetach__home": {
+    "title": "Productos Destacados",
     "props": {
-      "horizontalAlign": "center",
-      "marginTop": 20,
-      "marginBottom": 20,
-      "blockClass": "container-benefits"
+      "blockClass": "msv-flexRow-productDetach__home"
+    },
+    "children": ["flex-layout.col#productDetach__home"]
+  },
+
+  "flex-layout.col#productDetach__home": {
+    "props": {
+      "blockClass": "msv-flexCol-productDetach__home",
+      "preventVerticalStretch": true
     },
     "children": [
-      "flex-layout.row#benefit-1",
-      "flex-layout.row#benefit-2",
-      "flex-layout.row#benefit-3",
-      "flex-layout.row#benefit-4"
+      "rich-text#title-productDetach__home",
+      "tab-layout#productDetach__home"
     ]
   },
 
-  "flex-layout.row#benefit-1": {
-    "title": "Beneficio 1",
-    "props": {
-      "blockClass": "content-benefits"
-    },
-    "children": ["image#benefit-1", "rich-text#benefit-1"]
-  },
-
-  "flex-layout.row#benefit-2": {
-    "title": "Beneficio 2",
-    "props": {
-      "blockClass": "content-benefits"
-    },
-    "children": ["image#benefit-2", "rich-text#benefit-2"]
-  },
-
-  "flex-layout.row#benefit-3": {
-    "title": "Beneficio 3",
-    "props": {
-      "blockClass": "content-benefits"
-    },
-    "children": ["image#benefit-3", "rich-text#benefit-3"]
-  },
-
-  "flex-layout.row#benefit-4": {
-    "title": "Beneficio 4",
-    "props": {
-      "blockClass": "content-benefits"
-    },
-    "children": ["image#benefit-4", "rich-text#benefit-4"]
-  },
-
-  "image#benefit-1": {
-    "title": "Imagen",
-    "props": {
-      "src": "assets/images/truck.png",
-      "maxHeight": 50,
-      "maxWidth": 80,
-      "blockClass": "image-benefits"
-    }
-  },
-
-  "image#benefit-2": {
-    "title": "Imagen",
-    "props": {
-      "src": "assets/images/secure-shield.png",
-      "maxHeight": 50,
-      "maxWidth": 80,
-      "blockClass": "image-benefits"
-    }
-  },
-
-  "image#benefit-3": {
-    "title": "Imagen",
-    "props": {
-      "src": "assets/images/conversation.png",
-      "maxHeight": 50,
-      "maxWidth": 80,
-      "blockClass": "image-benefits"
-    }
-  },
-
-  "image#benefit-4": {
-    "title": "Imagen",
-    "props": {
-      "src": "assets/images/online-shop.png",
-      "maxHeight": 50,
-      "maxWidth": 80,
-      "blockClass": "image-benefits"
-    }
-  },
-
-  "rich-text#benefit-1": {
-    "title": "Texto Beneficios",
-    "props": {
-      "text": "Entrega en tu Ciudad",
-      "blockClass": "text-benefits"
-    }
-  },
-
-  "rich-text#benefit-2": {
-    "title": "Texto Beneficios",
-    "props": {
-      "text": "Compras Seguras",
-      "blockClass": "text-benefits"
-    }
-  },
-
-  "rich-text#benefit-3": {
-    "title": "Texto Beneficios",
-    "props": {
-      "text": "Asesoría Personalizada",
-      "blockClass": "text-benefits"
-    }
-  },
-
-  "rich-text#benefit-4": {
-    "title": "Texto Beneficios",
-    "props": {
-      "text": "Más de 400 mil Productos",
-      "blockClass": "text-benefits"
-    }
-  },
-
-  // BENEFICIOS
-
-  // CATEGORIAS
-
-  "flex-layout.row#categories": {
-    "title": "Categorias",
-    "props": {
-      "blockClass": "categoriesRow-home"
-    },
-    "children": ["flex-layout.col#categories"]
-  },
-
-  "flex-layout.col#categories": {
-    "props": {
-      "blockClass": "categoriesCol-home"
-    },
-    "children": [
-      "rich-text#categories-title",
-      "slider-layout#banner--categories-home"
-    ]
-  },
-
-  "rich-text#categories-title": {
-    "title": "Titulo Categorias",
-    "props": {
-      "text": "Nuestras Categorías",
-      "blockClass": "title-home"
-    }
-  },
-
-  "slider-layout#banner--categories-home": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 5,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "blockClass": ["carousel", "spacehome", "categories-home"]
-    },
-    "children": [
-      "flex-layout.row#category-1",
-      "flex-layout.row#category-2",
-      "flex-layout.row#category-3",
-      "flex-layout.row#category-4",
-      "flex-layout.row#category-5",
-      "flex-layout.row#category-6",
-      "flex-layout.row#category-7",
-      "flex-layout.row#category-8",
-      "flex-layout.row#category-9",
-      "flex-layout.row#category-10",
-      "flex-layout.row#category-11",
-      "flex-layout.row#category-12",
-      "flex-layout.row#category-13",
-      "flex-layout.row#category-14",
-      "flex-layout.row#category-15"
-    ]
-  },
-
-  // CATEGORIAS
-
-  // DESTACADOS
-
-  "flex-layout.row#detach": {
-    "title": "Destacados",
-    "props": {
-      "blockClass": ["static--container", "history--container"]
-    },
-    "children": ["flex-layout.col#detach"]
-  },
-
-  "flex-layout.col#detach": {
-    "children": ["flex-layout.row#detach-categories"]
-  },
-
-  "flex-layout.row#detach-categories": {
-    "props": {
-      "blockClass": "detach-categories-container"
-    },
-    "children": ["tab-layout#detach-categories"]
-  },
-
-  "tab-layout#detach-categories": {
-    "props": {
-      "blockClass": "detach-categories",
-      "defaultActiveTabId": "detach-category-1"
-    },
-    "children": ["tab-list#detach-categories", "tab-content#detach-categories"]
-  },
-
-  "tab-list#detach-categories": {
-    "props": {
-      "blockClass": "list-detach-categories"
-    },
-    "children": [
-      "rich-text#detach-title",
-      "tab-list.item#detach-category-1",
-      "tab-list.item#detach-category-2",
-      "tab-list.item#detach-category-3"
-    ]
-  },
-
-  "rich-text#detach-title": {
-    "title": "Titulo Destacados",
+  "rich-text#title-productDetach__home": {
+    "title": "Titulo",
     "props": {
       "text": "Productos Destacados",
-      "blockClass": ["title-home", "title--detach"]
-    }
-  },
-
-  "tab-list.item#detach-category-1": {
-    "props": {
-      "tabId": "detach-category-1",
-      "label": "Plumones",
-      "defaultActiveTab": true
-    }
-  },
-
-  "tab-list.item#detach-category-2": {
-    "props": {
-      "tabId": "detach-category-2",
-      "label": "Cojines"
-    }
-  },
-
-  "tab-list.item#detach-category-3": {
-    "props": {
-      "tabId": "detach-category-3",
-      "label": "Batas"
-    }
-  },
-
-  "tab-content#detach-categories": {
-    "children": [
-      "tab-content.item#detach-category-1",
-      "tab-content.item#detach-category-2",
-      "tab-content.item#detach-category-3"
-    ]
-  },
-
-  "tab-content.item#detach-category-1": {
-    "props": {
-      "tabId": "detach-category-1"
-    },
-    "children": ["list-context.product-list#detach-category-1"]
-  },
-
-  "tab-content.item#detach-category-2": {
-    "props": {
-      "tabId": "detach-category-2"
-    },
-    "children": ["list-context.product-list#detach-category-2"]
-  },
-
-  "tab-content.item#detach-category-3": {
-    "props": {
-      "tabId": "detach-category-3"
-    },
-    "children": ["list-context.product-list#detach-category-3"]
-  },
-
-  // DESTACADOS
-
-  // COLECCIONES
-
-  "flex-layout.row#collection": {
-    "title": "Colleciones",
-    "props": {},
-    "children": ["flex-layout.col#collection"]
-  },
-  "flex-layout.col#collection": {
-    "children": [
-      "rich-text#collection-title",
-      "list-context.media-list#banner-collection"
-    ]
-  },
-  "rich-text#collection-title": {
-    "title": "Titulo Colecciones",
-    "props": {
-      "text": "Colecciones",
-      "blockClass": "title-home"
-    }
-  },
-  "list-context.media-list#banner-collection": {
-    "title": "Banner Media",
-    "children": ["slider-layout#banner-collection"],
-    "props": {
-      "height": 700,
-      "preload": true,
-      "mediaList": [
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
-        },
-        {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
-        }
+      "blockClass": [
+        "msv-richText-productDetach__home",
+        "msv-richText-title__home"
       ]
     }
   },
-  "slider-layout#banner-collection": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 3,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "always",
-      "showPaginationDots": "never",
-      "blockClass": ["carousel", "spacehome", "collection-home"]
-    }
-  },
 
-  // COLECCIONES
+  // Productos destacados
 
-  // PRODUCTOS EN TENDECIA
+  // Slide Categorias
 
-  "flex-layout.row#trending-products": {
-    "title": "Productos en Tendencia",
-    "props": {},
-    "children": ["flex-layout.col#trending-products"]
-  },
-  "flex-layout.col#trending-products": {
-    "children": [
-      "rich-text#trending-products-title",
-      "list-context.product-list#trending-products"
-    ]
-  },
-  "rich-text#trending-products-title": {
-    "title": "Titulo Lo Más Vendidos",
+  "flex-layout.row#slideCategories__home": {
+    "title": "Nuestras Categorias",
     "props": {
-      "text": "Productos en Tendencia",
-      "blockClass": "title-home"
-    }
-  },
-  "list-context.product-list#trending-products": {
-    "title": "Colección",
-    "blocks": ["product-summary.shelf#product-home"],
-    "props": {
-      "collection": "137",
-      "hideUnavailableItems": true,
-      "skusFilter": "FIRST_AVAILABLE",
-      "orderBy": "OrderByTopSaleDESC"
+      "blockClass": "msv-flexRow-slideCategories__home"
     },
-    "children": ["slider-layout#product-home"]
+    "children": ["flex-layout.col#slideCategories__home"]
   },
 
-  // PRODUCTOS EN TENDECIA
-
-  // BANNERS HOME
-
-  "flex-layout.row#banners-home": {
-    "title": "Banners",
+  "flex-layout.col#slideCategories__home": {
     "props": {
-      "blockClass": "container-banners-home",
-      "horizontalAlign": "center"
-    },
-    "children": ["flex-layout.col#content-banners-home"]
-  },
-
-  "flex-layout.col#content-banners-home": {
-    "title": "Contenido",
-    "props": {
-      "blockClass": "containerCol-banners-home"
+      "blockClass": "msv-flexCol-slideCategories__home",
+      "preventVerticalStretch": true
     },
     "children": [
-      "flex-layout.row#content-banners-home-1",
-      "flex-layout.row#content-banners-home-2"
+      "rich-text#title-slideCategories__home",
+      "msv-text-image-slide"
     ]
   },
 
-  "flex-layout.row#content-banners-home-1": {
-    "title": "Contenido 1",
+  "rich-text#title-slideCategories__home": {
+    "title": "Titulo",
     "props": {
-      "blockClass": ["containerRow1-banners-home", "containerRow-banners-home"]
-    },
-    "children": [
-      "flex-layout.col#content1-banners1-home",
-      "flex-layout.row#content1-banners2-home"
-    ]
-  },
-
-  "flex-layout.col#content1-banners1-home": {
-    "title": "Columna 1",
-    "props": {
-      "blockClass": "containerCol-banners-home",
-      "horizontalAlign": "center",
-      "verticalAlign": "center"
-    },
-    "children": ["image#banner1-home-1"]
-  },
-
-  "flex-layout.row#content1-banners2-home": {
-    "title": "Columna 2",
-    "props": {
-      "blockClass": "containerCol-banners-home",
-      "horizontalAlign": "center",
-      "verticalAlign": "center"
-    },
-    "children": ["image#banner2-home-1", "image#banner3-home-1"]
-  },
-
-  "image#banner1-home-1": {
-    "title": "Imagen",
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": 400,
-      "maxWidth": 765,
-      "blockClass": ["banner1-home-1", "banner-home"]
+      "text": "Nuestras Categorias",
+      "blockClass": [
+        "msv-richText-slideCategories__home",
+        "msv-richText-title__home"
+      ]
     }
   },
 
-  "image#banner2-home-1": {
-    "title": "Imagen",
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": 400,
-      "maxWidth": 375,
-      "blockClass": ["banner2-home-1", "banner-home"]
-    }
-  },
+  // Slide Categorias
 
-  "image#banner3-home-1": {
-    "title": "Imagen",
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": 400,
-      "maxWidth": 375,
-      "blockClass": ["banner3-home-1", "banner-home"]
-    }
-  },
+  // Newsletter
 
-  "flex-layout.row#content-banners-home-2": {
-    "title": "Contenido 2",
-    "props": {
-      "blockClass": ["containerRow2-banners-home", "containerRow-banners-home"]
-    },
-    "children": [
-      "flex-layout.row#content2-banners1-home",
-      "flex-layout.col#content2-banners2-home"
-    ]
-  },
-
-  "flex-layout.row#content2-banners1-home": {
-    "title": "Columna 1",
-    "props": {
-      "blockClass": "containerCol-banners-home",
-      "horizontalAlign": "center",
-      "verticalAlign": "center"
-    },
-    "children": ["image#banner1-home-2", "image#banner2-home-2"]
-  },
-
-  "flex-layout.col#content2-banners2-home": {
-    "title": "Columna 2",
-    "props": {
-      "blockClass": "containerCol-banners-home",
-      "horizontalAlign": "center",
-      "verticalAlign": "center"
-    },
-    "children": ["image#banner3-home-2"]
-  },
-
-  "image#banner1-home-2": {
-    "title": "Imagen",
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": 400,
-      "maxWidth": 375,
-      "blockClass": ["banner1-home-2", "banner-home"]
-    }
-  },
-
-  "image#banner2-home-2": {
-    "title": "Imagen",
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": 400,
-      "maxWidth": 375,
-      "blockClass": ["banner2-home-2", "banner-home"]
-    }
-  },
-
-  "image#banner3-home-2": {
-    "title": "Imagen",
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
-      "maxHeight": 400,
-      "maxWidth": 765,
-      "blockClass": ["banner3-home-2", "banner-home"]
-    }
-  },
-  // BANNERS HOME
-
-  // LOS MÁS VENDIDOS
-
-  "flex-layout.row#best-sellers": {
-    "title": "Los Más Vendidos",
-    "props": {},
-    "children": ["flex-layout.col#best-sellers"]
-  },
-  "flex-layout.col#best-sellers": {
-    "children": [
-      "rich-text#best-sellers-title",
-      "list-context.product-list#best-sellers"
-    ]
-  },
-  "rich-text#best-sellers-title": {
-    "title": "Titulo Lo Más Vendidos",
-    "props": {
-      "text": "Los Más Vendidos",
-      "blockClass": "title-home"
-    }
-  },
-  "list-context.product-list#best-sellers": {
-    "title": "Colección",
-    "blocks": ["product-summary.shelf#product-home"],
-    "props": {
-      "collection": "137",
-      "hideUnavailableItems": true,
-      "skusFilter": "FIRST_AVAILABLE",
-      "orderBy": "OrderByTopSaleDESC"
-    },
-    "children": ["slider-layout#product-home"]
-  },
-
-  // LOS MÁS VENDIDOS
-
-  // COMPRA ONLINE LINK
-
-  "responsive-layout.desktop#shop-online-link-dk": {
-    "title": "Links Compra Online",
-    "props": {
-      "blockClass": "container-content-text-link-dk"
-    },
-    "children": ["flex-layout.row#link-shop-dk"]
-  },
-
-  "flex-layout.row#link-shop-dk": {
-    "children": ["flex-layout.col#content-link-shop-dk"]
-  },
-
-  "flex-layout.col#content-link-shop-dk": {
-    "props": {
-      "blockClass": "content-text-link"
-    },
-    "children": [
-      "rich-text#link-shop-title",
-      "flex-layout.row#content-link-shop-dk"
-    ]
-  },
-
-  "flex-layout.row#content-link-shop-dk": {
-    "props": {
-      "blockClass": "container-link-text"
-    },
-    "children": [
-      "flex-layout.col#content1-link-shop-dk",
-      "flex-layout.col#content2-link-shop-dk",
-      "flex-layout.col#content3-link-shop-dk",
-      "flex-layout.col#content4-link-shop-dk",
-      "flex-layout.col#content5-link-shop-dk"
-    ]
-  },
-
-  "flex-layout.col#content1-link-shop-dk": {
-    "props": {
-      "blockClass": "content-link-text"
-    },
-    "children": ["rich-text#text-link-colum1"]
-  },
-
-  "rich-text#text-link-colum1": {
-    "title": "Text bloque 1",
-    "props": {
-      "text": "[Enlace de SEO](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
-      "blockClass": "text-link__home"
-    }
-  },
-
-  "flex-layout.col#content2-link-shop-dk": {
-    "props": {
-      "blockClass": "content-link-text"
-    },
-    "children": ["rich-text#text-link-colum2"]
-  },
-
-  "rich-text#text-link-colum2": {
-    "title": "Text bloque 2",
-    "props": {
-      "text": "[Enlace de SEO](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
-      "blockClass": "text-link__home"
-    }
-  },
-
-  "flex-layout.col#content3-link-shop-dk": {
-    "props": {
-      "blockClass": "content-link-text"
-    },
-    "children": ["rich-text#text-link-colum3"]
-  },
-
-  "rich-text#text-link-colum3": {
-    "title": "Text bloque 3",
-    "props": {
-      "text": "[Enlace de SEO](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
-      "blockClass": "text-link__home"
-    }
-  },
-
-  "flex-layout.col#content4-link-shop-dk": {
-    "props": {
-      "blockClass": "content-link-text"
-    },
-    "children": ["rich-text#text-link-colum4"]
-  },
-
-  "rich-text#text-link-colum4": {
-    "title": "Text bloque 4",
-    "props": {
-      "text": "[Enlace de SEO](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
-      "blockClass": "text-link__home"
-    }
-  },
-
-  "flex-layout.col#content5-link-shop-dk": {
-    "props": {
-      "blockClass": "content-link-text"
-    },
-    "children": ["rich-text#text-link-colum5"]
-  },
-
-  "rich-text#text-link-colum5": {
-    "title": "Text bloque 5",
-    "props": {
-      "text": "[Enlace de SEO](https://developers.vtex.com/vtex-developer-docs/docs/welcome)",
-      "blockClass": "text-link__home"
-    }
-  },
-
-  // COMPRA ONLINE LINK
-
-  // TEXTOS SEO
-
-  "flex-layout.row#text-seo": {
-    "title": "Textos SEO",
-    "props": {
-      "blockClass": "container-text-seo"
-    },
-    "children": ["flex-layout.col#content-text-seo"]
-  },
-
-  "flex-layout.col#content-text-seo": {
-    "title": "Contenido",
-    "props": { "blockClass": "containerCol-text-seo" },
-    "children": [
-      "rich-text#title-text-seo",
-      "flex-layout.row#content-text-seo-1",
-      "flex-layout.row#content-text-seo-2"
-    ]
-  },
-
-  "rich-text#title-text-seo": {
-    "title": "Titulo Textos SEO",
-    "props": {
-      "text": "Conoce el nuevo sitio de Brissa",
-      "blockClass": "title-home"
-    }
-  },
-
-  "flex-layout.row#content-text-seo-1": {
-    "title": "Row 1",
-    "props": {
-      "blockClass": ["containerRow1-text-seo", "containerRow-text-seo"]
-    },
-    "children": ["rich-text#text-seo1"]
-  },
-
-  "flex-layout.row#content-text-seo-2": {
-    "title": "Row 2",
-    "props": {
-      "blockClass": ["containerRow2-text-seo", "containerRow-text-seo"]
-    },
-    "children": [
-      "rich-text#text-seo2",
-      "rich-text#text-seo3",
-      "rich-text#text-seo4"
-    ]
-  },
-
-  "rich-text#text-seo1": {
-    "title": "Text SEO",
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section.\n**Be Bold!**\n*This is italic*",
-      "blockClass": ["text-seo"]
-    }
-  },
-  "rich-text#text-seo2": {
-    "title": "Text SEO",
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section.\n**Be Bold!**\n*This is italic*",
-      "blockClass": ["text-seo", "lastText-seo"]
-    }
-  },
-  "rich-text#text-seo3": {
-    "title": "Text SEO",
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section.\n**Be Bold!**\n*This is italic*",
-      "blockClass": ["text-seo", "lastText-seo"]
-    }
-  },
-  "rich-text#text-seo4": {
-    "title": "Text SEO",
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "Visit our [help](https://developers.vtex.com/vtex-developer-docs/docs/welcome) section.\n**Be Bold!**\n*This is italic*",
-      "blockClass": ["text-seo", "lastText-seo"]
-    }
-  },
-  // TEXTOS SEO
-
-  // NEWSLETTER
-  "flex-layout.row#image-newsletter": {
+  "flex-layout.row#newsletter__home": {
     "title": "Newsletter",
     "props": {
-      "horizontalAlign": "center",
-      "fullWidth": true
-    },
-    "children": ["image#newsletter"]
-  },
-  "image#newsletter": {
-    "props": {
-      "src": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png"
-    }
-  },
-  // NEWSLETTER
-
-  "flex-layout.row#form-massive": {
-    "props": {
-      "blockClass": "formRow_massive"
-    },
-    "children": ["image#image_form", "flex-layout.col#form-massive"]
-  },
-  "image#image_form": {
-    "props": {
-      "src": "https://massivespacenew.vteximg.com.br/arquivos/image_test_massive2.jpg",
-      "blockClass": "image_form",
-      "maxHeight": 450
-    }
-  },
-  "flex-layout.col#form-massive": {
-    "props": {
-      "paddingLeft": 5,
-      "paddingRight": 5,
-      "blockClass": "form_massive"
-    },
-    "children": ["rich-text#form-massive", "form#massive-home"]
-  },
-
-  "rich-text#form-massive": {
-    "props": {
-      "text": "Contáctanos",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "blockClass": "text-form"
-    }
-  },
-  "form#massive-home": {
-    "props": {
-      "entity": "FM",
-      "schema": "formMassive"
+      "blockClass": "msv-flexRow-newsletter__home",
+      "marginTop": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7
     },
     "children": [
-      "form-input.text#name",
-      "form-input.text#phone",
-      "form-input.text#email",
-      "form-input.text#city",
-      "form-submit"
-    ],
-    "blocks": ["form-success"]
+      "flex-layout.col#textNewsletter__home",
+      "flex-layout.col#formNewsletter__home"
+    ]
   },
-  "form-success": {
-    "children": ["rich-text#successSubmit"]
-  },
-  "rich-text#successSubmit": {
+
+  "flex-layout.col#textNewsletter__home": {
+    "title": "Contenido Textos",
     "props": {
-      "text": "Succesfully submitted the data!",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
-  "form-input.text#name": {
-    "props": {
-      "pointer": "#/properties/name",
-      "placeholder": "Nombre"
-    }
-  },
-  "form-input.text#phone": {
-    "props": {
-      "pointer": "#/properties/phone",
-      "placeholder": "Teléfono"
-    }
-  },
-  "form-input.text#email": {
-    "props": {
-      "pointer": "#/properties/email",
-      "placeholder": "Email"
-    }
-  },
-  "form-input.text#city": {
-    "props": {
-      "pointer": "#/properties/city",
-      "placeholder": "Ciudad"
-    }
-  },
-  "form-submit": {
-    "props": {
-      "label": "Enviar"
-    }
-  },
-  // TEXTOS SEO
-  "flex-layout.row#container-text-seo": {
-    "props": {
-      "blockClass": "home-container-text-seo",
-      "htmlId": "viewMore-custom"
+      "blockClass": "msv-flexCol-textNewsletter__home"
     },
-    "children": ["flex-layout.col#text-seo"]
+    "children": ["rich-text#text-newsletter__home"]
   },
-  "flex-layout.col#text-seo": {
-    "title": "Textos SEO",
+
+  "rich-text#text-newsletter__home": {
+    "title": "Texto",
     "props": {
-      "blockClass": "home-container-text-seo"
-    },
-    "children": ["seo-context#home"]
+      "text": "## ¡Suscribite y obtén el 20%OFF en tu cumple! \n El diligenciar el presente formulario se entenderá como una conducta inequívoca de que otorga su consentimiento de forma libre, voluntaria y expresa a Calzatodo S.A. para que trate su información personal de acuerdo con lo descrito en nuestro aviso de privacidad",
+      "blockClass": "msv-richText-newsletter__home"
+    }
   },
-  "seo-context#home": {
-    "title": "Contenido",
+
+  "flex-layout.col#formNewsletter__home": {
     "props": {
-      "isHome": true
+      "blockClass": "contarinerCol-newsletter__home"
     },
-    "children": ["seo-long-text", "seo-paragraph", "seo-links"]
+    "children": ["msv-newsletter"]
   }
-  // TEXTOS SEO
+
+  // Newsletter
 }

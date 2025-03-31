@@ -1,8 +1,9 @@
 {
   "store.custom#test": {
-    "children": ["custom-metas-injection#test", "flex-layout.row#modal-trigger"]
+    "children": ["msv-metas-injection#test", "flex-layout.row#modal-trigger"]
   },
-  "custom-metas-injection#test": {
+
+  "msv-metas-injection#test": {
     "title": "Custom Meta Tags",
     "props": {
       "metas": [
@@ -38,7 +39,7 @@
     }
   },
   "modal-layout#example": {
-    "children": ["flex-layout.row#form-massive"],
+    "children": [],
     "props": {
       "blockClass": "containerContentModal"
     }
