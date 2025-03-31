@@ -1,0 +1,16 @@
+.flexRow--msv-flexRow-newsletter__home {
+  background-color: #bdbdbd;
+}
+
+.flexRowContent--msv-flexRow-newsletter__home {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+}
+
+@media screen and (max-width: 960px) {
+  .flexRowContent--msv-flexRow-newsletter__home {
+    max-width: 95%;
+  }
+}

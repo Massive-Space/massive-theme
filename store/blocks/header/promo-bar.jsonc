@@ -1,0 +1,27 @@
+{
+  "flex-layout.row#info-header-top": {
+    "title": "Texto Top",
+    "props": {
+      "blockClass": "infoRow-header-top"
+    },
+    "children": ["msv-promo-bar-and-timer"]
+  },
+
+  "msv-promo-bar-and-timer": {
+    "title": "Promo Bar Timer",
+    "props": {
+      "newPromotions": [
+        {
+          "namePromotion": "Promoción activo con color",
+          "href": "promoción-href",
+          "backgroundColor": "#444",
+          "colorText": "#FFFFFF",
+          "colorTimer": "#FFFFFF",
+          "initialDate": "2024-10-30T15:00:00.000Z",
+          "finalDate": "2024-11-31T15:00:00.000Z",
+          "timerActive": true
+        }
+      ]
+    }
+  }
+}
