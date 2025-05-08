@@ -14,11 +14,11 @@
         {
           "namePromotion": "Promoción activo con color",
           "href": "promoción-href",
-          "backgroundColor": "#444",
+          "backgroundColor": "#53626c",
           "colorText": "#FFFFFF",
           "colorTimer": "#FFFFFF",
           "initialDate": "2024-10-30T15:00:00.000Z",
-          "finalDate": "2024-11-31T15:00:00.000Z",
+          "finalDate": "2025-11-31T15:00:00.000Z",
           "timerActive": true
         }
       ]

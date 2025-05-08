@@ -9,22 +9,16 @@
         "phone": 2
       }
     },
-    "children": [
-      // "vtex.product-highlights@2.x:product-highlights#colecction",
-      "product-summary-image",
-      "flex-layout.row#info__shelf"
-    ]
+    "children": ["product-summary-image", "flex-layout.row#info__shelf"]
   },
 
-  // "children": [
-  //   "stack-layout#prodsum",
-  //   "product-summary-name",
-  //   "flex-layout.col#productRating",
-  //   "product-list-price#summary",
-  //   "flex-layout.row#selling-price-savings",
-  //   "product-installments#summary",
-  //   "add-to-cart-button"
-  // ]
+  "product-summary.shelf#search-bar": {
+    "title": "Vitrina",
+    "props": {
+      "blockClass": "product-summary-shelf-search"
+    },
+    "children": ["product-summary-image", "flex-layout.row#info__shelf"]
+  },
 
   "stack-layout#prodsum": {
     "children": [

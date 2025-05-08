@@ -151,7 +151,7 @@
 }
 
 .autoCompleteOuterContainer :global(.vtex-input-prefix__group) {
-  border-color: transparent;
+  border-color: #b3b3b3;
   height: 45px;
 }
 

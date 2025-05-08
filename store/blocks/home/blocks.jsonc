@@ -47,7 +47,7 @@
   "tab-list.item#tab-lis-item3__home": {
     "title": "Item Tab 3",
     "props": {
-      "tabId": "home2",
+      "tabId": "home3",
       "label": "Más Vendido",
       "blockClass": "msv-tabListItem-productDetach__home"
     }

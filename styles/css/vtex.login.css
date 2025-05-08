@@ -51,7 +51,9 @@
 
 .sendButton :global(.vtex-button) {
   background-color: #ff0063;
-  border-radius: 10px;
+  border-color: #ff0063;
+  border-radius: 5px;
+  height: 40px;
 }
 
 .sendButton :global(.vtex-button):hover {
@@ -70,4 +72,17 @@
 }
 .emailPasswordOptionBtn :global(.vtex-button):hover {
   border-color: #ff0063;
+}
+
+.contentAlwaysWithOptions {
+  flex-direction: column;
+}
+
+.contentAlwaysWithOptions {
+  background-color: transparent;
+}
+
+.contentFormVisible {
+  padding: 0;
+  width: 100%;
 }

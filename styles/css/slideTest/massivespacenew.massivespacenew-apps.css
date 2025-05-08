@@ -8,16 +8,19 @@
 
 .msv_stiTextSlider {
   text-align: center;
-  color: #fff;
-  font-weight: 700;
-  border: 1px solid #231032;
-  border-radius: 20px;
-  width: 80%;
+  border: none;
   margin: 0 auto;
-  background-color: #231032;
 
   position: absolute;
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.msv_stiTextSlider .paragraph {
+  background-color: #231032;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 20px;
+  padding: 3px 3rem;
 }

@@ -65,6 +65,8 @@
 .msv_mdMenuContent {
   flex: 1;
   padding: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .msv_mdMenuImage {

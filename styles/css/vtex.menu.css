@@ -69,12 +69,12 @@
 
 @media screen and (max-width: 1024px) {
   :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
-  .menuItem--footer__menu-text--isOpen {
+    .menuItem--footer__menu-text--isOpen {
     background-color: #b3b3b3;
   }
   :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
-  .menuItem--footer__menu-text--isOpen
-  .styledLinkContainer--footer__menu-text {
+    .menuItem--footer__menu-text--isOpen
+    .styledLinkContainer--footer__menu-text {
     border-bottom: none;
   }
 
@@ -96,13 +96,13 @@
   }
 
   :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
-  .menuItem--footer__menu-text--isOpen {
+    .menuItem--footer__menu-text--isOpen {
     background-color: #536271;
   }
 
   :global(.vtex-disclosure-layout-1-x-trigger--footer__terms--visible)
-  .menuItem--footer__menu-text--isOpen
-  .styledLinkContainer--footer__menu-text {
+    .menuItem--footer__menu-text--isOpen
+    .styledLinkContainer--footer__menu-text {
     border-bottom: none;
   }
 
@@ -115,4 +115,45 @@
   .styledLinkContainer--menu-header-Item {
     margin: 0 7px;
   }
+}
+
+.styledLinkContent--menu-items--login-header,
+.styledLinkContent--menuItem--search-header {
+  color: #fff;
+  font-weight: 600;
+}
+
+.submenuWrapper--menuItem--search-header--isOpen {
+  position: fixed;
+  top: 100px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-width: 1px;
+  background-color: #f4f4f4;
+}
+
+.styledLinkContent--menu-items--item-login-header,
+.styledLinkContent--menu-items--login-header {
+  justify-content: center;
+}
+
+.styledLinkContainer--menu-items--login-header,
+.styledLinkContainer--menuItem--search-header {
+  margin: 0;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  min-width: 150px;
+}
+
+.styledLinkContainer--menu-items--login-header {
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+}
+
+.submenuWrapper--vtex-menu--login-header--isOpen {
+  left: -7rem;
+  top: 8px;
+  background-color: rgba(245, 245, 245, 0.8);
+  backdrop-filter: blur(4px);
 }

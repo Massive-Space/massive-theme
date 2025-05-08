@@ -9,6 +9,7 @@
   "header-layout.desktop": {
     "title": "Header Desktop",
     "children": [
+      "flex-layout.row#info-header-top",
       "toggle-layout#store_promo_term_NO_TOCAR",
       "whats-app-widget",
       "flex-layout.row#telemarketing__home",
@@ -34,6 +35,8 @@
     }
   },
 
+  // Sticky
+
   "sticky-layout#content-header__home": {
     "title": "Contenido Header DK",
     "props": {
@@ -53,38 +56,10 @@
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#spacer-header",
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer-header",
-      "search-bar",
-      //"locale-switcher",
-      "login",
-      "minicart.v2",
-      "flex-layout.col#spacer-header"
+      "flex-layout.row#headerclient-options"
     ]
-  },
-
-  "flex-layout.row#menu-desktop": {
-    "title": "Menu Header DK",
-    "props": {
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true,
-      "blockClass": "msv-flexRow-menuDesktop__header"
-    },
-    "children": ["msv-menu-header_dk"]
-  },
-
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
-
-  "flex-layout.col#spacer-header": {
-    "props": {
-      "width": "grow"
-    }
   },
 
   "flex-layout.col#logo-desktop": {
@@ -96,12 +71,204 @@
   },
 
   "logo#desktop": {
+    "title": "Logo",
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://massivespacenew.vteximg.com.br/arquivos/Massive1x.svg",
+      "url": "https://massivespacenew.vtexassets.com/assets/vtex.file-manager-graphql/images/571a14e0-985a-4593-b121-b1130af6f484___06ff3529fafaa74e09746ff4ff6dd776.svg",
       "width": "150",
-      "height": "50"
+      "height": "50",
+      "blockClass": "logo-header-dk"
+    }
+  },
+
+  "flex-layout.row#headerclient-options": {
+    "title": "Opciones de Cliente",
+    "props": {
+      "blockClass": "flexRow--headerclient-options"
+    },
+    "children": [
+      "menu-item#search",
+      "vtex.menu@2.x:menu#login-header",
+      "minicart.v2"
+    ]
+  },
+
+  "menu-item#search": {
+    "props": {
+      "id": "",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menuItem--search-header",
+      "onMountBehavior": "close",
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Buscar Producto",
+        "text": "Buscar Producto"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#search"]
+  },
+
+  "vtex.menu@2.x:submenu#search": {
+    "props": {
+      "width": "auto",
+      "blockClass": "menuItem--search-header"
+    },
+    "children": ["search-bar"]
+  },
+
+  "search-bar": {
+    "title": "Search Bar",
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "autoFocus": false,
+      "maxWidth": 1200,
+      "minSearchTermLength": 3,
+      "inputType": "text",
+      "placeholder": "¿Qué producto estás buscando?",
+      "blockClass": "containerSearchBar"
+    }
+  },
+
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#search-bar"],
+    "props": {
+      "simulationBehavior": "default",
+      "maxTopSearches": 10,
+      "maxHistory": 10,
+      "maxSuggestedProducts": 2,
+      "maxSuggestedTerms": 2,
+      "productLayout": "VERTICAL",
+      "hideTitles": false,
+      "historyFirst": false,
+      "blockClass": "searchResult-searchbar",
+      "customBreakpoints": {
+        "md": {
+          "width": 110
+        }
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#login-header": {
+    "title": "Login",
+    "props": {
+      "experimentalOptimizeRendering": true
+    },
+    "children": ["menu-item#login-header"]
+  },
+
+  "menu-item#login-header": {
+    "props": {
+      "id": "menu-item-login-header",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "onMountBehavior": "close",
+      "blockClass": "menu-items--login-header",
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Iniciar sesión",
+        "text": "Iniciar sesión"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu#login-header"]
+  },
+
+  "vtex.menu@2.x:submenu#login-header": {
+    "props": {
+      "width": "auto",
+      "blockClass": "vtex-menu--login-header"
+    },
+    "children": ["vtex.menu@2.x:menu#login-items-header"]
+  },
+
+  "vtex.menu@2.x:menu#login-items-header": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "vtex-menu-menu--login-header"
+    },
+    "children": [
+      "login-content#login-header",
+      "menu-item#guarantee-header-1",
+      "menu-item#guarantee-header-2"
+    ]
+  },
+
+  "login-content#login-header": {
+    "title": "Contenido Login",
+    "props": {
+      "blockClass": "login-content--login"
+    }
+  },
+
+  "menu-item#guarantee-header-1": {
+    "props": {
+      "id": "menu-item-guarantee-header",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["menu-items--item-login-header"],
+      "itemProps": {
+        "type": "external",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Solución De Garantías",
+        "text": "Solución De Garantías"
+      }
+    }
+  },
+
+  "menu-item#guarantee-header-2": {
+    "props": {
+      "id": "menu-item-guarantee-header",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": ["menu-items--item-login-header"],
+      "itemProps": {
+        "type": "external",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "Garantía Y Devolución",
+        "text": "Garantía Y Devolución"
+      }
+    }
+  },
+
+  // Menu desktop
+
+  "flex-layout.row#menu-desktop": {
+    "title": "Menu Header DK",
+    "props": {
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "msv-flexRow-menuDesktop__header"
+    },
+    "children": [
+      "msv-menu-header_dk"
+    ]
+  },
+
+  // Espacios
+
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+
+  "flex-layout.col#spacer-header": {
+    "props": {
+      "width": "grow"
     }
   }
 }

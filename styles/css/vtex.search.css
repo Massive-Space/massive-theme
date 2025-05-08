@@ -1,0 +1,23 @@
+@media screen and (min-width: 1024px) {
+  .biggy-autocomplete {
+    position: fixed;
+    right: 0;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .history-and-top-wrapper {
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex: 1;
+    background-color: #fff;
+    max-width: 56%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .itemList--suggestion,
+  .tileList {
+    background-color: #fff;
+  }
+}

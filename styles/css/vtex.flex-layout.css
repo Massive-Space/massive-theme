@@ -32,7 +32,11 @@
 }
 
 .flexRowContent--main-header {
-  background-color: #ffffff;
+  background-color: #231032;
+}
+
+.flexRowContent--main-header:hover {
+  background-color: #231032;
 }
 
 .flexRowContent--main-header-mobile {
@@ -49,6 +53,12 @@
 .flexRowContent--main-header :global(.vtex-menu-2-x-styledLink) {
   color: #727273;
   font-size: 14px;
+}
+
+.flexRowContent--flexRow--headerclient-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .flexRow--deals {
