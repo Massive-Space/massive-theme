@@ -19,8 +19,5 @@
   },
   "store.custom#MSV-stores": {
     "path": "/tiendas"
-  },
-  "store.custom#test": {
-    "path": "/test"
   }
 }
