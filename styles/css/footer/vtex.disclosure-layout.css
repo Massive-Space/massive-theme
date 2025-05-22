@@ -1,0 +1,190 @@
+.trigger--disclosure-trigger--description-pdp {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  padding: 0;
+  padding-right: 10px;
+}
+
+.trigger--disclosure-trigger--description-pdp--hidden
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-description)::after {
+  content: "\e91f";
+  font-family: "Icons";
+  font-size: 16px;
+  color: #333;
+  padding-left: 10px;
+}
+
+.trigger--disclosure-trigger--description-pdp--visible
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-description)::after {
+  content: "\e91e";
+  font-family: "Icons";
+  font-size: 15px;
+  color: #333;
+  padding-left: 10px;
+}
+
+.trigger--disclosure-trigger--more-info-mobile,
+.trigger--disclosure-trigger--more-info {
+  background-color: transparent;
+  border: none;
+  margin: 0 auto;
+  display: flex;
+}
+
+.trigger--disclosure-trigger--more-info-mobile--hidden
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-more-info)::after,
+.trigger--disclosure-trigger--more-info--hidden
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-more-info)::after {
+  content: "\e917";
+  font-family: "Icons";
+  font-size: 13px;
+  color: #333;
+  padding-left: 10px;
+}
+
+.trigger--disclosure-trigger--more-info-mobile--visible
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-more-info)::after,
+.trigger--disclosure-trigger--more-info--visible
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-more-info)::after {
+  content: "\e916";
+  font-family: "Icons";
+  font-size: 13px;
+  color: #333;
+  padding-left: 10px;
+}
+
+.trigger--disclosure-trigger--more-info--hidden
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-more-info)::before {
+  content: "Más Información";
+  color: #333;
+  font-family: "WorkSans-Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.trigger--disclosure-trigger--more-info--visible
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-more-info)::before {
+  content: "Menos Información";
+  color: #333;
+  font-family: "WorkSans-Regular";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.trigger--disclosure-trigger--more-info-mobile--hidden
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-more-info)::before {
+  content: "Más Información";
+  color: #333;
+  font-family: "WorkSans-Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.trigger--disclosure-trigger--more-info-mobile--visible
+  :global(.vtex-rich-text-0-x-paragraph--richText--title-more-info)::before {
+  content: "Menos Información";
+  color: #333;
+  font-family: "WorkSans-Bold";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+@media screen and (min-width: 1280px) {
+  .content--disclosure-content--footer-more-info--visible {
+    width: 100vw !important;
+    transform: translateX(-75.5%);
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1680px) {
+  .content--disclosure-content--footer-more-info--visible {
+    width: 100vw !important;
+    transform: translateX(-72.7%);
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1728px) {
+  .content--disclosure-content--footer-more-info--visible {
+    width: 100vw !important;
+    transform: translateX(-72%);
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .content--disclosure-content--footer-more-info--visible {
+    width: 100vw !important;
+    transform: translateX(-70%);
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 2550px) {
+  .content--disclosure-content--footer-more-info--visible {
+    width: 100vw !important;
+    transform: translateX(-65%);
+    margin-top: 10px;
+  }
+}
+
+.trigger--disclosure-trigger--search-mobile,
+.trigger--disclosure-trigger--online-payments {
+  background-color: transparent;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-left: 16.453px;
+  padding-right: 16.453px;
+}
+
+@media screen and (max-width: 1024px) {
+  .content--footer__terms--visible {
+    background-color: #4f4f4f;
+  }
+  .trigger--footer__terms {
+    width: 100%;
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #d4d4d4 !important;
+    border: none;
+    padding: 10px 0px;
+    max-height: 40px;
+  }
+
+  .trigger--menu__terms {
+    width: 100%;
+    background-color: #e5e5e5;
+    border-bottom: 1px solid #d4d4d4 !important;
+    border: none;
+    padding: 10px 0px;
+    max-height: 45px;
+  }
+}
+
+/* templates */
+
+.trigger--disclosure-trigger--item-medios-de-pago {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  background: #f7f7f7;
+  transition: 0.4s;
+  border: none;
+  padding: 0 31px;
+}
+
+/* templates */

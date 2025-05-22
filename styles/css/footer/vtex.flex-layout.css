@@ -1,0 +1,174 @@
+/* footer */
+
+.flexRow--flexRow--menu-footer {
+  padding-bottom: 1rem;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.flexRow--flexRow--network-footer-store,
+.flexRow--flexRow--menu-footer,
+.flexRow--payment-methods,
+.flexRow--credits {
+  background-color: #e5e5e5;
+  border-top: 1px solid #c7c7c7;
+}
+
+.flexRow--flexRow--network-footer-store {
+  padding: 0.5rem 0;
+}
+
+.flexRow--payment-methods {
+  height: 75px;
+  display: flex;
+  align-items: center;
+}
+
+.flexRow--payment-methods :global(.vtex-store-components-3-x-container) {
+  width: 100%;
+}
+
+.flexColChild--flexCol-powerBy {
+  display: flex;
+  justify-content: center;
+}
+
+.flexCol--flexCol-powerBy {
+  gap: 10px;
+}
+
+.flexRowContent--payment-methods {
+  align-items: center;
+  gap: 1rem;
+}
+
+.flexRowContent--payment-methods .stretchChildrenWidth:first-child {
+  width: 65% !important;
+}
+
+.flexRowContent--payment-methods .stretchChildrenWidth:last-child {
+  width: 35% !important;
+}
+
+.flexRowContent--flexRow--powerBy .stretchChildrenWidth:first-child {
+  width: 33% !important;
+}
+
+.flexRowContent--flexRow-content-paymentMethods {
+  gap: 10px;
+}
+
+.flexRowContent--flexRow-content-paymentMethods
+  .stretchChildrenWidth:first-child {
+  width: 10% !important;
+}
+
+.flexRowContent--flexRow-content-paymentMethods
+  .stretchChildrenWidth:last-child {
+  width: 10% !important;
+}
+
+.flexCol--flexCol--footer-menu {
+  padding-left: 10%;
+}
+
+.flexCol--flexCol--footer-menu .flexColChild--flexCol--footer-menu:first-child {
+  height: 13% !important;
+}
+
+.flexRowContent--flexRow--menu-footer {
+  justify-content: center;
+  gap: 1rem;
+}
+
+.flexCol--footer-col-border {
+  position: relative;
+}
+
+.flexCol--footer-col-border::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 100%;
+  background-color: #c7c7c7;
+}
+
+.flexRowContent--flexRow--network-footer-store .stretchChildrenWidth {
+  display: flex;
+  align-items: center;
+}
+
+.flexRowContent--flexRow--network-2-footer .stretchChildrenWidth {
+  width: 20% !important;
+}
+
+.flexRowContent--flexRow-powerBy {
+  max-width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* mobile */
+
+.flexRow--rowPowerBy-footer-mobile {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flexColChild--colPowerBy-footer-mobile {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .flexRow--rowPowerBy-footer-mobile {
+    display: block;
+  }
+
+  .flexRowContent--rowPowerBy-footer-mobile {
+    padding: 5px 0 11px;
+    width: 100%;
+  }
+
+  .flexRow--rowNetworks-footer,
+  .flexRow--rowWatched-by,
+  .flexRow--rowPayment-method {
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .flexRow--rowInfo-footer-mobile {
+    border-top: 1px solid #d4d4d4;
+  }
+
+  .flexRowContent--rowInfo-footer-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .flexRowContent--rowNetworks-footer,
+  .flexCol--colWatched-by {
+    margin-bottom: 1rem;
+  }
+
+  .flexCol--colWatched-by,
+  .flexCol--colPayment-method,
+  .flexCol--colNetworks-footer {
+    display: flex;
+    align-items: center;
+  }
+
+  .flexRowContent--rowRetworks-footer {
+    gap: 40px;
+  }
+
+  .flexRowContent--flexRow-powerBy {
+    display: flex;
+    max-width: 50%;
+  }
+}
+
+/* footer */

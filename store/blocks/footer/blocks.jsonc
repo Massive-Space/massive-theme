@@ -1,154 +1,167 @@
 {
-  "disclosure-layout-group#footer-menu": {
-    "title": "Menu",
+  "flex-layout.row#footer-info-mobile": {
+    "title": "Footer Imagenes",
     "props": {
-      "blockClass": "disclosure-footer__mobile",
-      "maxVisible": "one"
+      "blockClass": "footer-info-desktop"
     },
-    "children": ["disposition-layout#footer"]
+    "children": ["flex-layout.col#footer-info-mobile"]
   },
 
-  "disposition-layout#footer": {
-    "title": "Mostrar / Ocultar / Reorganizar",
-    "children": [
-      "disclosure-layout#footer__content__1",
-      "disclosure-layout#footer__content__2",
-      "disclosure-layout#footer__content__3",
-      "disclosure-layout#footer__content__4",
-      "disclosure-layout#footer__content__5",
-      "disclosure-layout#footer__content__6"
-    ],
+  "flex-layout.col#footer-info-mobile": {
     "props": {
-      "disposition": [
-        {
-          "order": 1
-        },
-        {
-          "order": 2
-        },
-        {
-          "order": 3
-        },
-        {
-          "order": 4
-        },
-        {
-          "order": 5
-        },
-        {
-          "order": 6
-        }
-      ]
+      "blockClass": "colFooter-info-desktop"
+    },
+    "children": [
+      "flex-layout.row#footer-3-info-desktop",
+      "flex-layout.row#footer-2-info-desktop",
+      "flex-layout.col#footer-1-mobile"
+    ]
+  },
+
+  "flex-layout.col#footer-1-mobile": {
+    "children": ["rich-text#footer-mobile"],
+    "props": {
+      "blockClass": "text-footer"
     }
   },
 
-  "disclosure-layout#footer__content__1": {
-    "title": "Menu 1",
+  "rich-text#footer-mobile": {
+    "title": "Texto",
     "props": {
-      "blockClass": "footer__content",
-      "initialVisibility": "visible"
-    },
-    "children": [
-      "disclosure-trigger#title-footer__content",
-      "disclosure-content#footer__content"
-    ]
-  },
-  "disclosure-layout#footer__content__2": {
-    "title": "Menu 2",
-    "props": {
-      "blockClass": "footer__content"
-    },
-    "children": [
-      "disclosure-trigger#title-footer__content",
-      "disclosure-content#footer__content"
-    ]
-  },
-  "disclosure-layout#footer__content__3": {
-    "title": "Menu 3",
-    "props": {
-      "blockClass": "footer__content"
-    },
-    "children": [
-      "disclosure-trigger#title-footer__content",
-      "disclosure-content#footer__content"
-    ]
-  },
-  "disclosure-layout#footer__content__4": {
-    "title": "Menu 4",
-    "props": {
-      "blockClass": "footer__content"
-    },
-    "children": [
-      "disclosure-trigger#title-footer__content",
-      "disclosure-content#footer__content"
-    ]
-  },
-
-  "disclosure-layout#footer__content__5": {
-    "title": "Menu 5",
-    "props": {
-      "blockClass": "footer__content"
-    },
-    "children": [
-      "disclosure-trigger#title-footer__content",
-      "disclosure-content#footer__content"
-    ]
-  },
-
-  "disclosure-layout#footer__content__6": {
-    "title": "Menu 6",
-    "props": {
-      "blockClass": "footer__content"
-    },
-    "children": [
-      "disclosure-trigger#title-footer__content",
-      "disclosure-content#footer__content"
-    ]
-  },
-
-  "disclosure-trigger#title-footer__content": {
-    "title": "Título",
-    "props": {
-      "blockClass": "footer__terms"
-    },
-    "children": ["menu-item#categories"]
-  },
-  "menu-item#categories": {
-    "title": "Asignación Titulo",
-    "props": {
-      "blockClass": "footer__menu-text",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": false,
-        "tagTitle": "",
-        "text": ""
-      }
+      "text": "Copyright © 2023 TODACO S.A.S. Listo Mundo Cerámico. All Rights Reserved. Powered by",
+      "blockClass": "text-footer"
     }
   },
 
-  "disclosure-content#footer__content": {
-    "title": "Categorias",
-    "children": ["vtex.menu@2.x:menu#category__list"],
+  "flex-layout.row#footer-1-info-desktop": {
+    "title": "Vigitado Por",
     "props": {
-      "blockClass": "footer__terms"
+      "blockClass": "rowWatched-by"
+    },
+    "children": ["flex-layout.col#footer-1-info-desktop"]
+  },
+  "flex-layout.col#footer-1-info-desktop": {
+    "props": {
+      "blockClass": "colWatched-by",
+      "horizontalAlign": "CENTER"
+    },
+    "children": ["rich-text#footer-info-1", "image#watched-by"]
+  },
+  "rich-text#footer-info-1": {
+    "title": "Texto Info 1",
+    "props": {
+      "text": "Vigilado por:",
+      "blockClass": "footer"
     }
   },
 
-  "vtex.menu@2.x:menu#category__list": {
-    "title": "Listado",
+  "image#watched-by": {
     "props": {
-      "orientation": "vertical",
-      "blockClass": "footer__menu-list",
-      "type": "custom",
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#"
-      }
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/589a0770-df5d-402f-8f05-473247aef28a___3f04e4fac90dee40dadbecd17dfff092.svg",
+      "maxHeight": 40,
+      "blockClass": "image-watched-footer"
+    }
+  },
+
+  "flex-layout.row#footer-2-info-desktop": {
+    "title": "Medios de Pago",
+    "props": {
+      "blockClass": "rowPayment-method",
+      "marginBottom": 6
     },
-    "children": []
+    "children": ["flex-layout.col#footer-2-info-desktop"]
+  },
+  "flex-layout.col#footer-2-info-desktop": {
+    "props": {
+      "blockClass": "colPayment-method",
+      "horizontalAlign": "CENTER"
+    },
+    "children": ["rich-text#footer-info-2", "image#payment-method"]
+  },
+  "rich-text#footer-info-2": {
+    "title": "Texto Info 2",
+    "props": {
+      "text": "Medios de pago disponibles:",
+      "blockClass": "footer"
+    }
+  },
+
+  "image#payment-method": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/baab5dd0-5bda-4f76-b968-8e9e9264d15d___69f575f9872a92d431e953915e2469ca.svg",
+      "maxHeight": 80,
+      "blockClass": "image-payment-footer"
+    }
+  },
+
+  "flex-layout.row#footer-3-info-desktop": {
+    "title": "Redes Sociales",
+    "props": {
+      "blockClass": "rowNetworks-footer"
+    },
+    "children": ["flex-layout.col#footer-3-info-desktop"]
+  },
+  "flex-layout.col#footer-3-info-desktop": {
+    "props": {
+      "blockClass": "colNetworks-footer",
+      "horizontalAlign": "CENTER"
+    },
+    "children": ["rich-text#footer-info-3", "flex-layout.row#networks-footer"]
+  },
+  "rich-text#footer-info-3": {
+    "title": "Texto Info 3",
+    "props": {
+      "text": "Síguenos en nuestras redes:",
+      "blockClass": "footer"
+    }
+  },
+
+  "flex-layout.row#networks-footer": {
+    "props": {
+      "blockClass": "rowRetworks-footer",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "image#networks-footer-1",
+      "image#networks-footer-2",
+      "image#networks-footer-3",
+      "image#networks-footer-4"
+    ]
+  },
+
+  "image#networks-footer-1": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/c51765f4-a188-49e5-9d36-bea0089578c0___cdcc64d3be2ab165c03baad28b2054f6.svg",
+      "maxHeight": 36,
+      "link": "https://www.instagram.com/listomundoceramico/?hl=es",
+      "blockClass": "image-network-footer"
+    }
+  },
+
+  "image#networks-footer-2": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/fd0a05c5-8269-483f-9ee4-be1011340b77___1efe89c10e41e022c4821b524364989b.svg",
+      "maxHeight": 36,
+      "link": "https://www.facebook.com/ListoMundoCeramico/",
+      "blockClass": "image-network-footer"
+    }
+  },
+
+  "image#networks-footer-3": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/822f28f9-80ab-4ca8-be7c-8906196353a3___6f298c7bf553e078e99fd02f653b18ee.svg",
+      "maxHeight": 36,
+      "link": "http://wa.me/573185968272",
+      "blockClass": "image-network-footer"
+    }
+  },
+
+  "image#networks-footer-4": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/1b1329b6-bcec-45ce-a60e-d95268e2b3c1___4be81ae0a7d1478073ca6adcaadce103.svg",
+      "maxHeight": 36,
+      "link": "https://www.tiktok.com",
+      "blockClass": "image-network-footer"
+    }
   }
 }

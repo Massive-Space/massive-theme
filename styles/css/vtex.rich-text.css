@@ -437,3 +437,10 @@
   font-size: 22px;
   margin: 10px 0;
 }
+
+.paragraph--richText--title-more-info {
+  font-size: 0;
+  margin: 10px 0 12px;
+  display: flex;
+  align-items: center;
+}

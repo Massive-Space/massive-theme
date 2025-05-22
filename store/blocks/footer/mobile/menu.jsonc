@@ -1,0 +1,300 @@
+{
+  "disclosure-layout-group#footer-menu": {
+    "title": "Contenido",
+    "props": {
+      "blockClass": "disclosure-footer__mobile",
+      "maxVisible": "one"
+    },
+    "children": ["disposition-layout#footer"]
+  },
+
+  "disposition-layout#footer": {
+    "title": "Mostrar / Ocultar / Reorganizar",
+    "children": [
+      "disclosure-layout#footer__content__1",
+      "disclosure-layout#footer__content__2",
+      "disclosure-layout#footer__content__3",
+      "disclosure-layout#footer__content__4"
+      // "disclosure-layout#footer__content__5",
+      // "disclosure-layout#footer__content__6"
+    ],
+    "props": {
+      "disposition": [
+        {
+          "order": 1
+        },
+        {
+          "order": 2
+        },
+        {
+          "order": 3
+        },
+        {
+          "order": 4
+        },
+        {
+          "order": 5
+        },
+        {
+          "order": 6
+        }
+      ]
+    }
+  },
+
+  "disclosure-layout#footer__content__1": {
+    "title": "Menu 1",
+    "props": {
+      "blockClass": "footer__content",
+      "initialVisibility": "visible"
+    },
+    "children": [
+      "disclosure-trigger#title-footer__content-1",
+      "disclosure-content#footer__content_1"
+    ]
+  },
+  "disclosure-layout#footer__content__2": {
+    "title": "Menu 2",
+    "props": {
+      "blockClass": "footer__content"
+    },
+    "children": [
+      "disclosure-trigger#title-footer__content-2",
+      "disclosure-content#footer__content_2"
+    ]
+  },
+  "disclosure-layout#footer__content__3": {
+    "title": "Menu 3",
+    "props": {
+      "blockClass": "footer__content"
+    },
+    "children": [
+      "disclosure-trigger#title-footer__content-3",
+      "disclosure-content#footer__content_3"
+    ]
+  },
+  "disclosure-layout#footer__content__4": {
+    "title": "Menu 4",
+    "props": {
+      "blockClass": "footer__content"
+    },
+    "children": [
+      "disclosure-trigger#title-footer__content-4",
+      "disclosure-content#footer__content_4"
+    ]
+  },
+
+  "disclosure-layout#footer__content__5": {
+    "title": "Menu 5",
+    "props": {
+      "blockClass": "footer__content"
+    },
+    "children": [
+      "disclosure-trigger#title-footer__content-5",
+      "disclosure-content#footer__content_5"
+    ]
+  },
+
+  "disclosure-layout#footer__content__6": {
+    "title": "Menu 6",
+    "props": {
+      "blockClass": "footer__content"
+    },
+    "children": [
+      "disclosure-trigger#title-footer__content-6",
+      "disclosure-content#footer__content_6"
+    ]
+  },
+
+  "disclosure-trigger#title-footer__content-1": {
+    "title": "Título",
+    "props": {
+      "blockClass": "footer__terms"
+    },
+    "children": ["menu-item#categories-1"]
+  },
+
+  "disclosure-trigger#title-footer__content-2": {
+    "title": "Título",
+    "props": {
+      "blockClass": "footer__terms"
+    },
+    "children": ["menu-item#categories-2"]
+  },
+
+  "disclosure-trigger#title-footer__content-3": {
+    "title": "Título",
+    "props": {
+      "blockClass": "footer__terms"
+    },
+    "children": ["menu-item#categories-3"]
+  },
+
+  "disclosure-trigger#title-footer__content-4": {
+    "title": "Título",
+    "props": {
+      "blockClass": "footer__terms"
+    },
+    "children": ["menu-item#categories-4"]
+  },
+
+  "disclosure-trigger#title-footer__content-5": {
+    "title": "Título",
+    "props": {
+      "blockClass": "footer__terms"
+    },
+    "children": ["menu-item#categories-5"]
+  },
+
+  "disclosure-trigger#title-footer__content-6": {
+    "title": "Título",
+    "props": {
+      "blockClass": "footer__terms"
+    },
+    "children": ["menu-item#categories-6"]
+  },
+
+  "menu-item#categories-1": {
+    "title": "Asignación Titulo",
+    "props": {
+      "blockClass": "footer__menu-text",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Mas Información",
+        "text": "Mas Información "
+      }
+    }
+  },
+
+  "menu-item#categories-2": {
+    "title": "Asignación Titulo",
+    "props": {
+      "blockClass": "footer__menu-text",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Servicio al cliente",
+        "text": "Servicio al cliente"
+      }
+    }
+  },
+
+  "menu-item#categories-3": {
+    "title": "Asignación Titulo",
+    "props": {
+      "blockClass": "footer__menu-text",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Nuestra compañia",
+        "text": "Nuestra compañia"
+      }
+    }
+  },
+
+  "menu-item#categories-4": {
+    "title": "Asignación Titulo",
+    "props": {
+      "blockClass": "footer__menu-text",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Proceso de compra",
+        "text": "Proceso de compra"
+      }
+    }
+  },
+
+  "menu-item#categories-5": {
+    "title": "Asignación Titulo",
+    "props": {
+      "blockClass": "footer__menu-text",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "",
+        "text": ""
+      }
+    }
+  },
+
+  "menu-item#categories-6": {
+    "title": "Asignación Titulo",
+    "props": {
+      "blockClass": "footer__menu-text",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "",
+        "text": ""
+      }
+    }
+  },
+
+  "disclosure-content#footer__content_1": {
+    "title": "Categorias",
+    "children": ["vtex.menu@2.x:menu#menu-footer-items-1"],
+    "props": {
+      "blockClass": "footer__terms"
+    }
+  },
+
+  "disclosure-content#footer__content_2": {
+    "title": "Categorias",
+    "children": ["vtex.menu@2.x:menu#menu-footer-items-2"],
+    "props": {
+      "blockClass": "footer__terms"
+    }
+  },
+
+  "disclosure-content#footer__content_3": {
+    "title": "Categorias",
+    "children": ["vtex.menu@2.x:menu#menu-footer-items-3"],
+    "props": {
+      "blockClass": "footer__terms"
+    }
+  },
+
+  "disclosure-content#footer__content_4": {
+    "title": "Categorias",
+    "children": ["vtex.menu@2.x:menu#menu-footer-items-4"],
+    "props": {
+      "blockClass": "footer__terms"
+    }
+  },
+
+  "disclosure-content#footer__content_5": {
+    "title": "Categorias",
+    "children": [],
+    "props": {
+      "blockClass": "footer__terms"
+    }
+  },
+
+  "disclosure-content#footer__content_6": {
+    "title": "Categorias",
+    "children": [],
+    "props": {
+      "blockClass": "footer__terms"
+    }
+  }
+}

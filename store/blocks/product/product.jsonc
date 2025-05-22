@@ -4,9 +4,8 @@
     "children": [
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
+      "buybuy",
       "iframe-product1",
-      "flex-layout.row#specifications-title",
-      "product-specification-group#table",
       "responsive-layout.desktop#shelf",
       "responsive-layout.mobile#shelf",
       "flex-layout.row#cross-selling-block",

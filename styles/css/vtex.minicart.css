@@ -45,3 +45,7 @@
   justify-content: center;
   min-width: 130px;
 }
+
+.openIconContainer :global(.vtex-button):hover {
+  background-color: transparent;
+}

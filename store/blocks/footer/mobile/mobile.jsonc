@@ -1,0 +1,87 @@
+{
+  "footer-layout.mobile": {
+    "title": "Footer Mobile",
+    "props": {
+      "blockClass": "main-footer-mobile"
+    },
+    "children": [
+      "disclosure-layout#more-info-mobile",
+      "flex-layout.row#2-footer-mobile"
+    ]
+  },
+
+  "disclosure-layout#more-info-mobile": {
+    "title": "Más Información",
+    "props": {
+      "blockClass": "disclosure-layout--more-info-mobile"
+    },
+    "children": [
+      "disclosure-trigger#more-info-mobile",
+      "disclosure-content#more-info-mobile"
+    ]
+  },
+
+  "disclosure-trigger#more-info-mobile": {
+    "props": {
+      "blockClass": "disclosure-trigger--more-info-mobile"
+    },
+    "children": ["rich-text#question"]
+  },
+
+  "disclosure-content#more-info-mobile": {
+    "props": {
+      "blockClass": "disclosure-content--footer-more-info-mobile"
+    },
+    "children": ["disclosure-layout-group#footer-menu"]
+  },
+
+  "flex-layout.row#2-footer-mobile": {
+    "props": {
+      "paddingTop": 4,
+      "paddingBottom": 4,
+      "blockClass": "rowInfo-footer-mobile"
+    },
+    "children": [
+      "flex-layout.row#footer-info-mobile",
+      "flex-layout.row#guarded-by"
+    ]
+  },
+
+  "flex-layout.row#guarded-by": {
+    "title": "Power By",
+    "props": {
+      "blockClass": "rowPowerBy-footer-mobile",
+      "preserveLayoutOnMobile": true,
+      "paddingTop": 4
+    },
+    "children": [
+      "flex-layout.col#guarded-by-1",
+      "flex-layout.col#guarded-by-2",
+      "flex-layout.col#guarded-by-3"
+    ]
+  },
+
+  "flex-layout.col#guarded-by-1": {
+    "title": "Contenido 1",
+    "props": {
+      "blockClass": "colPowerBy-footer-mobile"
+    },
+    "children": ["rich-text#guarded-by-1", "image#guarded-by-1"]
+  },
+
+  "flex-layout.col#guarded-by-2": {
+    "title": "Contenido 2",
+    "props": {
+      "blockClass": "colPowerBy-footer-mobile"
+    },
+    "children": ["rich-text#guarded-by-2", "image#guarded-by-2"]
+  },
+
+  "flex-layout.col#guarded-by-3": {
+    "title": "Contenido 3",
+    "props": {
+      "blockClass": "colPowerBy-footer-mobile"
+    },
+    "children": ["rich-text#guarded-by-3", "image#guarded-by-3"]
+  }
+}

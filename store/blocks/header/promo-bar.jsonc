@@ -2,7 +2,8 @@
   "flex-layout.row#info-header-top": {
     "title": "Texto Top",
     "props": {
-      "blockClass": "infoRow-header-top"
+      "blockClass": "infoRow-header-top",
+      "fullWidth": true
     },
     "children": ["msv-promo-bar-and-timer"]
   },

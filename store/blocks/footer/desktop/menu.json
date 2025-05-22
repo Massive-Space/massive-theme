@@ -1,0 +1,499 @@
+{
+
+  "vtex.menu@2.x:menu#menu-footer-items-1": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#item-1-footer-1",
+      "menu-item#item-1-footer-2",
+      "menu-item#item-1-footer-3",
+      "menu-item#item-1-footer-4",
+      "menu-item#item-1-footer-5",
+      "menu-item#item-1-footer-6",
+      "menu-item#item-1-footer-7",
+      "menu-item#item-1-footer-8",
+      "menu-item#item-1-footer-9"
+    ]
+  },
+
+  "menu-item#item-1-footer-1": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Información legal",
+        "text": "Información legal"
+      }
+    }
+  },
+
+  "menu-item#item-1-footer-2": {
+    "props": {
+      "id": "menu-item-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-cookies",
+        "noFollow": false,
+        "tagTitle": "Política de Cookies",
+        "text": "Política de Cookies"
+      }
+    }
+  },
+
+  "menu-item#item-1-footer-3": {
+    "props": {
+      "id": "menu-item-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-de-proteccion-de-datos",
+        "noFollow": false,
+        "tagTitle": "Política de protección de Datos",
+        "text": "Política de protección de Datos"
+      }
+    }
+  },
+
+  "menu-item#item-1-footer-4": {
+    "props": {
+      "id": "menu-item-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/politicas-de-garantias-y-devoluciones",
+        "noFollow": false,
+        "tagTitle": "Política de Garantías y Devoluciones",
+        "text": "Política de Garantías y Devoluciones"
+      }
+    }
+  },
+
+  "menu-item#item-1-footer-5": {
+    "props": {
+      "id": "menu-item-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/login?ReturnUrl=%2f_secure%2fprocedimiento-de-debida-diligencia",
+        "noFollow": false,
+        "tagTitle": "Procedimiento de debida diligencia",
+        "text": "Procedimiento de debida diligencia"
+      }
+    }
+  },
+
+  "menu-item#item-1-footer-6": {
+    "props": {
+      "id": "menu-item-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/terminos-y-condiciones",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones Compra en Tienda Online",
+        "text": "Términos y Condiciones Compra en Tienda Online"
+      }
+    }
+  },
+
+  "menu-item#item-1-footer-7": {
+    "props": {
+      "id": "menu-item-7",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/terminos-y-condiciones-compra-en-tienda-fisica",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones Compra e Tienda Física",
+        "text": "Términos y Condiciones Compra e Tienda Física"
+      }
+    }
+  },
+
+  "menu-item#item-1-footer-8": {
+    "props": {
+      "id": "menu-item-8",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/tyc-campana",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones de Campaña",
+        "text": "Términos y Condiciones de Campaña"
+      }
+    }
+  },
+
+  "menu-item#item-1-footer-9": {
+    "props": {
+      "id": "menu-item-9",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/tyc-club-del-profesional",
+        "noFollow": false,
+        "tagTitle": "Términos y Condiciones Club del profesional",
+        "text": "Términos y Condiciones Club del profesional"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#menu-footer-items-2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#item-2-footer-1",
+      "menu-item#item-2-footer-2",
+      "menu-item#item-2-footer-3",
+      "menu-item#item-2-footer-4",
+      "menu-item#item-2-footer-5",
+      "menu-item#item-2-footer-6"
+    ]
+  },
+
+  "menu-item#item-2-footer-1": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/listo-3d",
+        "noFollow": false,
+        "tagTitle": "Listo 3D",
+        "text": "Listo 3D"
+      }
+    }
+  },
+
+  "menu-item#item-2-footer-2": {
+    "props": {
+      "id": "menu-item-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.listo.com.co:200/cli.htm",
+        "noFollow": false,
+        "tagTitle": "Acceso Clientes Corporativos",
+        "text": "Acceso Clientes Corporativos"
+      }
+    }
+  },
+
+  "menu-item#item-2-footer-3": {
+    "props": {
+      "id": "menu-item-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": ":200/proveedores/",
+        "noFollow": false,
+        "tagTitle": "Acceso Proveedores",
+        "text": "Acceso Proveedores"
+      }
+    }
+  },
+
+  "menu-item#item-2-footer-4": {
+    "props": {
+      "id": "menu-item-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.sic.gov.co/",
+        "noFollow": false,
+        "tagTitle": "SIC",
+        "text": "SIC"
+      }
+    }
+  },
+
+  "menu-item#item-2-footer-5": {
+    "props": {
+      "id": "menu-item-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "",
+        "text": ""
+      }
+    }
+  },
+
+  "menu-item#item-2-footer-6": {
+    "props": {
+      "id": "menu-item-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": false,
+        "tagTitle": "",
+        "text": ""
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#menu-footer-items-3": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#item-3-footer-1",
+      "menu-item#item-3-footer-2",
+      "menu-item#item-3-footer-3"
+    ]
+  },
+
+  "menu-item#item-3-footer-1": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/sobre-nosotros",
+        "noFollow": false,
+        "tagTitle": "Sobre Nosotros",
+        "text": "Sobre Nosotros"
+      }
+    }
+  },
+
+  "menu-item#item-3-footer-2": {
+    "props": {
+      "id": "menu-item-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/lineas-de-negocio",
+        "noFollow": false,
+        "tagTitle": "Líneas de Negocio",
+        "text": "Líneas de Negocio"
+      }
+    }
+  },
+
+  "menu-item#item-3-footer-3": {
+    "props": {
+      "id": "menu-item-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/nuestros-convenios",
+        "noFollow": false,
+        "tagTitle": "Nuestro Convenios y Servicios",
+        "text": "Nuestro Convenios y Servicios"
+      }
+    }
+  },
+
+  "menu-item#item-3-footer-4": {
+    "props": {
+      "id": "menu-item-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/club-del-profesional",
+        "noFollow": false,
+        "tagTitle": "Club de Profesional Listo",
+        "text": "Club de Profesional Listo"
+      }
+    }
+  },
+
+  "menu-item#item-3-footer-5": {
+    "props": {
+      "id": "menu-item-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "https://listomundoceramico.sherlockhr.computrabajo.com/",
+        "noFollow": false,
+        "tagTitle": "Trabaja con nosotros",
+        "text": "Trabaja con nosotros"
+      }
+    }
+  },
+
+  "menu-item#item-3-footer-6": {
+    "props": {
+      "id": "menu-item-6",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/preguntas-frecuentes",
+        "noFollow": false,
+        "tagTitle": "Preguntas Frecuentes",
+        "text": "Preguntas Frecuentes"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#menu-footer-items-4": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#item-4-footer-1",
+      "menu-item#item-4-footer-2",
+      "menu-item#item-4-footer-3",
+      "menu-item#item-4-footer-4",
+      "menu-item#item-4-footer-5"
+    ]
+  },
+
+  "menu-item#item-4-footer-1": {
+    "props": {
+      "id": "menu-item-1",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acuerdo-de-transporte",
+        "noFollow": false,
+        "tagTitle": "Acuerdo de Transporte ",
+        "text": "Acuerdo de Transporte "
+      }
+    }
+  },
+
+  "menu-item#item-4-footer-2": {
+    "props": {
+      "id": "menu-item-2",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.listo.co/CRU/",
+        "noFollow": false,
+        "tagTitle": "Características y Recomendaciones de uso de nuestros productos - CRU",
+        "text": "Características y Recomendaciones de uso de nuestros productos - CRU"
+      }
+    }
+  },
+
+  "menu-item#item-4-footer-3": {
+    "props": {
+      "id": "menu-item-3",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/medios-de-pago",
+        "noFollow": false,
+        "tagTitle": "FAQ Medios de Pago",
+        "text": "FAQ Medios de Pago"
+      }
+    }
+  },
+
+  "menu-item#item-4-footer-4": {
+    "props": {
+      "id": "menu-item-4",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/fe-erratas",
+        "noFollow": false,
+        "tagTitle": "Fe de Erratas",
+        "text": "Fe de Erratas"
+      }
+    }
+  },
+
+  "menu-item#item-4-footer-5": {
+    "props": {
+      "id": "menu-item-5",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-item--footer",
+      "itemProps": {
+        "type": "internal",
+        "href": "/Programa-de-transparencia-y-etica-empresarial",
+        "noFollow": false,
+        "tagTitle": "Progama de transparencia y Etica empresarial",
+        "text": "Progama de transparencia y Etica empresarial"
+      }
+    }
+  }
+}

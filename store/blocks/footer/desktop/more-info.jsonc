@@ -1,0 +1,127 @@
+{
+  "disclosure-layout#footer--more-info": {
+    "title": "Contenedor Más Información",
+    "props": {
+      "blockClass": "disclosure-layout--more-info"
+    },
+    "children": [
+      "disclosure-trigger#footer--more-info",
+      "disclosure-content#footer--more-info"
+    ]
+  },
+
+  "disclosure-trigger#footer--more-info": {
+    "title": "Titulo Botón",
+    "props": {
+      "blockClass": "disclosure-trigger--more-info"
+    },
+    "children": ["rich-text#question"]
+  },
+
+  "disclosure-content#footer--more-info": {
+    "title": "Contenido",
+    "props": {
+      "blockClass": "disclosure-content--footer-more-info"
+    },
+    "children": ["flex-layout.row#footer-2-desktop"]
+  },
+
+  "rich-text#question": {
+    "title": "Texto",
+    "props": {
+      "text": "Más información",
+      "blockClass": "richText--title-more-info"
+    }
+  },
+
+  "flex-layout.row#footer-2-desktop": {
+    "title": "Menu Footer",
+    "props": {
+      "blockClass": "flexRow--menu-footer",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    },
+    "children": [
+      "flex-layout.col#footer-1-desktop",
+      "flex-layout.col#footer-2-desktop",
+      "flex-layout.col#footer-3-desktop",
+      "flex-layout.col#footer-4-desktop"
+    ]
+  },
+
+  "flex-layout.col#footer-1-desktop": {
+    "title": "Menu 1",
+    "props": {
+      "blockClass": "flexCol--footer-menu"
+    },
+    "children": [
+      "rich-text#title-menu-footer-1",
+      "vtex.menu@2.x:menu#menu-footer-items-1"
+    ]
+  },
+
+  "rich-text#title-menu-footer-1": {
+    "title": "Texto",
+    "props": {
+      "text": "Más Información",
+      "blockClass": "footer--title-menu"
+    }
+  },
+
+  "flex-layout.col#footer-2-desktop": {
+    "title": "Menu 2",
+    "props": {
+      "blockClass": ["flexCol--footer-menu", "footer-col-border"]
+    },
+    "children": [
+      "rich-text#title-menu-footer-2",
+      "vtex.menu@2.x:menu#menu-footer-items-2"
+    ]
+  },
+
+  "rich-text#title-menu-footer-2": {
+    "title": "Texto",
+    "props": {
+      "text": "Servicio al cliente",
+      "blockClass": "footer--title-menu"
+    }
+  },
+
+  "flex-layout.col#footer-3-desktop": {
+    "title": "Menu 3",
+    "props": {
+      "blockClass": ["flexCol--footer-menu", "footer-col-border"]
+    },
+    "children": [
+      "rich-text#title-menu-footer-3",
+      "vtex.menu@2.x:menu#menu-footer-items-3"
+    ]
+  },
+
+  "rich-text#title-menu-footer-3": {
+    "title": "Texto",
+    "props": {
+      "text": "Nuestra Compañia",
+      "blockClass": "footer--title-menu"
+    }
+  },
+
+  "flex-layout.col#footer-4-desktop": {
+    "title": "Menu 4",
+    "props": {
+      "blockClass": ["flexCol--footer-menu", "footer-col-border"]
+    },
+    "children": [
+      "rich-text#title-menu-footer-4",
+      "vtex.menu@2.x:menu#menu-footer-items-4"
+    ]
+  },
+
+  "rich-text#title-menu-footer-4": {
+    "title": "Texto",
+    "props": {
+      "text": "Necesitas ayuda",
+      "blockClass": "footer--title-menu"
+    }
+  }
+}

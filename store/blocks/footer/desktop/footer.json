@@ -1,0 +1,446 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer-1-desktop",
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#footer-4-desktop"
+    ]
+  },
+
+  "flex-layout.row#footer-1-desktop": {
+    "title": "Network / Location Store",
+    "props": {
+      "blockClass": "flexRow--network-footer-store"
+    },
+    "children": [
+      "flex-layout.col#footer-1-desktop-1",
+      "flex-layout.col#footer-1-desktop-2",
+      "flex-layout.col#footer-1-desktop-3"
+    ]
+  },
+
+  "flex-layout.col#footer-1-desktop-1": {
+    "title": "Network",
+    "props": {
+      "blockClass": "flexCol--network-footer",
+      "width": "50%"
+    },
+    "children": ["flex-layout.row#footer-network"]
+  },
+
+  "flex-layout.row#footer-network": {
+    "title": "Redes Sociales",
+    "props": {
+      "blockClass": "flexRow--network-footer"
+    },
+    "children": [
+      "flex-layout.row#footer-network-1",
+      "flex-layout.row#footer-network-2"
+    ]
+  },
+
+  "flex-layout.row#footer-network-1": {
+    "title": "Titulo",
+    "props": {
+      "blockClass": "flexRow--network-1-footer"
+    },
+    "children": ["rich-text#text-network"]
+  },
+
+  "flex-layout.row#footer-network-2": {
+    "props": {
+      "blockClass": "flexRow--network-2-footer"
+    },
+    "children": [
+      "image#network-1",
+      "image#network-2",
+      "image#network-3",
+      "image#network-4"
+    ]
+  },
+
+  "rich-text#text-network": {
+    "title": "Texto",
+    "props": {
+      "text": "Síguenos en nuestras redes:",
+      "blockClass": "footer--network"
+    }
+  },
+
+  "image#network-1": {
+    "title": "Imagen",
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/fd0a05c5-8269-483f-9ee4-be1011340b77___1efe89c10e41e022c4821b524364989b.svg",
+      "maxHeight": 35,
+      "blockClass": "image--networks-footer",
+      "link": {
+        "url": "https://www.facebook.com/ListoMundoCeramico/"
+      }
+    }
+  },
+
+  "image#network-2": {
+    "title": "Imagen",
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/c51765f4-a188-49e5-9d36-bea0089578c0___cdcc64d3be2ab165c03baad28b2054f6.svg",
+      "maxHeight": 35,
+      "blockClass": "image--networks-footer",
+      "link": {
+        "url": "https://www.instagram.com/listomundoceramico/?hl=es"
+      }
+    }
+  },
+
+  "image#network-3": {
+    "title": "Imagen",
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/1b1329b6-bcec-45ce-a60e-d95268e2b3c1___4be81ae0a7d1478073ca6adcaadce103.svg",
+      "maxHeight": 35,
+      "blockClass": "image--networks-footer",
+      "link": {
+        "url": "https://www.tiktok.com/@listomundoceramico"
+      }
+    }
+  },
+
+  "image#network-4": {
+    "title": "Imagen",
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/822f28f9-80ab-4ca8-be7c-8906196353a3___6f298c7bf553e078e99fd02f653b18ee.svg",
+      "maxHeight": 35,
+      "blockClass": "image--networks-footer",
+      "link": {
+        "url": "http://wa.me/573185968272"
+      }
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop-2": {
+    "title": "Location Store",
+    "props": {
+      "blockClass": "flexCol--network-footer",
+      "width": "25%"
+    },
+    "children": ["rich-text#text-store-location"]
+  },
+
+  "rich-text#text-store-location": {
+    "title": "Texto",
+    "props": {
+      "text": "[Nuestras tiendas](/nuestras-tiendas)",
+      "blockClass": "footer--store-location"
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop-3": {
+    "title": "Más Información",
+    "props": {
+      "blockClass": "flexCol--more-info-footer",
+      "width": "25%"
+    },
+    "children": ["disclosure-layout#footer--more-info"]
+  },
+
+  "flex-layout.row#footer-3-desktop": {
+    "title": "Metodos de Pago / Power By",
+    "props": {
+      "blockClass": "payment-methods"
+    },
+    "children": [
+      "flex-layout.col#footer--desktop-1",
+      "flex-layout.col#footer--desktop-2"
+    ]
+  },
+
+  "flex-layout.col#footer--desktop-1": {
+    "title": "Metodos de Pago",
+    "props": {
+      "blockClass": "flexCol-payment-methods"
+    },
+    "children": ["flex-layout.row#footer--desktop-2"]
+  },
+
+  "flex-layout.row#footer--desktop-2": {
+    "props": {
+      "blockClass": "flexRow-content-paymentMethods"
+    },
+    "children": [
+      "image#payment-methods-1",
+      "image#payment-methods-2",
+      "image#payment-methods-3",
+      "image#payment-methods-4",
+      "image#payment-methods-5",
+      "image#payment-methods-6",
+      "image#payment-methods-7",
+      "image#payment-methods-8",
+      "image#payment-methods-9",
+      "image#payment-methods-10"
+    ]
+  },
+
+  "image#payment-methods-1": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/9bea5fee-f112-4dd4-8e82-3a8408d2d020___dadfd414fabfbfcd53e900393b1fdec7.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "image#payment-methods-2": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/98225751-dbb5-4f7e-9520-db6fa0901082___a573269d3f49fe5d78da82dcff984484.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "image#payment-methods-3": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/1ef37d71-54dc-4465-b4ea-62766ded5915___489c3450d2666781b32ac1a41934f92e.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "image#payment-methods-4": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/77080a45-976a-4fc3-8b19-6b43f6b18e25___fc2ff6b5741315cf7173339910063aa0.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "image#payment-methods-5": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/c064217d-2a4d-4c9a-b1ca-5adc51e243f8___5591413837236fd866328ea359e448db.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "image#payment-methods-6": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/9bfa8fda-59ed-458e-91bb-72150bf76411___c16e4fd3322d21a91edc429cec7e9305.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "image#payment-methods-7": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/2a3754a8-605b-4320-9c15-599a168468d3___85d99ea1a91440c8984b6988890dda70.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "image#payment-methods-8": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/72a056dc-b2dc-4f69-b62d-1e311aee9cb5___af92c757ab6eef3f8eaa839fa68a096e.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "image#payment-methods-9": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/f0c7a324-1a40-4180-9a4d-a1f5046acaf5___a355a775801db6068555dbe938a64881.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "image#payment-methods-10": {
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/2cc05ead-939f-485d-9658-81e06fe76730___6d6d7efefce103b0452bbb085c50780b.svg",
+      "maxHeight": 12
+    }
+  },
+
+  "flex-layout.col#footer--desktop-2": {
+    "title": "Power By",
+    "props": {
+      "blockClass": ""
+    },
+    "children": ["flex-layout.row#footer-2-desktop-2"]
+  },
+
+  "flex-layout.row#footer-2-desktop-2": {
+    "props": {
+      "blockClass": "flexRow--powerBy"
+    },
+    "children": [
+      "flex-layout.col#footer--desktop-by-1",
+      "flex-layout.col#footer--desktop-by-2",
+      "flex-layout.col#footer--desktop-by-3"
+    ]
+  },
+
+  "flex-layout.col#footer--desktop-by-1": {
+    "title": "Vigilado",
+    "props": {
+      "blockClass": "flexCol-powerBy"
+    },
+    "children": ["rich-text#guarded-by-1", "image#guarded-by-1"]
+  },
+
+  "flex-layout.col#footer--desktop-by-2": {
+    "title": "Vigilado",
+    "props": {
+      "blockClass": "flexCol-powerBy"
+    },
+    "children": ["rich-text#guarded-by-2", "image#guarded-by-2"]
+  },
+
+  "flex-layout.col#footer--desktop-by-3": {
+    "title": "Vigilado",
+    "props": {
+      "blockClass": "flexCol-powerBy"
+    },
+    "children": ["rich-text#guarded-by-3", "image#guarded-by-3"]
+  },
+
+  "rich-text#guarded-by-1": {
+    "title": "Texto",
+    "props": {
+      "text": "Sitio seguro:",
+      "blockClass": "footer--powerBy"
+    }
+  },
+
+  "rich-text#guarded-by-2": {
+    "title": "Texto",
+    "props": {
+      "text": "Vigilado por:",
+      "blockClass": "footer--powerBy"
+    }
+  },
+
+  "rich-text#guarded-by-3": {
+    "title": "Texto",
+    "props": {
+      "text": "Certificado:",
+      "blockClass": "footer--powerBy"
+    }
+  },
+
+  "image#guarded-by-1": {
+    "title": "Imagen",
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/ccb18f23-62fa-486d-b835-0f9c7894ae3a___3a28e0602eb431ffd193ad26826b55af.svg",
+      "maxHeight": 30,
+      "link": {
+        "url": "https://www.pcisecuritystandards.org/minisite/es-es/",
+        "newTab": true
+      }
+    }
+  },
+
+  "image#guarded-by-2": {
+    "title": "Imagen",
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/589a0770-df5d-402f-8f05-473247aef28a___3f04e4fac90dee40dadbecd17dfff092.svg",
+      "maxHeight": 30,
+      "link": {
+        "url": "https://sedeelectronica.sic.gov.co/",
+        "newTab": true
+      }
+    }
+  },
+
+  "image#guarded-by-3": {
+    "title": "Imagen",
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/35259229-613a-4d7c-9bda-3fefa8fe781d___de9ca9477b9a2e72bc2eab616f9ef0db.svg",
+      "maxHeight": 28,
+      "link": {
+        "url": "https://www.sgs.com/es-co",
+        "newTab": true
+      }
+    }
+  },
+
+  "flex-layout.row#footer-4-desktop": {
+    "title": "Creditos",
+    "props": {
+      "blockClass": "credits"
+    },
+    "children": ["flex-layout.col#footer--desktop"]
+  },
+
+  "flex-layout.col#footer--desktop": {
+    "title": "Creditos",
+    "props": {
+      "blockClass": "credits"
+    },
+    "children": ["rich-text#footer"]
+  },
+
+  "rich-text#footer": {
+    "props": {
+      "text": "Copyright © 2023 TODACO S.A.S. Listo Mundo Cerámico. All Rights Reserved. Powered by",
+      "blockClass": "footer"
+    }
+  },
+
+  "flex-layout.row#footer--power-by": {
+    "title": "Power By",
+    "props": {
+      "blockClass": "flexRow-powerBy",
+      "marginTop": 2,
+      "marginBottom": 5
+    },
+    "children": [
+      "flex-layout.col#footer--power-by-1",
+      "flex-layout.col#footer--power-by-2"
+    ]
+  },
+
+  "flex-layout.col#footer--power-by-1": {
+    "title": "Power By",
+    "props": {
+      "blockClass": "flexCol-powerBy"
+    },
+    "children": ["rich-text#power-by-1", "image#power-by-1"]
+  },
+
+  "flex-layout.col#footer--power-by-2": {
+    "title": "Technology",
+    "props": {
+      "blockClass": "flexCol-powerBy"
+    },
+    "children": ["rich-text#power-by-2", "image#power-by-2"]
+  },
+
+  "rich-text#power-by-1": {
+    "title": "Texto",
+    "props": {
+      "text": "Powered By:",
+      "blockClass": "footer--powerBy"
+    }
+  },
+
+  "image#power-by-1": {
+    "title": "Imagen",
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/950d66e6-1f89-4f9f-beea-9365a0cfccc9___92caa624b784fe991fb40500357fdda8.svg",
+      "maxHeight": 15,
+      "link": {
+        "url": "https://massivespace.rocks/"
+      }
+    }
+  },
+
+  "rich-text#power-by-2": {
+    "title": "Texto",
+    "props": {
+      "text": "Technology:",
+      "blockClass": "footer--powerBy"
+    }
+  },
+
+  "image#power-by-2": {
+    "title": "Imagen",
+    "props": {
+      "src": "https://listocorona.vtexassets.com/assets/vtex.file-manager-graphql/images/c10a91f1-fd43-4ef1-b532-c7770e816b4b___a44d953f7eb24bd3efbde8dc4cef3a75.svg",
+      "maxHeight": 15,
+      "link": {
+        "url": "https://vtex.com/es-co/"
+      }
+    }
+  }
+}

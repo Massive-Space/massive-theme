@@ -580,3 +580,8 @@
 .flexRow--flexRow--text-seo-home {
   position: absolute;
 }
+
+.flexRow--infoRow-header-top :global(.vtex-store-components-3-x-container) {
+  padding-left: 0;
+  padding-right: 0;
+}
