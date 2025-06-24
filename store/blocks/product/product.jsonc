@@ -166,7 +166,8 @@
       "sku-selector#product",
       "product-assembly-options",
       "flex-layout.row#buy-button",
-      "whats-app-button"
+      "whats-app-button",
+      "add-to-gift-list-btn"
     ]
   },
 

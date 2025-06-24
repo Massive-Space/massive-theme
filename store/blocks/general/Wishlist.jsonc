@@ -1,0 +1,109 @@
+{
+  "my-account-link.wishlist-link": {
+    "title": "Link",
+    "props": {
+      "blockClass": "Wishlist",
+      "label": "Favoritos"
+    }
+  },
+  "my-account-page.wishlist-page": {
+    "title": "Wishlist",
+    "children": [
+      "flex-layout.row#top",
+      "list-context.wishlist"
+    ]
+  },
+  "store.wishlist": {
+    "title": "Wishlist",
+    "blocks": [
+      "flex-layout.row#top",
+      "list-context.wishlist"
+    ]
+  },
+  "flex-layout.row#top": {
+    "title": "Contenedor",
+    "children": [
+      "flex-layout.col#title"
+    ]
+  },
+  "flex-layout.col#title": {
+    "title": "Contenedor Título",
+    "children": [
+      "rich-text#title"
+    ],
+    "props": {
+      "blockClass": "titleWishlist",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title": {
+    "title": "Título",
+    "props": {
+      "text": "### Favoritos"
+    }
+  },
+  "list-context.wishlist": {
+    "title": "Productos",
+    "props": {
+      "blockClass": "shelf__wishlist",
+      "showViewEmptyList": true
+    },
+    "blocks": [
+      "product-summary.shelf",
+      "wishlist-empty-list"
+    ],
+    "children": [
+      "slider-layout#wishlist"
+    ]
+  },
+  "wishlist-empty-list": {
+    "title": "Wishlist Vacía",
+    "children": [
+      "rich-text#description"
+    ]
+  },
+  "rich-text#description": {
+    "title": "Título",
+    "props": {
+      "text": "### No hay productos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "text__empy__productss"
+    }
+  },
+  "product-summary.shelf#wishlist": {
+    "title": "Contenido",
+    "props": {
+      "blockClass": "total__sheld__wishlist"
+    },
+    "children": [
+      "add-to-list-btn#main-wishlist" /* 
+        "product-summary-image#main-shelf", */
+      /* "flex-layout.row#content-info-shelf" */
+    ]
+  },
+  "add-to-list-btn#main-wishlist": {
+    "title": "Botón Wishlist",
+    "props": {
+      "blockClass": [
+        "whislist__shelves",
+        "wishlist__wishlist"
+      ]
+    }
+  },
+  "slider-layout#wishlist": {
+    "title": "Productos",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 30,
+        "tablet": 30,
+        "phone": 30
+      },
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "infinite": false,
+      "fullWidth": true,
+      "blockClass": "slide__wishlist"
+    }
+  }
+}
