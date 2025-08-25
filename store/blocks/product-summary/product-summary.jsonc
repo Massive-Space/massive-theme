@@ -9,7 +9,7 @@
         "phone": 2
       }
     },
-    "children": ["product-summary-image", "flex-layout.row#info__shelf"]
+    "children": ["product-summary-image", "flex-layout.row#info__shelf","msv-tab-custom"]
   },
 
   "product-summary.shelf#search-bar": {
@@ -17,7 +17,7 @@
     "props": {
       "blockClass": "product-summary-shelf-search"
     },
-    "children": ["product-summary-image", "flex-layout.row#info__shelf"]
+    "children": ["product-summary-image", "flex-layout.row#info__shelf","msv-tab-custom"]
   },
 
   "stack-layout#prodsum": {

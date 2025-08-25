@@ -27,7 +27,8 @@
     },
     "children": [
       "product-summary-image",
-      "flex-layout.row#info__shelf-related"
+      "flex-layout.row#info__shelf-related",
+      "msv-tab-custom"
     ]
   },
   "product-summary.shelf#detach-categories": {
@@ -55,7 +56,8 @@
     "children": [
       // "vtex.product-highlights@2.x:product-highlights#colecction",
       "product-summary-image",
-      "flex-layout.row#info__shelf"
+      "flex-layout.row#info__shelf",
+      "msv-tab-custom"
     ]
   },
 
