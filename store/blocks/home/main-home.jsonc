@@ -8,6 +8,7 @@
     "title": "Contenido",
     "children": [
       "list-context.media-list#banner-media__home",
+      "slider-layout#slider-bannerDobles",
       "flex-layout.row#productDetach__home",
       "flex-layout.row#slideCategories__home",
       "flex-layout.row#newsletter__home"
@@ -47,6 +48,68 @@
         },
         {
           "order": 11
+        }
+      ]
+    }
+  },
+  "slider-layout#slider-bannerDobles": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "blockClass": "carousel",
+      "autoplay": {
+        "timeout": 5000,
+        "stopOnHover": true
+      }
+    },
+    "children": [
+      "banner-doble-m3"
+    ]
+  },
+  "flex-layout.row#banner-doble-m3": {
+    "props": {
+      "blockClass": "banner-doble-m3"
+    },
+    "children": ["banner-doble-m3"]
+  },
+
+  "banner-doble-m3": {
+    "props": {
+      "banners": [
+        {
+          "typeFile": "imagen",
+          "url": "https://oneillco.vtexassets.com/assets/vtex.file-manager-graphql/images/45dae473-0bd5-449f-a2ed-f478d2b6c496___928727b212c45cab41590f596ac0e8d8.jpg",
+          "link": "/hombre",
+          "altOrTitle": "teste-m3",
+          "showButton": true,
+          "position": "bottom",
+          "textButton": "COMPRAR",
+          "linkButton": "/teste"
+        },
+        {
+          "typeFile": "imagen",
+          "url": "https://oneillco.vtexassets.com/assets/vtex.file-manager-graphql/images/45dae473-0bd5-449f-a2ed-f478d2b6c496___928727b212c45cab41590f596ac0e8d8.jpg",
+          "link": "/mujer",
+          "altOrTitle": "teste-m3",
+          "showButton": true,
+          "position": "up",
+          "textButton": "COMPRAR 2",
+          "linkButton": "/teste"
+        },
+        {
+          "typeFile": "video",
+          "url": "https://oneillco.vtexassets.com/assets/vtex.file-manager-graphql/images/45dae473-0bd5-449f-a2ed-f478d2b6c496___928727b212c45cab41590f596ac0e8d8.jpg",
+          "link": "/mujer",
+          "altOrTitle": "teste-m3",
+          "showButton": true,
+          "position": "bottom",
+          "textButton": "COMPRAR",
+          "linkButton": "/teste"
         }
       ]
     }
