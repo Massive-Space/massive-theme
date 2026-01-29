@@ -56,12 +56,14 @@
 
   "responsive-layout.desktop#product-images": {
     "children": [
+      "front-flag",
       "vtex.product-highlights@2.x:product-highlights#new-plp",
       "product-images#pdp"
     ]
   },
   "responsive-layout.phone#product-images": {
     "children": [
+      "front-flag",
       "vtex.product-highlights@2.x:product-highlights#new-plp",
       "product-images#mobile"
     ]
