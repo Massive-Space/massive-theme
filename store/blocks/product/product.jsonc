@@ -109,6 +109,7 @@
       "blockClass": "main-img"
     },
     "children": [
+      
       "responsive-layout.desktop#product-images",
       "responsive-layout.phone#product-images"
     ]
