@@ -109,6 +109,7 @@
       "blockClass": "main-img"
     },
     "children": [
+      "front-flag",
       "responsive-layout.desktop#product-images",
       "responsive-layout.phone#product-images"
     ]

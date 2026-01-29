@@ -9,7 +9,7 @@
         "phone": 2
       }
     },
-    "children": ["product-summary-image", "flex-layout.row#info__shelf","msv-tab-custom"]
+    "children": ["front-flag","product-summary-image", "flex-layout.row#info__shelf","msv-tab-custom"]
   },
 
   "product-summary.shelf#search-bar": {
