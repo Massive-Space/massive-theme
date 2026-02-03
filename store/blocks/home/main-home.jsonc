@@ -8,7 +8,7 @@
     "title": "Contenido",
     "children": [
       "list-context.media-list#banner-media__home",
-      "slider-layout#slider-bannerDobles",
+      "banner-doble-m3",
       "flex-layout.row#productDetach__home",
       "flex-layout.row#slideCategories__home",
       "flex-layout.row#newsletter__home"
