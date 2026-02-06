@@ -160,6 +160,7 @@
       "rowGap": 0
     },
     "children": [
+      "popUpContextList",
       "flex-layout.row#product-name",
       "responsive-layout.desktop#product-rating-list-btn",
       "flex-layout.row#description",

@@ -75,7 +75,8 @@
     "massivespacenew.app-seo": "0.x",
     "massivespacenew.locator": "0.x",
     "massivespacenew.my-lists": "0.x",
-    "massivespacenew.admin-app": "0.x"
+    "massivespacenew.admin-app": "0.x",
+    "massivespacenew.popups-admin-app": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",
