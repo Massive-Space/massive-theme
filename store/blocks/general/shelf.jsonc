@@ -55,6 +55,7 @@
     },
     "children": [
       // "vtex.product-highlights@2.x:product-highlights#colecction",
+      "front-flag",
       "product-summary-image",
       "flex-layout.row#info__shelf",
       "msv-tab-custom"
