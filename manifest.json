@@ -2,7 +2,7 @@
   "vendor": "massivespacenew",
   "name": "store-theme",
   "title": "massive space",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
