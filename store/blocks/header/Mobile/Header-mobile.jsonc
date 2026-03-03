@@ -5,6 +5,7 @@
       "blockClass": "header__mobile"
     },
     "children": [
+      "front-popup",
       "toggle-layout#store_promo_term",
       "whats-app-widget",
       "slider-layout#header-top",

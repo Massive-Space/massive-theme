@@ -76,6 +76,7 @@
     "massivespacenew.locator": "0.x",
     "massivespacenew.my-lists": "0.x",
     "massivespacenew.admin-app": "0.x",
+    "massivespacenew.popup-admin-app": "0.x",
     "massivespacenew.popups-promocional": "0.x"
   },
   "peerDependencies": {
