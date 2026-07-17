@@ -67,6 +67,7 @@
     },
     "children": [
       "toggle-layout#store_promo_term",
+      "front-thermometer-minicart",
       "minicart-summary",
       "minicart-checkout-button",
       "drawer-close-button"
