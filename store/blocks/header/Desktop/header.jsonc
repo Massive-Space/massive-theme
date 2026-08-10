@@ -10,6 +10,7 @@
     "title": "Header Desktop",
     "children": [
       "front-popup",
+      "front-maintenance",
       "flex-layout.row#info-header-top",
       "toggle-layout#store_promo_term_NO_TOCAR",
       "whats-app-widget",
