@@ -77,7 +77,8 @@
     "massivespacenew.my-lists": "0.x",
     "massivespacenew.admin-app": "0.x",
     "massivespacenew.popup-admin-app": "1.x",
-    "massivespacenew.popups-promocional": "0.x"
+    "massivespacenew.popups-promocional": "0.x",
+    "massivespacenew.termometro-admin-app": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x",
