@@ -1,0 +1,183 @@
+.sgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+}
+
+.sgSelector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Selector global envuelto dentro de clase local */
+.sgSelector :global(.vtex-styleguide-9-x-dropdown) {
+  width: 100%;
+}
+
+.sgImage {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.sgOptions {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.sgOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px 5px;
+  border-bottom: 1px solid #dfdfdf;
+  margin-bottom: 5px;
+}
+
+.sgOption:first-child .sgOptionTitle,
+.sgOption:first-child .sgOptionValue {
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.sgOptionTitle {
+  font-weight: 600;
+  margin: 0;
+  min-width: 40px;
+  font-size: 13px;
+}
+
+.sgOptionValue {
+  margin: 0;
+  text-align: center;
+  min-width: 70px;
+  font-size: 13px;
+}
+
+/* Modales e interfaces globales anidadas dentro de .sgSelector */
+.sgSelector :global(.vtex-dropdown__caption) {
+  display: flex;
+  justify-content: center;
+}
+
+.sgSelector :global(.vtex-styleguide-9-x-container) {
+  color: #536271;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid #bbb;
+  background: #f3f5f7;
+}
+
+.sgSelector :global(.vtex-dropdown__arrow) {
+  color: #536271;
+}
+
+.sgModalContent {
+  padding: 1rem 0;
+  display: block;
+}
+
+/* Overlay flotante */
+.sgOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.sgOverlayOpen {
+  opacity: 1;
+  pointer-events: auto;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: flex-end;
+  z-index: 999999;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Drawer deslizable lateral */
+.sgModal {
+  background: #fff;
+  width: 90%;
+  max-width: 420px;
+  height: 100vh;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.sgModalOpen {
+  transform: translateX(0);
+  background: #fff;
+  width: 90%;
+  max-width: 420px;
+  height: 100vh;
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sgClose {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background: transparent;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+  z-index: 10;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sgOpenBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #536271;
+  padding: 0;
+  border-bottom: 1px solid #bdbdbd;
+  margin: 10px 0;
+  font-family: "Quicksand";
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+
+  .sgModal,
+  .sgModalOpen {
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .sgModalContent {
+    padding: 0;
+  }
+}
