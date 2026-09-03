@@ -163,8 +163,15 @@
 .flexRow--info__shelf,
 .flexColChild--info__shelf,
 .flexRowContent--info__shelf {
-  height: 100%;
+  height: auto;
 }
+
+.flexRow--price {
+  min-height: 2.8em !important; 
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
 .flexRow--info__shelf {
   position: relative;
   display: flex;
