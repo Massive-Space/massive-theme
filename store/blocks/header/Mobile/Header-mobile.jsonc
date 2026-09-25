@@ -5,6 +5,7 @@
       "blockClass": "header__mobile"
     },
     "children": [
+      "popUpContextList",
       "front-popup",
       "front-thermometer-header",
       "toggle-layout#store_promo_term",
