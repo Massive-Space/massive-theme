@@ -1,0 +1,7 @@
+{
+  "store.custom#blog-lilipink": {
+    "children": [
+      "SliderBlog"
+    ]
+  }
+}

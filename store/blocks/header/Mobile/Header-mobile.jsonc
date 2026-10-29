@@ -6,6 +6,7 @@
     },
     "children": [
       "front-popup",
+      "front-thermometer-header",
       "toggle-layout#store_promo_term",
       "whats-app-widget",
       "slider-layout#header-top",

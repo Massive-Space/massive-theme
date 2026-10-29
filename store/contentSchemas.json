@@ -1,0 +1,88 @@
+{
+  "definitions": {
+    "SizeGuide": {
+      "properties": {
+        "mainImage": {
+          "$ref": "app:vtex.native-types#/definitions/url",
+          "default": "",
+          "title": "Imagen Principal",
+          "widget": {
+            "ui:widget": "image-uploader"
+          }
+        },
+        "mainImageMobile": {
+          "$ref": "app:vtex.native-types#/definitions/url",
+          "default": "",
+          "title": "Imagen Principal Mobile",
+          "widget": {
+            "ui:widget": "image-uploader"
+          }
+        },
+        "options": {
+          "type": "array",
+          "title": "Guía de tallas",
+          "items": {
+            "title": "Categoría",
+            "type": "object",
+            "properties": {
+              "image": {
+                "$ref": "app:vtex.native-types#/definitions/url",
+                "default": "",
+                "title": "Imagen",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "imageMobile": {
+                "$ref": "app:vtex.native-types#/definitions/url",
+                "default": "",
+                "title": "Imagen Mobile",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "title": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "default": "",
+                "title": "Titulo"
+              },
+              "tableOptions": {
+                "type": "array",
+                "title": "Tabla",
+                "items": {
+                  "properties": {
+                    "title": {
+                      "$ref": "app:vtex.native-types#/definitions/richText",
+                      "default": "",
+                      "title": "Titulo"
+                    },
+                    "value": {
+                      "$ref": "app:vtex.native-types#/definitions/richText",
+                      "default": "",
+                      "title": "Valor 1"
+                    },
+                    "value2": {
+                      "$ref": "app:vtex.native-types#/definitions/richText",
+                      "default": "",
+                      "title": "Valor 2"
+                    },
+                    "value3": {
+                      "$ref": "app:vtex.native-types#/definitions/richText",
+                      "default": "",
+                      "title": "Valor 3"
+                    },
+                    "value4": {
+                      "$ref": "app:vtex.native-types#/definitions/richText",
+                      "default": "",
+                      "title": "Valor 4"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

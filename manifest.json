@@ -2,7 +2,7 @@
   "vendor": "massivespacenew",
   "name": "store-theme",
   "title": "massive space",
-  "version": "2.0.0",
+  "version": "2.0.5",
   "builders": {
     "assets": "0.x",
     "styles": "2.x",
@@ -69,6 +69,10 @@
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
     "vtex.toggle-layout": "0.x",
+    "vtex.native-types": "0.x",
+    "vtex.product-context": "0.x",
+    "vtex.device-detector": "0.x",
+    "vtex.store-graphql": "2.x",
     "massivespacenew.admin-ui-widgets": "0.x",
     "massivespacenew.referrals": "0.x",
     "massivespacenew.massivespacenew-apps": "0.x",
@@ -78,6 +82,7 @@
     "massivespacenew.admin-app": "0.x",
     "massivespacenew.popup-admin-app": "1.x",
     "massivespacenew.popups-promocional": "0.x",
+    "massivespacenew.termometro-admin-app": "0.x",
     "massivespacenew.mantenimiento-admin-app": "0.x"
   },
   "peerDependencies": {

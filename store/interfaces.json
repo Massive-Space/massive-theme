@@ -7,5 +7,11 @@
   },
   "whats-app-button": {
     "component": "massivespacenew.admin-ui-widgets/WhatsAppButton"
+  },
+  "size-guide": {
+    "component": "SizeGuide",
+    "content": {
+      "$ref": "#/definitions/SizeGuide"
+    }
   }
 }
