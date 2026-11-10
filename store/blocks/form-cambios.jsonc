@@ -1,0 +1,34 @@
+{
+  "store.custom#form-cambios-y-devoluciones": {
+    "blocks": [
+      "flex-layout.row#form-cambios-container"
+    ]
+  },
+  "flex-layout.row#form-cambios-container": {
+    "props": {
+      "blockClass": "form-clean-wrapper",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#form-cambios-content"
+    ]
+  },
+  "flex-layout.col#form-cambios-content": {
+    "props": {
+      "blockClass": "form-clean-col",
+      "horizontalAlign": "center",
+      "width": "100%"
+    },
+    "children": [
+      "rich-text#form-cambios-mount"
+    ]
+  },
+  "rich-text#form-cambios-mount": {
+    "props": {
+      "text": "",
+      "blockClass": "form-cambios-placeholder"
+    }
+  }
+}

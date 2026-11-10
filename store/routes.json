@@ -22,5 +22,8 @@
   },
   "store.custom#blog-lilipink": {
     "path": "/ofertas"
+  },
+  "store.custom#form-cambios-y-devoluciones": {
+    "path": "/form-cambios-y-devoluciones"
   }
 }
